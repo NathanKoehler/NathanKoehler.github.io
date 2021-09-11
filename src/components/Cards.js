@@ -18,7 +18,7 @@ function Cards() {
               path="/services"
             />
             <CardItem
-              src="images/theAscentTitleScreen.png"
+              src="images/TheAscentTitleScreen.png"
               srcAlt="images/TheAscent-Background.png"
               text="Illustration and C# coding for the Ascent, a 2D platformer built in built in Unity Game Engine. I led the project to win 1st at the Georgia FBLA 2020 Conference for Game Development and Simulation."
               label="Game Design"
