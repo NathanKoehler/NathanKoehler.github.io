@@ -6,6 +6,7 @@ import Gallery from "../Gallery";
 import pageVariants, { pageTransition } from "../Transition";
 
 export default function Artwork() {
+  
   return (
     <motion.div
       style={{ position: "absolute" }}

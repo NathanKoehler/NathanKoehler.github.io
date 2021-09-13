@@ -133,7 +133,7 @@ const Gallery = () => {
                 delayedCall="true"
                 onChange={(isVisible) => imageVisibleChange(index, isVisible)}
               >
-                <GalleryCard show={imagesShownArray[index]}>
+                <GalleryCard show={imagesShownArray[index]} >
                   <div height={item.height}
                     className="pics"
                     key={index}
