@@ -9,6 +9,7 @@ import Services from "./components/pages/Services";
 /* Command D to select line and highlight instances of a word in a line*/
 import Artwork from "./components/pages/Artwork";
 import AboutMe from "./components/pages/AboutMe";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -18,7 +19,8 @@ function App() {
       <Navbar />
       <main style={{ position: "relative" }}>
       
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
+        <ScrollToTop />
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
             <Route path="/services" component={Services} />
