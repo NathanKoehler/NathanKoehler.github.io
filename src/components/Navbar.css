@@ -2,10 +2,11 @@
   background: var(--background);
   height: 80px;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   --background: #fff;
@@ -14,6 +15,12 @@
   --vivid: #2373db;
 
   transition: 0.8s all;
+}
+
+.navbar-invisible-box {
+  top: 0;
+  height: 80px;
+  width: 100%;
 }
 
 .navbar-container {
@@ -115,13 +122,14 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     height: 95vh;
     position: absolute;
     top: 80px;
     left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
+    opacity: 0;
+    transition: background 0.5s ease, height 0s, opacity 0.5s ease, left 0.5s ease;
   }
 
   .nav-menu.active {

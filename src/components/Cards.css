@@ -1,6 +1,7 @@
 .cards {
   padding: 2rem 6rem 2rem 6rem;
   background: #fff;
+  opacity: .99;
 }
 
 .card__title {

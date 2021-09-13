@@ -45,8 +45,9 @@ function Navbar() {
 
   return (
     <>
+      <div className="navbar-invisible-box" />
       <Nav scrollNav={scrollNav} className="navbar">
-        <div className="navbar-container">
+        <section className="navbar-container">
           <Link
             to="/"
             className="navbar-logo"
@@ -111,7 +112,7 @@ function Navbar() {
             </li>
           </ul>
           {button && <Button buttonStyle={buttonStyle}>ABOUT ME</Button>}
-        </div>
+        </section>
       </Nav>
     </>
   );

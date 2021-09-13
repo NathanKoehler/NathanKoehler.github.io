@@ -3,17 +3,15 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import { Instagram, InstagramBackground } from "./FooterElements";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import useWindowDimensions from "./Helper";
 
 function Footer() {
-  const footerContainer = useRef(null);
   const [scrollNav, setScrollNav] = useState(false);
   const [offsetY, setOffsetY] = useState(0);
-  const { height, width } = useWindowDimensions(footerContainer);
   const handleScroll = () =>
+    // sets offsetY to be a variable 0 through 1, 1 being at the bottom of page
     setOffsetY(
       window.scrollY /
-        (Math.max(
+        (Math.max( // accomidates for all the various browsers
           document.body.scrollHeight,
           document.body.offsetHeight,
           document.documentElement.clientHeight,
@@ -31,35 +29,41 @@ function Footer() {
     };
   }, []);
 
-  const iicon = useRef(null);
+  const iicon = useRef(null); // used to enable the "fake hover" on the instagram logo
 
+  /* the fake hover effect on the instagram logo */
   const triggerRippleHover = (isVisible) => {
     if (isVisible) {
+      // if the logo comes into view, trigger the effect
       const event = new MouseEvent("mouseover", {
         view: window,
         bubbles: true,
         cancelable: true,
-      });
+      }); // triggers the mock mouse over for the onmouseover javascript event
 
       const event2 = new MouseEvent("mouseout", {
         view: window,
         bubbles: true,
         cancelable: true,
-      });
+      }); // undos the onmouseover javascript effect
 
       iicon.current.dispatchEvent(event);
 
       setTimeout(() => {
         iicon.current.dispatchEvent(event2);
-      }, 500);
+      }, 500); // delay ensures that the view has time to see the effect
     }
   };
 
   return (
-    <div className="footer-container">
+    <section className="footer-container">
       <div
         className="footer-parallax"
-        style={{ transform: `translateY(${offsetY})` }}
+        style={{
+          /* changes the opacity and transform to emulate a parallax effect */
+          opacity: `${offsetY * offsetY * 100}%`,
+          transform: `translateY(${600 - offsetY * 600}px)`,
+        }}
       >
         <div className="footer-links">
           <div className="footer-link-wrapper">
@@ -147,7 +151,7 @@ function Footer() {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 }
 

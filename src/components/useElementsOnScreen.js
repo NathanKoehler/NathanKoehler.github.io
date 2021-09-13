@@ -2,24 +2,24 @@ import { useState, useEffect, useRef } from 'react'
 
 export const useElementsOnScreen = (options) => {
     const containerRef = useRef(null);
-    const [ isVisible, setIsVisible ] = useState(false)
+    const [ isVisible, setIsVisible ] = useState(false);
 
     const callbackFunction = (entries) => {
-        const [ entry] = entries
-        setIsVisible(entry.isIntersecting)
+        const [ entry ] = entries;
+        setIsVisible(entry.isIntersecting);
     }
 
     useEffect(() => {
-        const observer = new IntersectionObserver(callbackFunction, options)
+        const observer = new IntersectionObserver(callbackFunction, options);
         if (containerRef.current) observer.observe(containerRef.current)
 
         return () => {
             // eslint-disable-next-line react-hooks/exhaustive-deps
-            if (containerRef.current) observer.unobserve(containerRef.current)
+            if (containerRef.current) observer.unobserve(containerRef.current);
         }
-    }, [containerRef, options])
+    }, [containerRef, options]);
 
-    return [containerRef, isVisible]
+    return [containerRef, isVisible];
 }
 
-export default useElementsOnScreen
+export default useElementsOnScreen;

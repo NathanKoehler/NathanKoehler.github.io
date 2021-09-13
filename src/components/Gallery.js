@@ -134,7 +134,7 @@ const Gallery = () => {
                 onChange={(isVisible) => imageVisibleChange(index, isVisible)}
               >
                 <GalleryCard show={imagesShownArray[index]}>
-                  <div
+                  <div height={item.height}
                     className="pics"
                     key={index}
                     onClick={() => getImg(item.imgSrc)}

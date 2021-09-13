@@ -2,31 +2,38 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
+import Parallax from "react-rellax";
 
 function HeroSection() {
   return (
     <div className="hero-invisible-width">
       <div className="hero-container">
         <video src="/videos/video-1.mp4" autoPlay loop muted />
-        <h1>NATE IS A UI/UX DESIGNER</h1>
-        <p>Undergrad student at Georgia Tech studying Media and Interaction Design looking for a 2022 spring internship.</p>
-        <div className="hero-btns">
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn-large"
-          >
-            PROGRAMMING
-          </Button>
-          <Button
-            className="btns"
-            buttonStyle="btn--primary"
-            buttonSize="btn-large"
-          >
-            MEDIA 
-            <i className="fas fa-chevron-circle-down" />
-          </Button>
-        </div>
+        <Parallax speed={-7} className="hero-parallax">
+            <h1>NATE IS A UI/UX DESIGNER</h1>
+            <p>
+              Undergrad student at Georgia Tech studying Media and Interaction
+              Design looking for a 2022 spring internship.
+            </p>
+            <div className="hero-btns">
+              <Button
+              goTo="/artwork"
+                className="btns"
+                buttonStyle="btn--outline"
+                buttonSize="btn-large"
+              >
+                ARTWORK
+              </Button>
+              <Button
+                className="btns"
+                buttonStyle="btn--primary"
+                buttonSize="btn-large"
+              >
+                MEDIA
+                <i className="fas fa-chevron-circle-down" />
+              </Button>
+            </div>
+        </Parallax>
       </div>
     </div>
   );
