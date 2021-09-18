@@ -20,10 +20,10 @@ function App() {
       
         <AnimatePresence initial={false}>
           <Switch location={location} key={location.pathname}>
-            <Route exact path="/" component={Home} />
-            <Route path="/services" component={Services} />
-            <Route path="/artwork" component={Artwork} />
-            <Route path="/about-me" component={AboutMe} />
+            <Route exact path={`/`} component={Home} />
+            <Route exact path={`/services`} component={Services} />
+            <Route exact path={`/artwork`} component={Artwork} />
+            <Route exact path={`/about-me`} component={AboutMe} />
           </Switch>
         </AnimatePresence>
       </main>

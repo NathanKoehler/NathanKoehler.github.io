@@ -9,7 +9,7 @@ import pageVariants, { pageTransition } from "../Transition";
 function Home(props) {
   return (
     <motion.div
-      style={{ position: "absolute", width: "100%"}}
+      style={{ position: "absolute", width: "100%" }}
       initial="initial"
       animate="in"
       exit="out"
