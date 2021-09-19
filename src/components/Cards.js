@@ -11,7 +11,7 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/AHS-Robotics.png"
+              src="https://personal-react-aws-bucket.s3.amazonaws.com/album1/AHS-Robotics.png"
               srcAlt="images/AHS-Robotics-Background.png"
               text="Web design and illustration work to redesign the website and digital marketing for the Alpharetta Robotics Team. My role as head of marketing was to redesign the online webpage and the social media platforms."
               label="UI / UX"
