@@ -8,77 +8,77 @@ const Gallery = () => {
     {
       id: 1,
       height: 2400,
-      imgSrc: "images/gallery/pillar.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/pillar.png",
     },
     {
       id: 2,
       height: 1333,
-      imgSrc: "images/gallery/glaveborn.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/glaveborn.png",
     },
     {
       id: 3,
       height: 1400,
-      imgSrc: "images/gallery/anta.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/anta.png",
     },
     {
       id: 4,
       height: 3600,
-      imgSrc: "images/gallery/newrohcaw.jpg",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcaw.jpg",
     },
     {
       id: 5,
       height: 1668,
-      imgSrc: "images/gallery/fire.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fire.png",
     },
     {
       id: 6,
       height: 612,
-      imgSrc: "images/gallery/mountain.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/mountain.png",
     },
     {
       id: 7,
       height: 1853,
-      imgSrc: "images/gallery/winter.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/winter.png",
     },
     {
       id: 8,
       height: 2341,
-      imgSrc: "images/gallery/tree.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/tree.png",
     },
     {
       id: 9,
       height: 3600,
-      imgSrc: "images/gallery/newrohcawback.jpg",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcawback.jpg",
     },
     {
       id: 10,
       height: 3300,
-      imgSrc: "images/gallery/fish.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fish.png",
     },
     {
       id: 11,
       height: 2400,
-      imgSrc: "images/gallery/foundry.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/foundry.png",
     },
     {
       id: 12,
       height: 2400,
-      imgSrc: "images/gallery/wall.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/wall.png",
     },
     {
       id: 13,
       height: 1960,
-      imgSrc: "images/gallery/sit.jpeg",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sit.jpeg",
     },
     {
       id: 14,
       height: 2550,
-      imgSrc: "images/gallery/water.png",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/water.png",
     },
     {
       id: 15,
       height: 3300,
-      imgSrc: "images/gallery/sorcerer.jpeg",
+      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sorcerer.jpeg",
     },
   ];
 
