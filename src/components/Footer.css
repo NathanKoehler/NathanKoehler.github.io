@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: .99;
+  z-index: 4;
+  position: relative;
 }
 
 .footer-links {

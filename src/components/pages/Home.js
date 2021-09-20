@@ -18,8 +18,8 @@ function Home(props) {
       transition={pageTransition}
     >
       <HeroSection navRef={props.navRef} />
-      <Slider />
       <Cards />
+      <Slider />
       <Footer />
     </motion.div>
   );

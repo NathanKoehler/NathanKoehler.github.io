@@ -9,7 +9,7 @@ function HeroSection() {
     <div className="hero-invisible-width">
       <div className="hero-container">
         <video src="https://personal-react-aws-bucket.s3.amazonaws.com/album1/videos/video-1.mp4" autoPlay loop muted />
-        <Parallax speed={-7} className="hero-parallax">
+        <Parallax speed={-6} className="hero-parallax">
             <h1>NATE IS A UI/UX DESIGNER</h1>
             <p>
               Undergrad student at Georgia Tech studying Media and Interaction
