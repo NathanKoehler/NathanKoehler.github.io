@@ -1,0 +1,14 @@
+.slider {
+    padding: 2rem 6rem 2rem 6rem;
+    background: #fff;
+    box-shadow: 0px -2px 50px 10px #000000b9;
+    opacity: .99;
+  }
+  
+  .slider__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 50px;
+    text-shadow: 4px 4px rgb(0, 173, 181, 0.5);
+  }

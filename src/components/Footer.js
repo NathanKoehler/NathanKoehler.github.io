@@ -11,7 +11,8 @@ function Footer() {
     // sets offsetY to be a variable 0 through 1, 1 being at the bottom of page
     setOffsetY(
       window.scrollY /
-        (Math.max( // accomidates for all the various browsers
+        (Math.max(
+          // accomidates for all the various browsers
           document.body.scrollHeight,
           document.body.offsetHeight,
           document.documentElement.clientHeight,
@@ -21,6 +22,7 @@ function Footer() {
           window.innerHeight)
     );
 
+  /* custom parallax component because I only needed a simple effect */
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -62,7 +64,7 @@ function Footer() {
         style={{
           /* changes the opacity and transform to emulate a parallax effect */
           opacity: `${offsetY * offsetY * 100}%`,
-          transform: `translateY(${600 - offsetY * 600}px)`,
+          transform: `translateY(${500 - offsetY * 500}px)`,
         }}
       >
         <div className="footer-links">
