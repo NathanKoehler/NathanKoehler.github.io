@@ -3,6 +3,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import { Instagram, InstagramBackground } from "./FooterElements";
 import ReactVisibilitySensor from "react-visibility-sensor";
+import { ScrollButton } from "./ScrollButton";
 
 function Footer() {
   const [scrollNav, setScrollNav] = useState(false);
@@ -58,7 +59,7 @@ function Footer() {
   };
 
   return (
-    <section className="footer-container">
+    <section id="footer" className="footer-container">
       <div
         className="footer-parallax"
         style={{
@@ -73,7 +74,7 @@ function Footer() {
               <h2>Let's Talk!</h2>
               <p>
                 Check out my social media below, or send me an email for
-                inquiries or to say hello.
+                inquiries and to say hello.
               </p>
             </div>
           </div>
@@ -152,6 +153,26 @@ function Footer() {
             </ReactVisibilitySensor>
           </div>
         </section>
+        <ReactVisibilitySensor delayedCall="true" intervalDelay="1000">
+          {({ isVisible }) => (
+            <div className="to-top-button" style={isVisible ? {opacity: 1} : {opacity: 0}}>
+              <ScrollButton
+                goTo="top"
+                vOffset={0}
+                className="btns"
+                buttonStyle="btn--invisible"
+                buttonSize="btn--large--invisible"
+              >
+                <div
+                  className="social-icon-link to-top-arrow"
+                  aria-label="Scroll To Top"
+                >
+                  <i class="fas fa-chevron-up"></i>
+                </div>
+              </ScrollButton>
+            </div>
+          )}
+        </ReactVisibilitySensor>
       </div>
     </section>
   );

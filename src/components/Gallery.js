@@ -105,13 +105,13 @@ const Gallery = () => {
 
   return (
     <>
-      <div className={modal ? "model open" : "model"}>
+      <span className={modal ? "model open" : "model"}>
         <img src={tempImgSrc} alt="Focus" />
         <i
           className="fas fa-times"
           onClick={() => setModal(false)}
         ></i>
-      </div>
+      </span>
       <div className="gallery-title">
         <div className="gallery-title-box">
           <div className="gallery-title-text">

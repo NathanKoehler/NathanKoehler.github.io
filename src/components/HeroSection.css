@@ -11,13 +11,14 @@ video {
     width: 100%;
     justify-content: center;
     position: relative;
+    opacity: 0.99;
 }
 
 .hero-container {
     /* background: url('images/img-home.jpg') center center/cover no-repeat; */
     height: 100vh;
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -28,6 +29,7 @@ video {
 .hero-parallax {
     width: 100%;
     display: flex;
+    position: fixed;
     flex-direction: column;
     align-items: center;
 }

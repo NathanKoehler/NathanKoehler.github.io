@@ -16,9 +16,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <main style={{ position: "relative" }}>
-      
-        <AnimatePresence initial={false}>
+      <main>
+        <AnimatePresence>
           <Switch location={location} key={location.pathname}>
             <Route exact path={`/`} component={Home} />
             <Route exact path={`/services`} component={Services} />
