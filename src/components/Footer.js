@@ -61,7 +61,7 @@ function Footer() {
   };
 
   return (
-    <section id="footer" className="footer-container">
+    <section className="footer-container">
       <div
         className="footer-parallax"
         style={{
@@ -155,7 +155,7 @@ function Footer() {
             </ReactVisibilitySensor>
           </div>
         </section>
-        <ReactVisibilitySensor delayedCall="true" intervalDelay="1000">
+        <ReactVisibilitySensor delayedCall="true"  intervalDelay="1000">
           {({ isVisible }) => (
             <div
               className="to-top-button"
@@ -180,6 +180,7 @@ function Footer() {
           )}
         </ReactVisibilitySensor>
       </div>
+      <div id="footer" />
     </section>
   );
 }

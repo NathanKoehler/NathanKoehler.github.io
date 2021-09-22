@@ -50,7 +50,7 @@ export const ScrollButton = ({
   /* allows it so that when the path is not specified (goTo is not set), the button goes nowhere */
   ScrollButton.defaultProps = {
     vDuration: 1800,
-    vOffset: -100,
+    vOffset: 100,
     goTo: "/",
   };
   
