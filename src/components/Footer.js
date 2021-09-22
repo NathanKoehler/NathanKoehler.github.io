@@ -75,8 +75,8 @@ function Footer() {
             <div className="footer-link-items">
               <h2>Let's Talk!</h2>
               <p>
-                Check out my social media below, or send me an email for
-                inquiries and to say hello.
+                Check out my social media below and shoot me an email for
+                inquiries or to say hello.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ function Footer() {
           )}
         </ReactVisibilitySensor>
       </div>
-      <div id="footer" />
+      <div id="footer" className="footer-scroll-to">asd</div>
     </section>
   );
 }
