@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Instagram, InstagramBackground } from "./FooterElements";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { ScrollButton } from "./ScrollButton";
+import { animateScroll as scroll } from "react-scroll";
+
 
 function Footer() {
   const [scrollNav, setScrollNav] = useState(false);
@@ -155,10 +157,14 @@ function Footer() {
         </section>
         <ReactVisibilitySensor delayedCall="true" intervalDelay="1000">
           {({ isVisible }) => (
-            <div className="to-top-button" style={isVisible ? {opacity: 1} : {opacity: 0}}>
+            <div
+              className="to-top-button"
+              style={isVisible ? { opacity: 1 } : { opacity: 0 }}
+            >
               <ScrollButton
-                goTo="top"
-                vOffset={0}
+                onClick={() => {
+                  scroll.scrollToTop();
+                }}
                 className="btns"
                 buttonStyle="btn--invisible"
                 buttonSize="btn--large--invisible"
@@ -167,7 +173,7 @@ function Footer() {
                   className="social-icon-link to-top-arrow"
                   aria-label="Scroll To Top"
                 >
-                  <i class="fas fa-chevron-up"></i>
+                  <i className="fas fa-chevron-up"></i>
                 </div>
               </ScrollButton>
             </div>

@@ -79,7 +79,7 @@
 .model {
     width: 100%;
     height: calc((100vh) - 80px);
-    position:fixed;
+    position: fixed;
     bottom: 0;
     left: 0;
     display: flex;
@@ -91,7 +91,7 @@
     opacity: 0;
     transform: scale(0);
     overflow: hidden;
-    z-index: 999;
+    z-index: 5;
 }
 
 .model.open{

@@ -16,10 +16,10 @@ function HeroSection() {
           muted
         />
         <Parallax
-          speed={-7}
+          speed={6}
           /* determines the speed of the parallax */ className="hero-parallax"
         >
-          <h1>NATE IS A UI/UX DESIGNER</h1>
+          <h1>NATE IS A <mark className="light-blue">UI/UX</mark> DESIGNER</h1>
           <p>
             Undergrad student at Georgia Tech studying Media and Interaction
             Design looking for a 2022 spring internship.

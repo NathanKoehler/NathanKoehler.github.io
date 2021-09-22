@@ -6,21 +6,22 @@ function Slider() {
   return (
     <section className="slider">
       <div className="slider-top">
-        <h1 className="slider-title">Skills</h1>
+        
 
         <Link
           className="slider-links-left"
           to="/"
           /* changes the URL */
         >
-          <h2 className="slider-title-left">我懂中文</h2>
+          <h2 className="slider-title-left">我 懂 中 文</h2>
         </Link>
+        <h1 className="slider-title">Skills</h1>
         <Link
           className="slider-links-right"
           to="/artwork"
           /* changes the URL */
         >
-          <h2 className="slider-title-right">My art skills</h2>
+          <h2 className="slider-title-right">View my art skills</h2>
         </Link>
       </div>
       <div className="marquee-background">
@@ -33,7 +34,7 @@ function Slider() {
             <li>After Effects</li>
             <li>Illustrator</li>
             <li>Unreal Engine</li>
-            <li>Photoshop</li>
+            <li style={{ color: "#72b7e8" }}>Photoshop</li>
             <li>InDesign</li>
 
             <li>React Native</li>
@@ -96,7 +97,7 @@ function Slider() {
               <i className="devicon-illustrator-plain" />
             </li>
             <li>
-              <i className="devicon-photoshop-plain" />
+            <i className="devicon-photoshop-line colored"></i>
             </li>
             <li>
               <i className="devicon-aftereffects-plain" />

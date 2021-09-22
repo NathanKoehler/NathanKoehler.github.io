@@ -18,7 +18,8 @@
 }
 
 .slider {
-  padding: 6rem 6rem 4rem 8rem;
+  content-visibility: auto;
+  padding: 4rem 6rem 2rem 8rem;
   background: var(--marquee-gradient-color);
   z-index: 3;
   position: relative;
@@ -28,9 +29,9 @@
 
 .slider-top {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .slider-top h2 {
@@ -38,22 +39,31 @@
 }
 
 .slider-links-right {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
   color: #fee;
-  position: absolute;
-  margin-left: 40vw;
   padding-top: 2rem;
   text-decoration: none;
 }
 
 .slider-links-left {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fee;
-  position: absolute;
-  margin-right: 40vw;
   padding-top: 2rem;
   text-decoration: none;
 }
 
 .slider-title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 50px;
   color: #fff;
@@ -61,14 +71,14 @@
 }
 
 .slider-title-left {
-  letter-spacing: 30px;
-  font-size: x-large;
+  text-align: center;
+  word-spacing: 30px;
+  font-size: larger;
 }
 
 .slider-title-right {
-  letter-spacing: 1px;
-  font-stretch: extra-condensed;
-  font-size: x-large;
+  text-align: center;
+  font-size: larger;
   font-style: italic;
 }
 
@@ -86,7 +96,7 @@
   width: var(--marquee-width);
   height: var(--marquee-height);
   background-color: #eee;
-  color: rgb(14, 84, 124);
+  color: rgb(29, 85, 131);
   overflow: hidden;
   position: absolute;
 }
@@ -95,7 +105,7 @@
   width: var(--marquee-width);
   height: var(--marquee-height);
   background-color: #eee;
-  color: rgb(55, 68, 85);
+  color: rgb(42, 53, 90);
   overflow: hidden;
   position: absolute;
 }
@@ -172,7 +182,7 @@
   /* border: 3px solid teal; */
   width: var(--marquee-element-width);
   flex-shrink: 0;
-  font-size: calc(var(--marquee-height) * 1 / 4);
+  font-size: calc(var(--i-marquee-element-width) * 1 / 7);
   white-space: nowrap;
 }
 
@@ -183,13 +193,13 @@
   /* border: 3px solid teal; */
   width: var(--i-marquee-element-width);
   flex-shrink: 0;
-  font-size: calc(var(--marquee-height) * 2/3);
+  font-size: calc(var(--marquee-height) * 3/5);
   white-space: nowrap;
 }
 
 @media (max-width: 600px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   :root {
     --marquee-width: 100vw;

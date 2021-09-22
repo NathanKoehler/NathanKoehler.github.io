@@ -11,6 +11,7 @@ export const ScrollButton = ({
     goTo,
     onClick,
     vOffset,
+    vDuration,
     buttonStyle,
     buttonSize,
   }) => {
@@ -22,12 +23,11 @@ export const ScrollButton = ({
   
     return (
       <Link
-        activeClass="active"
         to={goTo}
         spy={true}
         smooth={true}
         offset={vOffset}
-        duration={1800}
+        duration={vDuration}
         className="btn-mobile"
       >
         <button
@@ -49,6 +49,7 @@ export const ScrollButton = ({
 
   /* allows it so that when the path is not specified (goTo is not set), the button goes nowhere */
   ScrollButton.defaultProps = {
+    vDuration: 1800,
     vOffset: -100,
     goTo: "/",
   };

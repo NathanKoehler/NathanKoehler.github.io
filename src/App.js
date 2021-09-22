@@ -17,7 +17,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <AnimatePresence>
+        <AnimatePresence inital={false} exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
           <Switch location={location} key={location.pathname}>
             <Route exact path={`/`} component={Home} />
             <Route exact path={`/services`} component={Services} />

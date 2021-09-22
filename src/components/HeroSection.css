@@ -1,3 +1,13 @@
+mark.light-blue {
+    color: #a1fcff;
+    background: none;
+}
+
+mark.dark-blue {
+    color: #3382c4;
+    background: none;
+}
+
 video {
     object-fit: cover;
     height: 100vh;

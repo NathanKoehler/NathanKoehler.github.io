@@ -33,7 +33,7 @@ function Navbar() {
         setScrollNav(false);
         setButtonStyle("btn--outline");
       }
-    } 
+    }
   };
 
   /* used to ensure the 'sign up' button is invisible on reload */
@@ -83,13 +83,14 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item" /* second element in the navbar */>
-              <Link
-                to="/services"
+              <a
+                href="resources/Resume.pdf"
+                target="_blank"
                 /* changes the URL */ className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
-              </Link>
+                Resume
+              </a>
             </li>
             <li className="nav-item" /* third element in the navbar */>
               <Link
