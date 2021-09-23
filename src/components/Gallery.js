@@ -2,83 +2,99 @@ import React, { useState } from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import "./Gallery.css";
 import { GalleryCard } from "./GalleryElements";
+import useProgressiveImg from "./useProgressiveImg";
 
 const Gallery = () => {
-  let images = [
+  const images = [
     {
       id: 1,
       height: 2400,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/pillar.png",
+      width: 1800,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bpillar.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/pillar.png"),
     },
     {
       id: 2,
       height: 1333,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/glaveborn.png",
+      width: 2400,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bglaveborn.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/glaveborn.png"),
     },
     {
       id: 3,
       height: 1400,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/anta.png",
+      width: 1400,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/banta.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/anta.png"),
     },
     {
       id: 4,
       height: 3600,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcaw.jpg",
+      width: 1500,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bnewrohcaw.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcaw.jpg"),
     },
     {
       id: 5,
       height: 1668,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fire.png",
+      width: 2434,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bfire.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fire.png"),
     },
     {
       id: 6,
       height: 612,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/mountain.png",
+      width: 1500,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bmountain.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/mountain.png"),
     },
     {
       id: 7,
       height: 1853,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/winter.png",
+      width: 1133,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bwinter.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/winter.png"),
     },
     {
       id: 8,
       height: 2341,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/tree.png",
+      width: 3300,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/btree.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/tree.png"),
     },
     {
       id: 9,
       height: 3600,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcawback.jpg",
+      width: 1500,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bnewrohcawback.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/newrohcawback.jpg"),
     },
     {
       id: 10,
       height: 3300,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fish.png",
+      width: 2550,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bfish.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/fish.png"),
     },
     {
       id: 11,
       height: 2400,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/foundry.png",
+      width: 1800,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bfoundry.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/foundry.png"),
     },
     {
       id: 12,
       height: 2400,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/wall.png",
+      width: 1800,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bwall.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/wall.png"),
     },
     {
       id: 13,
       height: 1960,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sit.jpeg",
+      width: 1441,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bsit.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sit.jpeg"),
     },
     {
       id: 14,
       height: 2550,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/water.png",
+      width: 3300,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bwater.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/water.png"),
     },
     {
       id: 15,
       height: 3300,
-      imgSrc: "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sorcerer.jpeg",
+      width: 2550,
+      imgSrc: useProgressiveImg("https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/blurred/bsorcerer.jpg", "https://personal-react-aws-bucket.s3.amazonaws.com/album1/gallery/sorcerer.jpeg"),
     },
   ];
 
@@ -124,6 +140,8 @@ const Gallery = () => {
       <div className="gallery">
         {images &&
           images.map((item, index) => {
+            
+
             return (
               <ReactVisibilitySensor
                 key={index}
@@ -134,21 +152,24 @@ const Gallery = () => {
                 delayedCall="true"
                 onChange={(isVisible) => imageVisibleChange(index, isVisible)}
               >
-                <GalleryCard show={imagesShownArray[index]} >
-                  <div height={item.height}
+                <GalleryCard show={imagesShownArray[index]}>
+                  <div 
                     className="pics"
                     key={index}
-                    onClick={() => getImg(item.imgSrc)}
+                    onClick={() => getImg(item.imgSrc[0])}
                   >
-                    <div height={item.height}>
-                    <img
-                      loading="lazy"
+                    <img 
                       className="images"
-                      src={item.imgSrc}
+                      src={item.imgSrc[0]}
+                      height={item.height}
+                      width={item.width}
                       alt="Gallery"
+                      style={{
+                        filter: item.imgSrc[1] ? "blur(20px)" : "none",
+                        transition: item.imgSrc[1] ? "none" : "filter 0.3s ease-out"
+                      }}
                     />
                     </div>
-                  </div>
                 </GalleryCard>
               </ReactVisibilitySensor>
             );

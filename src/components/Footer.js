@@ -180,7 +180,7 @@ function Footer() {
           )}
         </ReactVisibilitySensor>
       </div>
-      <div id="footer" className="footer-scroll-to">asd</div>
+      <div id="footer" className="footer-scroll-to"></div>
     </section>
   );
 }
