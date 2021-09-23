@@ -5,6 +5,7 @@ import { GalleryCard } from "./GalleryElements";
 import useProgressiveImg from "./useProgressiveImg";
 
 const Gallery = () => {
+
   const images = [
     {
       id: 1,
@@ -147,7 +148,7 @@ const Gallery = () => {
                 key={index}
                 partialVisibility={true}
                 offset={{ top: 200 }}
-                intervalDelay="400"
+                intervalDelay="300"
                 intervalCheck="false"
                 delayedCall="true"
                 onChange={(isVisible) => imageVisibleChange(index, isVisible)}

@@ -79,7 +79,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item" /* first element in the navbar */>
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
+                HOME
               </Link>
             </li>
             <li className="nav-item" /* second element in the navbar */>
@@ -89,7 +89,7 @@ function Navbar() {
                 /* changes the URL */ className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Resume
+                RESUME
               </a>
             </li>
             <li className="nav-item" /* third element in the navbar */>
@@ -98,7 +98,7 @@ function Navbar() {
                 /* changes the URL */ className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Artwork
+                ARTWORK
               </Link>
             </li>
 
@@ -112,7 +112,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle={buttonStyle}>ABOUT ME</Button>}
+          {button && <Button buttonStyle={buttonStyle} goTo={"/about-me"}>ABOUT ME</Button>}
         </section>
       </Nav>
     </>

@@ -35,6 +35,7 @@ function HeroSection() {
             </Button>
             <ScrollButton
               goTo="footer"
+              vOffset={-250}
               className="btns"
               buttonStyle="btn--primary"
               buttonSize="btn-large"

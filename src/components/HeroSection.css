@@ -1,5 +1,7 @@
 mark.light-blue {
     color: #a1fcff;
+    font-size: 95px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: none;
 }
 
@@ -45,6 +47,7 @@ video {
 }
 
 .hero-parallax > h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #EEEEEE;
     text-align: center;
     font-size: 90px;
@@ -52,12 +55,11 @@ video {
 
 .hero-parallax > p {
     margin-top: 12px;
-    color: #00d8e4;
+    color: #00e7f3;
     font-size: 20px;
     font-weight: bolder;
     width: 80%;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero-btns {

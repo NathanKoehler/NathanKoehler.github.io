@@ -62,7 +62,7 @@ function Footer() {
 
   return (
     <section className="footer-container">
-      <div
+      <div id="footer"
         className="footer-parallax"
         style={{
           /* changes the opacity and transform to emulate a parallax effect */
@@ -180,7 +180,6 @@ function Footer() {
           )}
         </ReactVisibilitySensor>
       </div>
-      <div id="footer" className="footer-scroll-to"></div>
     </section>
   );
 }

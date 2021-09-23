@@ -41,7 +41,7 @@
 }
 
 .footer-link-items h2 {
-  /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 16px;
 }
 
@@ -201,16 +201,11 @@
 .to-top-button {
   position: absolute;
   width: 100%;
-  margin-top: 7rem;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 1s all ease-in-out;
-}
-
-.footer-scroll-to {
-  position: absolute;
-  margin-top: -120vh;
 }
 
 /* enables mobile compatibility */

@@ -1,0 +1,91 @@
+mark.light-red {
+    color: #f55a3e;
+    font-family:'Times New Roman', Times, serif;
+    background: none;
+}
+
+mark.small-red {
+    color: #f55a3e;
+    font-size: 18px;
+    background: none;
+}
+
+mark.light {
+    font-size: 5rem;
+    padding-top: 18vh;
+    background: none;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 120px;
+}
+
+
+
+mark.red {
+    color: #f55a3e;
+    font-size: 25px;
+    background: none;
+}
+
+.profile {
+    /* background: url('images/img-home.jpg') center center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.profile-img {
+    z-index: -1;
+    height: 100vh;
+    
+}
+
+.profile-top-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+
+.profile-top-text {
+    height: 60%;
+}
+
+.profile-top-text h2 {
+    padding-bottom: 20px;
+}
+
+.profile-top-text p {
+    margin-top: 12px;
+    text-align: end;
+}
+
+.text-over-image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.text-over-image h1 {
+    font-size: 5rem;
+    padding-top: 18vh;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 120px;
+}
