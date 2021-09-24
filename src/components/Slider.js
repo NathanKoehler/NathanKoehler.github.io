@@ -6,23 +6,27 @@ function Slider() {
   return (
     <section className="slider">
       <div className="slider-top">
-        
+        <div className="slider-title-sub">
+          <Link
+            className="slider-links"
+            to="/about-me"
+            /* changes the URL */
+          >
+            <h2 className="slider-title-left">我 懂 中 文</h2>
+          </Link>
+        </div>
 
-        <Link
-          className="slider-links-left"
-          to="/"
-          /* changes the URL */
-        >
-          <h2 className="slider-title-left">我 懂 中 文</h2>
-        </Link>
         <h1 className="slider-title">Skills</h1>
-        <Link
-          className="slider-links-right"
-          to="/artwork"
-          /* changes the URL */
-        >
-          <h2 className="slider-title-right">View my art skills</h2>
-        </Link>
+
+        <div className="slider-title-sub">
+          <Link
+            className="slider-links"
+            to="/artwork"
+            /* changes the URL */
+          >
+            <h2 className="slider-title-right">View my art skills</h2>
+          </Link>
+        </div>
       </div>
       <div className="marquee-background">
         <div className="marquee">
@@ -97,7 +101,7 @@ function Slider() {
               <i className="devicon-illustrator-plain" />
             </li>
             <li>
-            <i className="devicon-photoshop-line colored"></i>
+              <i className="devicon-photoshop-line colored"></i>
             </li>
             <li>
               <i className="devicon-aftereffects-plain" />
