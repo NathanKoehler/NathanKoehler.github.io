@@ -110,7 +110,7 @@ function Profile() {
                     let me know!
                   </Link>
                 </mark>{" "}
-                <span class="wave">&#128075;</span>
+                <span className="wave">&#128075;</span>
               </p>
             </div>
           </Parallax>
