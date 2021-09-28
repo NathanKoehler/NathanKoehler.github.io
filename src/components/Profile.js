@@ -32,7 +32,7 @@ function Profile() {
     <>
       <section className="profile">
         <div className="profile-top">
-          <Parallax speed={-5} className="text-over-image">
+          <Parallax speed={1} className="text-over-image">
             <h1>
               My Name Is{" "}
               <mark className="light-red">Nate</mark>
@@ -42,8 +42,10 @@ function Profile() {
             style={{
               /* changes the opacity and transform to emulate a parallax effect */
               opacity: `${170 - offsetY * 170}%`,
+              width: "100%",
+              height: "100%",
             }}
-            speed={-10}
+            speed={-7}
             className="profile-top-container"
           >
             <img

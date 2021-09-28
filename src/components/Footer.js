@@ -3,7 +3,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import { Instagram, InstagramBackground } from "./FooterElements";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import { ScrollButton } from "./ScrollButton";
+import { ScrollButton } from "./Scroll";
 import { animateScroll as scroll } from "react-scroll";
 
 

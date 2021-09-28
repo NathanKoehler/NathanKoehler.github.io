@@ -68,7 +68,9 @@ video {
 }
 
 .hero-btns .btn {
-    margin: 6px;
+    color: #fee;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .fa-play-circle {

@@ -3,7 +3,8 @@ import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
 import Parallax from "react-rellax";
-import { ScrollButton } from "./ScrollButton";
+import { ScrollButton, ScrollLink } from "./Scroll";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -25,23 +26,19 @@ function HeroSection() {
             Design looking for a 2022 spring internship.
           </p>
           <div className="hero-btns">
-            <Button
-              goTo="/artwork"
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn-large"
+            <Link
+              to="/artwork"
+              className="btn"
             >
               ARTWORK
-            </Button>
-            <ScrollButton
+            </Link>
+            <ScrollLink
               goTo="footer"
               vOffset={-250}
-              className="btns"
-              buttonStyle="btn--primary"
-              buttonSize="btn-large"
+              classN="btn"
             >
               CONTACT ME <i className="fas fa-chevron-circle-down" />
-            </ScrollButton>
+            </ScrollLink>
           </div>
         </Parallax>
       </div>
