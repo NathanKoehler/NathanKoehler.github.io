@@ -13,6 +13,7 @@
   --purewhite: #fff;
   --darkgray: #fff;
   --vivid: #2373db;
+  --rotate: 0deg;
 
   transition: 0.8s color;
 }
@@ -56,8 +57,19 @@
 }
 
 .navbar-name-front i {
-  transition: 1.6s color ease-in-out;
+  transition: 1.6s color ease-in-out, 0.8s transform ease-in-out;
+  transform: rotate(var(--rotate));
   color: var(--vivid);
+}
+
+.navbar-name-middle i {
+  transition: 0.9s transform ease-in-out;
+  transform: rotate(calc(var(--rotate) * 1));
+}
+
+.navbar-name-backdrop i {
+  transition: 1s transform ease-in-out;
+  transform: rotate(calc(var(--rotate) * 1));
 }
 
 .fa-typo3 {

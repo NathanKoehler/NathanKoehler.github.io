@@ -85,5 +85,5 @@ export const ScrollLink = ({
 ScrollButton.defaultProps = {
   vDuration: 1800,
   vOffset: 100,
-  goTo: "/",
+  goTo: "",
 };
