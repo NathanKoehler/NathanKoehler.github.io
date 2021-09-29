@@ -25,7 +25,6 @@ function Navbar() {
   let path = window.location.pathname;
   /* potentially changes navbar on page change */
   useEffect(() => {
-    console.log("page change");
     if (window.location.pathname === "/") {
       setScrollNav(false);
     } else {
