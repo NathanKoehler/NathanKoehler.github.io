@@ -8,12 +8,7 @@ function Navbar() {
   const handleClick = () => setClick(!click); // arrow function that reverses the state of click
   const [scrollNav, setScrollNav] = useState(false);
 
-  function closeMobileMenu(location) {
-    if (location === "/") {
-      setScrollNav(false);
-    } else {
-      setScrollNav(true);
-    }
+  const closeMobileMenu = () => {
     setClick(false);
   }
 
@@ -27,9 +22,23 @@ function Navbar() {
     }
   };
 
+  let path = window.location.pathname;
+  /* potentially changes navbar on page change */
+  useEffect(() => {
+    console.log("page change");
+    if (window.location.pathname === "/") {
+      setScrollNav(false);
+    } else {
+      setScrollNav(true);
+    }
+  }, [path]);
+
   /* used to ensure the 'sign up' button is invisible on reload */
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    }
   }, []);
 
   return (
@@ -40,10 +49,7 @@ function Navbar() {
           <Link
             to="/"
             className="navbar-logo"
-            onClick={() => {
-              closeMobileMenu("/");
-            }
-            } /* close mobile menu when topleft is clicked */
+            onClick={closeMobileMenu} /* close mobile menu when topleft is clicked */
           >
             <div className="navbar-name">
               <Name className="navbar-name-front" scrollNav={scrollNav}>
@@ -68,9 +74,7 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item" /* first element in the navbar */>
-              <Link to="/" className="nav-links" onClick={() => {
-              closeMobileMenu("/");
-            }}>
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 HOME
               </Link>
             </li>
@@ -87,9 +91,7 @@ function Navbar() {
               <Link
                 to="/artwork"
                 /* changes the URL */ className="nav-links"
-                onClick={() => {
-                  closeMobileMenu("/artwork");
-                }}
+                onClick={closeMobileMenu}
               >
                 ARTWORK
               </Link>
@@ -98,9 +100,7 @@ function Navbar() {
               <Link
                 to="/about-me"
                 /* changes the URL */ className="nav-links"
-                onClick={() => {
-                  closeMobileMenu("/about-me");
-                }}
+                onClick={closeMobileMenu}
               >
                 ABOUT
               </Link>
