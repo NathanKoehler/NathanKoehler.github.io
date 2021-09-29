@@ -117,7 +117,7 @@ mark.red {
   position: absolute;
   font-size: 5rem;
   width: max-content;
-
+  color: #000000;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 120px;
   z-index: 0;
@@ -142,3 +142,25 @@ mark.red {
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
+
+  @media screen and (max-width: 960px) {
+    .text-over-image h1 {
+        font-size: 4rem;
+    }
+
+    .profile-top-text h2 {
+      padding-bottom: 3vh;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    
+    .profile-top-text p {
+      margin-top: 2vh;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .profile-img {
+      opacity: 0.3;
+    }
+}

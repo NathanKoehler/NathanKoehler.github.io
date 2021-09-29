@@ -9,7 +9,7 @@ function Cards() {
       <h1 className="card__title">Work</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
-          <ul className="cards__items">
+          <ul id="cards" className="cards__items">
             <CardItem
               src="images/AHS-Robotics.png"
               srcAlt="images/AHS-Robotics-Background.png"

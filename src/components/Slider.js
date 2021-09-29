@@ -28,7 +28,7 @@ function Slider() {
           </Link>
         </div>
       </div>
-      <div className="marquee-background">
+      <div id="skills" className="marquee-background">
         <div className="marquee">
           <ul className="marquee-content">
             <li>React Native</li>

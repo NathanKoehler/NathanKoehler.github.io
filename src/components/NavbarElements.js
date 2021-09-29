@@ -10,7 +10,7 @@ export const Nav = styled.nav`
 
   --vivid: ${({ scrollNav }) => (scrollNav ? "#2373db" : "#fcc83f")};
 
-  transition: 800ms all ease;
+  transition: 800ms background-color ease, 800ms color ease;
 `;
 
 export const Name = styled.h4`
@@ -19,7 +19,7 @@ export const Name = styled.h4`
 
   z-index: 2;
 
-  transition: 500ms all ease-in-out;
+  transition: 500ms transform ease-in-out, 500ms color ease-in-out;
 `;
 
 export const NameMiddle = styled.h4`
@@ -30,7 +30,8 @@ export const NameMiddle = styled.h4`
 
   z-index: 1;
 
-  transition: 1000ms all ease-in-out;
+  transition: 1000ms transform ease-in-out, 1000ms opacity ease-in-out,
+    1000ms color ease-in-out;
 `;
 
 export const NameBackdrop = styled.h4`
