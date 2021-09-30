@@ -134,7 +134,7 @@ function Footer() {
                 </a>
                 <Link
                   className="social-icon-link github"
-                  to={{ pathname: "https://github.com/Natpoki" }}
+                  to={{ pathname: "https://github.com/NathanKoehler" }}
                   target="_blank"
                   aria-label="Twitter"
                 >
