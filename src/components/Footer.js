@@ -133,12 +133,12 @@ function Footer() {
                   <i className="far fa-envelope" />
                 </a>
                 <Link
-                  className="social-icon-link twitter"
-                  to={{ pathname: "https://twitter.com/Natpoki" }}
+                  className="social-icon-link github"
+                  to={{ pathname: "https://github.com/Natpoki" }}
                   target="_blank"
                   aria-label="Twitter"
                 >
-                  <i className="fab fa-twitter" />
+                  <i className="fab fa-github" />
                 </Link>
                 <Link
                   className="social-icon-link linkedin"
