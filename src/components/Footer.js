@@ -90,15 +90,15 @@ function Footer() {
             >
               <div className="social-icons">
                 <Link
-                  className="social-icon-link facebook"
+                  className="social-icon-link github"
                   to={{
-                    pathname: "https://www.facebook.com/nathaniel.koehler.79",
+                    pathname: "https://github.com/NathanKoehler",
                   }}
                   target="_blank" /* allows the link to open to another window */
-                  aria-label="Facebook"
+                  aria-label="Github"
                 >
                   <i
-                    className="fab fa-facebook-f" /* this puts the facebook icon */
+                    className="fab fa-github" /* this puts the github icon */
                   />
                 </Link>
                 <div
@@ -133,12 +133,12 @@ function Footer() {
                   <i className="far fa-envelope" />
                 </a>
                 <Link
-                  className="social-icon-link github"
-                  to={{ pathname: "https://github.com/NathanKoehler" }}
+                  className="social-icon-link twitter"
+                  to={{ pathname: "https://twitter.com/Natpoki" }}
                   target="_blank"
                   aria-label="Twitter"
                 >
-                  <i className="fab fa-github" />
+                  <i className="fab fa-twitter" />
                 </Link>
                 <Link
                   className="social-icon-link linkedin"

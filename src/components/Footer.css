@@ -93,8 +93,8 @@
   transform: translate3d(0px, -12px, 0px);
 }
 
-.facebook i:hover {
-  color: #4267b2;
+.github i:hover {
+  color: #75c6ff;
 }
 
 .holder {
@@ -152,8 +152,8 @@
   color: #ea4335;
 }
 
-.github i:hover {
-  color: #75c6ff;
+.twitter i:hover {
+  color: #1da1f2;
 }
 
 .linkedin i:hover {
