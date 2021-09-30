@@ -39,7 +39,7 @@ function HeroSection() {
           <ReactVisibilitySensor delayedCall="true"  intervalDelay="1000">
           {({ isVisible }) => (
             <div
-              className="to-bottom-button"
+              className="to-cards-button"
               style={isVisible ? { opacity: 1 } : { opacity: 0 }}
             >
               <ScrollButton
@@ -51,8 +51,8 @@ function HeroSection() {
                 buttonSize="btn--large--invisible"
               >
                 <div
-                  className="to-bottom-arrow"
-                  aria-label="Scroll To Top"
+                  className="to-cards-arrow"
+                  aria-label="Scroll To Cards"
                 >
                   <i className="fas fa-chevron-down"></i>
                 </div>

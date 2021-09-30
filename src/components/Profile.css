@@ -26,18 +26,18 @@ mark.red {
   align-items: center;
 }
 
-.profile a {
+.profile-top-text a {
   position: relative;
   color: #f55a3e;
   text-decoration: none;
   cursor: pointer;
 }
 
-.profile a:hover {
+.profile-top-text a:hover {
   color: #f55a3e;
 }
 
-.profile a::before {
+.profile-top-text a::before {
   content: "";
   position: absolute;
   display: block;
@@ -50,7 +50,7 @@ mark.red {
   transition: transform 0.3s ease;
 }
 
-.profile a:hover::before {
+.profile-top-text a:hover::before {
   transform: scaleX(1);
 }
 
@@ -77,7 +77,7 @@ mark.red {
   z-index: 1;
 }
 
-.profile-top-text {
+.profile-top-content {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -99,10 +99,31 @@ mark.red {
   text-align: end;
 }
 
-  .profile-dark {
-    color: rgb(0, 0, 0);
-    z-index: 3;
-  }
+.profile-dark {
+  color: rgb(0, 0, 0);
+  z-index: 3;
+}
+
+.about-footer-button {
+  margin: 2rem 0 0 6rem;
+  display: flex;
+  justify-content: center;
+  transition: 1s color ease-in-out, 1s opacity ease-in-out;
+}
+
+.about-footer-arrow i {
+  min-width: 40px;
+  color: #000000;
+  background: transparent;
+  font-size: 40px;
+  transition: 250ms all ease;
+  -webkit-transition: 250ms all ease;
+}
+
+.about-footer-arrow i:hover {
+  color: #f55a3e;
+  transform: translate3d(0px, 15px, 0px);
+}
 
 .text-over-image {
   position: absolute;
@@ -125,42 +146,65 @@ mark.red {
 
 /* credit to Jake Jarvis on https://jarv.is/notes/css-waving-hand-emoji/ */
 .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .text-over-image h1 {
+    font-size: 4rem;
   }
 
-  @media screen and (max-width: 960px) {
-    .text-over-image h1 {
-        font-size: 4rem;
-    }
+  .profile-top-content h2 {
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-    .profile-top-text h2 {
-      padding-bottom: 3vh;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    
-    .profile-top-text p {
-      margin-top: 2vh;
-      font-size: 1rem;
-      text-align: center;
-    }
+  .profile-top-content p {
+    margin-top: 2vh;
+    font-size: 1rem;
+    text-align: center;
+  }
 
-    .profile-img {
-      opacity: 0.3;
-    }
+  .about-footer-button {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s color ease-in-out, 1s opacity ease-in-out;
+  }
+
+  .profile-img {
+    opacity: 0.3;
+  }
 }
