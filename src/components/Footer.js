@@ -144,7 +144,7 @@ function Footer() {
                   className="social-icon-link linkedin"
                   to={{
                     pathname:
-                      "https://www.linkedin.com/in/nathaniel-koehler-52a5491ab/",
+                      "https://www.linkedin.com/in/natekoehler/",
                   }}
                   target="_blank"
                   aria-label="LinkedIn"
