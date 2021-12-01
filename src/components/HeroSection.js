@@ -20,7 +20,7 @@ function HeroSection() {
           </h1>
           <p>
             Undergrad student at Georgia Tech studying Media and Interaction
-            Design looking for a 2022 spring internship.
+            Design looking for a 2022 internship.
           </p>
           <div className="hero-btns">
             <ScrollLink goTo="cards" vOffset={-250}>
