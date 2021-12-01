@@ -138,7 +138,7 @@ const Gallery = () => {
           <h2>"Fresh from the head, delivered by hand."</h2>
         </div>
       </div>
-      <div className="gallery">
+      <div className="gallery-wrapper">
         {images &&
           images.map((item, index) => {
             

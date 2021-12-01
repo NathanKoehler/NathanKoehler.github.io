@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <div className="hero-invisible-width">
       <div id="top" className="hero-container">
-        <video src="/videos/video-1.mp4" autoPlay loop muted />
+        <video src="/videos/stars.mp4" autoPlay loop muted />
         <Parallax
           speed={6}
           /* determines the speed of the parallax */ className="hero-parallax"

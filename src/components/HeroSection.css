@@ -13,6 +13,8 @@ mark.dark-blue {
 video {
   object-fit: cover;
   height: 100vh;
+  background-color: #000000;
+  filter: brightness(90%) contrast(106%);
   width: 100%;
   position: fixed;
   z-index: -3;
