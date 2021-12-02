@@ -5,6 +5,26 @@ mark.light-blue {
   background: none;
 }
 
+mark.light-blue::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fee;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+mark.light-blue:hover::before {
+  transform: scaleX(1);
+  background-color: #4ab4f1;
+}
+
+
+
 mark.dark-blue {
   color: #3382c4;
   background: none;
