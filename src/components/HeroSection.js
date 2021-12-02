@@ -16,7 +16,7 @@ function HeroSection() {
           /* determines the speed of the parallax */ className="hero-parallax"
         >
           <h1>
-            NATE IS A <mark className="light-blue">UI/UX</mark> DESIGNER
+            NATE IS A <ScrollLink goTo="footer" vOffset={-250}><mark className="light-blue">UI/UX</mark></ScrollLink> DESIGNER
           </h1>
           <p>
             Undergrad student at Georgia Tech studying Media and Interaction
@@ -33,7 +33,7 @@ function HeroSection() {
               SKILLS
             </ScrollLink>
             <ScrollLink goTo="footer" vOffset={-250}>
-              CONTACT <i className="fas fa-chevron-circle-down" />
+              CONTACT
             </ScrollLink>
           </div>
           <ReactVisibilitySensor delayedCall="true"  intervalDelay="1000">
