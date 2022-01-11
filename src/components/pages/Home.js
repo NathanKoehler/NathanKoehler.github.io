@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import HeroSection from "../HeroSection";
+import Intro from "../Intro";
 import Cards from "../Cards";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
@@ -17,7 +17,7 @@ function Home(props) {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <HeroSection navRef={props.navRef} />
+      <Intro navRef={props.navRef} />
       <Cards />
       <Slider />
       <Footer />

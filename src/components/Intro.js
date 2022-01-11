@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
-import "./HeroSection.css";
+import "./Intro.css";
 import Parallax from "react-rellax";
 import { ScrollButton, ScrollLink } from "./Scroll";
 import { Link } from "react-router-dom";
 import ReactVisibilitySensor from "react-visibility-sensor";
 
-function HeroSection() {
+function Intro() {
   return (
     <div className="hero-invisible-width">
       <div id="top" className="hero-container">
@@ -66,4 +66,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default Intro;
