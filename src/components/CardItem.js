@@ -55,6 +55,11 @@ function CardItem(props) {
               className="cards__item__link"
               onMouseEnter={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
+              onClick={() => { // for rare cards that take you to a new page entirely
+                if (props.aPath != null) {
+                  window.open(props.aPath, '_blank')
+                }
+              }}
               to={props.path}
             >
               <div

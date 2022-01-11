@@ -26,7 +26,7 @@ function HeroSection() {
             <ScrollLink goTo="cards" vOffset={-250}>
               PROJECTS
             </ScrollLink>
-            <Link to="/gallery" >
+            <Link to="/artwork" >
               GALLERY
             </Link>
             <ScrollLink goTo="skills" vOffset={-250}>
