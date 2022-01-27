@@ -75,13 +75,13 @@ function Cards() {
                           src="images/RollerRush.png"
                           srcAlt="images/RollerRush-Background.png"
                           text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML as a part of the Computational Media interaction design track."
-                          label="Javascript"
+                          label="JavaScript"
                           path="/"
                         />
                         <CardItem
                           src="images/Todo.png"
                           srcAlt="images/Todo-Background.png"
-                          text="Web design work for a Todo application built in React.js. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:"
+                          text="Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:"
                           label="Web Dev"
                           path="/"
                           aPath="/fall2021-dev-takehome/"
