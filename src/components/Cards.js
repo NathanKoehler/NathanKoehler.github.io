@@ -13,7 +13,7 @@ function Cards() {
                             src="images/AHS-Robotics.png"
                             srcAlt="images/AHS-Robotics-Background.png"
                             text="Web design and illustration work to redesign the website and digital marketing for the Alpharetta Robotics Team. My role as head of marketing was to redesign the online webpage and the social media platforms."
-                            label="UI / UX"
+                            label="Web Dev"
                             path="/"
                         />
                         <CardItem
@@ -50,22 +50,42 @@ function Cards() {
                         />
                     </ul>
                     <ul
-                        className="cards__items" /* makes the 3 item row in the second column */
+                        className="cards__items" /* makes the 2 item container in the 3rd row */
                     >
                         <CardItem
                             src="images/FingersCrossed.png"
                             srcAlt="images/FingersCrossed-Background.png"
                             text="UX Design and 3D-Modeling work for a 8+ tabletop board game Fingers Crossed. I worked in graphics design prior to making 3D virtual and physical mockups for the game in Maya."
-                            label="UI/UX"
+                            label="UI / UX"
                         />
-                            <CardItem
-                                src="images/Aframe.png"
-                                srcAlt="images/Aframe-Background.png"
-                                text="Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration. Click to try it out:"
-                                label="UI/UX"
-                                path="/"
-                                aPath="/Aframe-3D-Replica/"
-                            />
+                        <CardItem
+                            src="images/Aframe.png"
+                            srcAlt="images/Aframe-Background.png"
+                            text="Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration. Click to try it out:"
+                            label="AR / VR"
+                            path="/"
+                            aPath="/Aframe-3D-Replica/"
+                        />
+                            
+                    </ul>
+                    <ul
+                        className="cards__items" /* makes the 2 item container in the 4th row */
+                    >
+                        <CardItem
+                          src="images/RollerRush.png"
+                          srcAlt="images/RollerRush-Background.png"
+                          text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML as a part of the Computational Media interaction design track."
+                          label="Javascript"
+                          path="/"
+                        />
+                        <CardItem
+                          src="images/Todo.png"
+                          srcAlt="images/Todo-Background.png"
+                          text="Web design work for a Todo application built in React.js. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:"
+                          label="Web Dev"
+                          path="/"
+                          aPath="/fall2021-dev-takehome/"
+                        /> 
                     </ul>
                 </div>
             </div>
