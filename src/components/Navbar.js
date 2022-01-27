@@ -79,7 +79,7 @@ function Navbar() {
             </li>
             <li className="nav-item" /* second element in the navbar */>
               <a
-                href="resources/Resume.pdf"
+                href="resources/Resume-Web.pdf" // takes you to the resume pdf
                 target="_blank"
                 /* changes the URL */ className="nav-links"
               >
