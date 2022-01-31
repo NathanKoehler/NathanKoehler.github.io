@@ -74,9 +74,10 @@ function Cards() {
                         <CardItem
                           src="images/RollerRush.png"
                           srcAlt="images/RollerRush-Background.png"
-                          text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML as a part of the Computational Media interaction design track."
+                          text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program. Click to try it out:"
                           label="JavaScript"
                           path="/"
+                          aPath={new URL('https://bluebokehs.github.io/rollerrush/', )} // takes to another site
                         />
                         <CardItem
                           src="images/Todo.png"
