@@ -15,9 +15,9 @@ const Gallery = () => {
     },
     {
       id: 2,
-      height: 1333,
-      width: 2400,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bglaveborn.jpg", "images/gallery/glaveborn.png"),
+      height: 2341,
+      width: 3300,
+      imgSrc: useProgressiveImg("images/gallery/blurred/btree.jpg", "images/gallery/tree.png"),
     },
     {
       id: 3,
@@ -31,11 +31,12 @@ const Gallery = () => {
       width: 1500,
       imgSrc: useProgressiveImg("images/gallery/blurred/bnewrohcaw.jpg", "images/gallery/newrohcaw.jpg"),
     },
+    
     {
       id: 5,
-      height: 1668,
-      width: 2434,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bfire.jpg", "images/gallery/fire.png"),
+      height: 1333,
+      width: 2400,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bglaveborn.jpg", "images/gallery/glaveborn.png"),
     },
     {
       id: 6,
@@ -51,9 +52,9 @@ const Gallery = () => {
     },
     {
       id: 8,
-      height: 2341,
-      width: 3300,
-      imgSrc: useProgressiveImg("images/gallery/blurred/btree.jpg", "images/gallery/tree.png"),
+      height: 1668,
+      width: 2434,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bfire.jpg", "images/gallery/fire.png"),
     },
     {
       id: 9,
@@ -81,9 +82,9 @@ const Gallery = () => {
     },
     {
       id: 13,
-      height: 2400,
-      width: 1800,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bwall.jpg", "images/gallery/wall.png"),
+      height: 1285,
+      width: 1285,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bbubblebakers.jpg", "images/gallery/bubblebakers.png"),
     },
     {
       id: 14,
@@ -105,9 +106,9 @@ const Gallery = () => {
     },
     {
       id: 17,
-      height: 3300,
-      width: 2550,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bsorcerer.jpg", "images/gallery/sorcerer.jpeg"),
+      height: 1101,
+      width: 845,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bpirate.jpg", "images/gallery/pirate.png"),
     },
     {
       id: 18,
@@ -120,6 +121,30 @@ const Gallery = () => {
       height: 2956,
       width: 2683,
       imgSrc: useProgressiveImg("images/gallery/blurred/bice.jpg", "images/gallery/ice.png"),
+    },
+    {
+      id: 20,
+      height: 2244,
+      width: 1452,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bmononokeredesign.jpg", "images/gallery/mononokeredesign.png"),
+    },
+    {
+      id: 21,
+      height: 2388,
+      width: 1668,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bhollowknight.jpg", "images/gallery/hollowknight.png"),
+    },
+    {
+      id: 22,
+      height: 3300,
+      width: 2550,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bsorcerer.jpg", "images/gallery/sorcerer.jpeg"),
+    },
+    {
+      id: 23,
+      height: 2400,
+      width: 1800,
+      imgSrc: useProgressiveImg("images/gallery/blurred/bwall.jpg", "images/gallery/wall.png"),
     },
   ];
 
@@ -159,7 +184,7 @@ const Gallery = () => {
           <div className="gallery-title-text">
             <h1>Image Gallery</h1>
           </div>
-          <h2>"Fresh from the head, delivered by hand."</h2>
+          <h2>"Done in Photoshop, Illustrator, and Traditional Mediums"</h2>
         </div>
       </div>
       <div className="gallery-wrapper">
