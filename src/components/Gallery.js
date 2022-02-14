@@ -130,8 +130,8 @@ const Gallery = () => {
     },
     {
       id: 21,
-      height: 2388,
-      width: 1668,
+      height: 1964,
+      width: 1538,
       imgSrc: useProgressiveImg("images/gallery/blurred/bthehollowknight.jpg", "images/gallery/thehollowknight.png"),
     },
     {
