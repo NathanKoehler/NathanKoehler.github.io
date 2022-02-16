@@ -14,7 +14,7 @@ function Navbar() {
 
   const changeNav = () => {
     if (window.location.pathname === "/") {
-      if (window.scrollY >= window.innerHeight - 100) {
+      if (window.scrollY >= 200) {
         setScrollNav(true);
       } else {
         setScrollNav(false);

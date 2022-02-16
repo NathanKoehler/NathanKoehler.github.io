@@ -64,64 +64,64 @@ function Profile() {
             <div className="profile-top-content">
               <div className="profile-top-text">
                 <h2>
-                  But you can call me <mark className="red">Nathan</mark>,{" "}
-                  <mark className="red">Nathaniel</mark>, or{" "}
-                  <mark className="red">曾雷生</mark> &#128516;
+                  But you can call me <mark className="red">Nathan</mark>,&nbsp;
+                  <mark className="red">Nathaniel</mark>, or&nbsp;
+                  <mark className="red">曾雷生</mark> <span>&#128516;</span>
                 </h2>
                 <p>
-                  I'm currenty a undergrad studying Media and Design at{" "}
-                  <mark className="small-red">Georgia Tech.</mark> &#128029;{" "}
+                  I'm currenty a undergrad studying Media and Design at&nbsp;
+                  <mark className="small-red">Georgia Tech.</mark> <span></span>&#128029;&nbsp;
                 </p>
                 <p>
                   I came from a trilingual family and enjoy both coding and
-                  illustration. &#128187;{" "}
+                  illustration. <span></span>&#128187;&nbsp;
                 </p>
                 <p>
-                  If you are interested in hiring me, you can check out my{" "}
+                  If you are interested in hiring me, you can check out my&nbsp;
                   <mark className="small-red">
                     <Link to={"footer"} spy={true} smooth={true} offset={-500}>
                       info below.
                     </Link>
-                  </mark>{" "}
-                  &#128071;{" "}
+                  </mark>&nbsp;
+                  &#128071;&nbsp;
                 </p>
                 <p>
-                  I'm now available for{" "}
+                  I'm now available for&nbsp;
                   <mark className="small-red">
                     <Link to={"footer"} spy={true} smooth={true} offset={-500}>
                       part-time roles
                     </Link>
                   </mark>
-                  ,{" "}
+                  ,&nbsp;
                   <mark className="small-red">
                     <Link to={"footer"} spy={true} smooth={true} offset={-500}>
                       internships
                     </Link>
                   </mark>
-                  , and{" "}
+                  , and&nbsp;
                   <mark className="small-red">
                     <Link to={"footer"} spy={true} smooth={true} offset={-500}>
                       co-ops.
                     </Link>
-                  </mark>{" "}
-                  &#128640;{" "}
+                  </mark>
+                  <span>&nbsp;&#128640;&nbsp;</span>
                 </p>
                 <p>
                   If you're just browsing, check out my work in the art gallery,
-                  too. &#127912;
+                  too. <span>&#127912;&nbsp;</span>
                 </p>
                 <p>
                   I also have a huge addication to game jams and hackathons.
-                  &#128198;
+                  <span>&nbsp;&#128198;&nbsp;</span>
                 </p>
                 <p>
-                  If you want any website or app created today{" "}
+                  If you want any website or app created today&nbsp;
                   <mark className="small-red">
                     <Link to={"footer"} spy={true} smooth={true} offset={-500}>
                       let me know!
                     </Link>
-                  </mark>{" "}
-                  <span className="wave">&#128075;</span>
+                  </mark>&nbsp;
+                  <span className="wave">&#128075;&nbsp;</span>
                 </p>
               </div>
               <div

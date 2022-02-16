@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   --background: ${({ scrollNav }) =>
-    scrollNav ? "rgb(238, 238, 238)" : "rgb(20, 20, 20)"};
+    scrollNav ? "rgba(238, 238, 238, 1)" : "rgba(0, 0, 0, 0.2)"};
 
   --purewhite: ${({ scrollNav }) => (scrollNav ? "#000000" : "#ffffff")};
 

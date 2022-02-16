@@ -8,21 +8,32 @@ import ReactVisibilitySensor from "react-visibility-sensor";
 
 function Intro() {
   return (
-    <div className="hero-invisible-width">
-      <div id="top" className="hero-container">
+    <div className="intro-invisible-width">
+      <div id="top" className="intro-container">
         <video src="/videos/stars.mp4" autoPlay loop muted />
         <Parallax
-          speed={6}
-          /* determines the speed of the parallax */ className="hero-parallax"
+          speed={5}
+          /* determines the speed of the parallax */ className="intro-parallax"
         >
-          <h1>
+          <h1 className="intro-text" /*
             NATE IS A <ScrollLink goTo="footer" vOffset={-250}><mark className="light-blue">UI/UX</mark></ScrollLink> DESIGNER
+          */>
+            NATE IS A&nbsp;
+            <div>
+              <ul>
+                <li className="uiux-header">UI / UX DESIGNER</li>
+                <li className="software-header">SOFTWARE DEVELOPER</li>
+                <li className="frontend-header">FRONTEND DEVELOPER</li>
+                <li className="graphic-header">GRAPHIC DESIGNER</li>
+                <li className="uiux-header">UI / UX DESIGNER</li>
+              </ul>
+            </div>
           </h1>
           <p>
             Undergrad student at Georgia Tech studying Media and Interaction
             Design looking for a 2022 internship.
           </p>
-          <div className="hero-btns">
+          <div className="intro-btns">
             <ScrollLink goTo="cards" vOffset={-250}>
               PROJECTS
             </ScrollLink>

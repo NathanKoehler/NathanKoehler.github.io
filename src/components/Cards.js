@@ -57,6 +57,7 @@ function Cards() {
                             srcAlt="images/FingersCrossed-Background.png"
                             text="UX Design and 3D-Modeling work for a 8+ tabletop board game Fingers Crossed. I worked in graphics design prior to making 3D virtual and physical mockups for the game in Maya."
                             label="UI / UX"
+                            path="/"
                         />
                         <CardItem
                             src="images/Aframe.png"
