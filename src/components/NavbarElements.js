@@ -4,6 +4,9 @@ export const Nav = styled.nav`
   --background: ${({ scrollNav }) =>
     scrollNav ? "rgba(238, 238, 238, 1)" : "rgba(0, 0, 0, 0.2)"};
 
+  --mobilebackground: ${({ scrollNav }) =>
+    scrollNav ? "#eeeeee" : "#111111"};
+
   --purewhite: ${({ scrollNav }) => (scrollNav ? "#000000" : "#ffffff")};
 
   --darkgray: ${({ scrollNav }) => (scrollNav ? "#eeeeee" : "#dbdbdb")};

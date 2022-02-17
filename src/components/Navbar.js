@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <>
       <div className="navbar-invisible-box" />
-      <Nav scrollNav={scrollNav} className="navbar">
+      <Nav scrollNav={scrollNav} className={click ? "navbar active" : "navbar"}>
         <section className="navbar-container">
           <Link
             to="/"

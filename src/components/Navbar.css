@@ -10,6 +10,7 @@
   top: 0;
   z-index: 999;
   --background: #fff;
+  --mobilebackground: #fff;
   --purewhite: #fff;
   --darkgray: #fff;
   --vivid: #2373db;
@@ -144,7 +145,7 @@
   }
 
   .nav-menu.active {
-    background: var(--background);
+    background: var(--mobilebackground);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -162,6 +163,10 @@
     background-color: var(--purewhite);
     color: var(--darkgray);
     border-radius: 0;
+  }
+
+  .navbar.active {
+    background-color: var(--mobilebackground);
   }
 
   .navbar-container {
