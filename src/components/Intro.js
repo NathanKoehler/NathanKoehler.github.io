@@ -18,7 +18,7 @@ function Intro() {
           <h1 className="intro-text" /*
             NATE IS A <ScrollLink goTo="footer" vOffset={-250}><mark className="light-blue">UI/UX</mark></ScrollLink> DESIGNER
           */>
-            NATE IS A&nbsp;
+            NATE IS A
             <div>
               <ul>
                 <li className="uiux-header">UI / UX DESIGNER</li>

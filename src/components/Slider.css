@@ -236,4 +236,7 @@
   .i-marquee:after {
     width: 5rem;
   }
+  .slider {
+    padding: 4rem 2rem 2rem 1rem;
+  }
 }

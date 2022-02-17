@@ -41,7 +41,7 @@ function Profile() {
     <>
       <section className="profile">
         <div className="profile-top">
-          <Parallax speed={1} className="text-over-image">
+          <Parallax speed={-2} className="text-over-image">
             <h1>
               My Name Is <mark className="light-red">Nate</mark>
             </h1>
@@ -66,7 +66,7 @@ function Profile() {
                 <h2>
                   But you can call me <mark className="red">Nathan</mark>,&nbsp;
                   <mark className="red">Nathaniel</mark>, or&nbsp;
-                  <mark className="red">曾雷生</mark> <span>&#128516;</span>
+                  <mark className="red">曾雷生</mark> <span role="img" aria-label="smile">&#128516;</span>
                 </h2>
                 <p>
                   I'm currenty a undergrad studying Media and Design at&nbsp;
