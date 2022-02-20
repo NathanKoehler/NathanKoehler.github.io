@@ -17,7 +17,7 @@ mark.dark-blue {
   background: none;
 }
 
-video {
+.piano {
   object-fit: cover;
   height: 100vh;
   background-color: #000000;

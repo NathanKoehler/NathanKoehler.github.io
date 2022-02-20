@@ -220,9 +220,6 @@
 }
 
 @media (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
   :root {
     --marquee-width: 100vw;
     --i-marquee-width: 100vw;

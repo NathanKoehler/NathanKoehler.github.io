@@ -42,3 +42,9 @@
   color: #fff;
   font-size: 100px;
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}

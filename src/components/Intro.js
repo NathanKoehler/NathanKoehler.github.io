@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import "./Intro.css";
+import Piano from "./Piano";
 import Parallax from "react-rellax";
 import { ScrollButton, ScrollLink } from "./Scroll";
 import { Link } from "react-router-dom";
@@ -10,7 +11,7 @@ function Intro() {
   return (
     <div className="intro-invisible-width">
       <div id="top" className="intro-container">
-        <video src="/videos/stars.mp4" autoPlay loop muted />
+        <Piano className="piano" />
         <Parallax
           speed={5}
           /* determines the speed of the parallax */ className="intro-parallax"
