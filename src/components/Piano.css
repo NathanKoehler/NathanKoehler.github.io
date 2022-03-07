@@ -51,7 +51,7 @@
   
   ul .white:active {
     border-top:1px solid var(--piano-whites-active-border1);
-    box-shadow:2px 0 3px var(--piano-whites-active-bshadow1) inset,-5px 1px 20px var(--piano-whites-active-bshadow2) inset,0 0 3px var(--piano-whites-active-bshadow2);
+    box-shadow:2px 0 5px var(--piano-whites-active-bshadow1) inset,-5px 1px 20px var(--piano-whites-active-bshadow2) inset,0 0 3px var(--piano-whites-active-bshadow2);
     background:linear-gradient(to bottom,var(--piano-whites1) 0%,var(--piano-whites-active) 100%)
   }
   
