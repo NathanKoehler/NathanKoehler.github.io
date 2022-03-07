@@ -9,6 +9,7 @@ import Services from "./components/pages/Services";
 /* Command D to select line and highlight instances of a word in a line*/
 import Artwork from "./components/pages/Artwork";
 import AboutMe from "./components/pages/AboutMe";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   const location = useLocation();
@@ -17,14 +18,16 @@ function App() {
     <>
       <Navbar />
       <main>
-        <AnimatePresence inital={false} exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path={`/`} component={Home} />
-            <Route exact path={`/services`} component={Services} />
-            <Route exact path={`/artwork`} component={Artwork} />
-            <Route exact path={`/about-me`} component={AboutMe} />
-          </Switch>
-        </AnimatePresence>
+        <ParallaxProvider>
+          <AnimatePresence inital={false} exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
+            <Switch location={location} key={location.pathname}>
+              <Route exact path={`/`} component={Home} />
+              <Route exact path={`/services`} component={Services} />
+              <Route exact path={`/artwork`} component={Artwork} />
+              <Route exact path={`/about-me`} component={AboutMe} />
+            </Switch>
+          </AnimatePresence>
+        </ParallaxProvider>
       </main>
     </>
   );
