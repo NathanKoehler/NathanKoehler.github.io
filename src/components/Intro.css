@@ -153,7 +153,7 @@ mark.dark-blue {
   pointer-events: all;
   margin-top: 32px;
   /* controls the distance of the intro section from the top */
-  margin-bottom: 64px;
+  margin-bottom: 58px;
   width: fit-content;
   display: flex;
   justify-content: center;
