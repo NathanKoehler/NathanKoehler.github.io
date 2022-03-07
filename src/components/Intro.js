@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import "./Intro.css";
 import Piano from "./Piano";
-import Parallax from "react-rellax";
+import { Parallax } from 'react-scroll-parallax';
 import { ScrollButton, ScrollLink } from "./Scroll";
 import { Link } from "react-router-dom";
 import ReactVisibilitySensor from "react-visibility-sensor";
@@ -13,7 +13,7 @@ function Intro() {
       <div id="top" className="intro-container">
         <Piano className="piano" />
         <Parallax
-          speed={5}
+          translateY={[30, -40]}
           /* determines the speed of the parallax */ className="intro-parallax"
         >
           <h1 className="intro-text" /*

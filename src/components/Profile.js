@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Profile.css";
-import Parallax from "react-rellax";
+import { Parallax } from 'react-scroll-parallax';
 import { Link } from "react-scroll";
 import { ScrollButton } from "./Scroll";
 
