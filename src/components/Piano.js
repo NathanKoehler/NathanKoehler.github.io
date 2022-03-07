@@ -1,5 +1,6 @@
 import React from "react";
 import "./Piano.css";
+import Key from "./Key";
 
 function Piano() {
     const NOTES = [
@@ -24,51 +25,51 @@ function Piano() {
         );
     });
 
-    const playNote = (note) => {
+    const playSound = (e, note) => {
         const noteAudio = new Audio(document.getElementById(note).src);
         noteAudio.play();
     }
     
     const keyDown = (e, pianoKey) => {
-        playNote(pianoKey);
+        playSound(e, pianoKey);
     }
 
     return (
             <ul className="set">
-                <li className="white b l" onMouseDown={(e) => keyDown(e, 'f')}></li>
-                <li className="black as l" onMouseDown={(e) => keyDown(e, 'fs')}></li>
-                <li className="white a l" onMouseDown={(e) => keyDown(e, 'g')}></li>
-                <li className="black gs l" onMouseDown={(e) => keyDown(e, 'gs')}></li>
-                <li className="white g l" onMouseDown={(e) => keyDown(e, 'a')}></li>
-                <li className="black fs l" onMouseDown={(e) => keyDown(e, 'as')}></li>
-                <li className="white f l" onMouseDown={(e) => keyDown(e, 'b')}></li>
+                <Key defaultStyle="white b l" audio={playSound} note='f'></Key>
+                <Key defaultStyle="black as l" audio={playSound} note='fs'></Key>
+                <Key defaultStyle="white a l" audio={playSound} note='g'></Key>
+                <Key defaultStyle="black gs l" audio={playSound} note='gs'></Key>
+                <Key defaultStyle="white g l" audio={playSound} note='a'></Key>
+                <Key defaultStyle="black fs l" audio={playSound} note='as'></Key>
+                <Key defaultStyle="white f l" audio={playSound} note='b'></Key>
                 
-                <li className="white e" onMouseDown={(e) => keyDown(e, 'ch')}></li>
-                <li className="black ds" onMouseDown={(e) => keyDown(e, 'csh')}></li>
-                <li className="white d" onMouseDown={(e) => keyDown(e, 'dh')}></li>
-                <li className="black cs" onMouseDown={(e) => keyDown(e, 'dsh')}></li>
-                <li className="white c" onMouseDown={(e) => keyDown(e, 'eh')}></li>
+                <Key defaultStyle="white e" audio={playSound} note='ch'></Key>
+                <Key defaultStyle="black ds" audio={playSound} note='csh'></Key>
+                <Key defaultStyle="white d" audio={playSound} note='dh'></Key>
+                <Key defaultStyle="black cs" audio={playSound} note='dsh'></Key>
+                <Key defaultStyle="white c" audio={playSound} note='eh'></Key>
 
-                <li className="white b h" onMouseDown={(e) => keyDown(e, 'fh')}></li>
-                <li className="black as h" onMouseDown={(e) => keyDown(e, 'fsh')}></li>
-                <li className="white a h" onMouseDown={(e) => keyDown(e, 'gh')}></li>
-                <li className="black gs h" onMouseDown={(e) => keyDown(e, 'gsh')}></li>
-                <li className="white g h" onMouseDown={(e) => keyDown(e, 'ah')}></li>
-                <li className="black fs h" onMouseDown={(e) => keyDown(e, 'ash')}></li>
-                <li className="white f h" onMouseDown={(e) => keyDown(e, 'bh')}></li>
+                <Key defaultStyle="white b h" audio={playSound} note='fh'></Key>
+                <Key defaultStyle="black as h" audio={playSound} note='fsh'></Key>
+                <Key defaultStyle="white a h" audio={playSound} note='gh'></Key>
+                <Key defaultStyle="black gs h" audio={playSound} note='gsh'></Key>
+                <Key defaultStyle="white g h" audio={playSound} note='ah'></Key>
+                <Key defaultStyle="black fs h" audio={playSound} note='ash'></Key>
+                <Key defaultStyle="white f h" audio={playSound} note='bh'></Key>
 
-                <li className="white e hh" onMouseDown={(e) => keyDown(e, 'chh')}></li>
-                <li className="black ds hh" onMouseDown={(e) => keyDown(e, 'cshh')}></li>
-                <li className="white d hh" onMouseDown={(e) => keyDown(e, 'dhh')}></li>
-                <li className="black cs hh" onMouseDown={(e) => keyDown(e, 'dshh')}></li>
-                <li className="white c hh" onMouseDown={(e) => keyDown(e, 'ehh')}></li>
-                <li className="white b hh" onMouseDown={(e) => keyDown(e, 'fhh')}></li>
-                <li className="black as hh" onMouseDown={(e) => keyDown(e, 'fshh')}></li>
-                <li className="white a hh" onMouseDown={(e) => keyDown(e, 'ghh')}></li>
-                <li className="black gs hh" onMouseDown={(e) => keyDown(e, 'gshh')}></li>
-                <li className="white g hh" onMouseDown={(e) => keyDown(e, 'ahh')}></li>
-                <li className="black fs hh" onMouseDown={(e) => keyDown(e, 'ashh')}></li>
-                <li className="white f hh" onMouseDown={(e) => keyDown(e, 'bhh')}></li>
+                <Key defaultStyle="white e hh" audio={playSound} note='chh'></Key>
+                <Key defaultStyle="black ds hh" audio={playSound} note='cshh'></Key>
+                <Key defaultStyle="white d hh" audio={playSound} note='dhh'></Key>
+                <Key defaultStyle="black cs hh" audio={playSound} note='dshh'></Key>
+                <Key defaultStyle="white c hh" audio={playSound} note='ehh'></Key>
+                <Key defaultStyle="white b hh" audio={playSound} note='fhh'></Key>
+                <Key defaultStyle="black as hh" audio={playSound} note='fshh'></Key>
+                <Key defaultStyle="white a hh" audio={playSound} note='ghh'></Key>
+                <Key defaultStyle="black gs hh" audio={playSound} note='gshh'></Key>
+                <Key defaultStyle="white g hh" audio={playSound} note='ahh'></Key>
+                <Key defaultStyle="black fs hh" audio={playSound} note='ashh'></Key>
+                <Key defaultStyle="white f hh" audio={playSound} note='bhh'></Key>
                 {audioFiles}
             </ul>
                 

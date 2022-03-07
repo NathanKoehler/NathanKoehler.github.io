@@ -49,7 +49,7 @@
     background:linear-gradient(to bottom,var(--piano-whites2) 0%,var(--piano-whites1) 100%)
   }
   
-  ul .white:active {
+  ul .white.active {
     border-top:1px solid var(--piano-whites-active-border1);
     box-shadow:2px 0 5px var(--piano-whites-active-bshadow1) inset,-5px 1px 20px var(--piano-whites-active-bshadow2) inset,0 0 3px var(--piano-whites-active-bshadow2);
     background:linear-gradient(to bottom,var(--piano-whites1) 0%,var(--piano-whites-active) 100%)
@@ -66,7 +66,7 @@
     background:linear-gradient(45deg,var(--piano-blacks1) 0%,var(--piano-blacks2) 100%)
   }
   
-  .black:active {
+  .black.active {
     box-shadow:-2px -2px 4px var(--piano-blacks-shadow1) inset,0 -3px 3px 4px var(--piano-blacks-shadow2) inset,0 1px 2px var(--piano-blacks-shadow3);
     background:linear-gradient(95deg,var(--piano-blacks1-active) 0%,var(--piano-blacks1) 100%)
   }
