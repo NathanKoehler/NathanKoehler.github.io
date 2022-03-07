@@ -1,14 +1,3 @@
-* {
-    box-sizing:border-box;
-    --piano-whites: #fff;
-    --piano-whites-border: #bbb;
-  }
-  
-  body {
-    margin:0;
-    background:#222
-  }
-  
   .set {
     height:100vh;
     width:100%;
@@ -20,10 +9,29 @@
     background:linear-gradient(to bottom right,rgba(0,0,0,0.3),rgba(0,0,0,0)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/187/vwood.png);
     box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5);
     z-index: -1;
-}
+
+    
+    --piano-whites1: rgb(48, 48, 48); /* var(--piano-whites1) */
+    --piano-whites2: rgb(73, 73, 73); /* var(--piano-whites2) */
+    --piano-whites-border: rgb(15, 15, 15); /* var(--piano-whites-border) */
+    --piano-whites-bshadow1: rgba(0, 0, 0, 0.034); /* var(--piano-whites-bshadow1) */
+    --piano-whites-bshadow2: rgba(0, 0, 0, 0.397); /* var(--piano-whites-bshadow2) */ 
+    --piano-whites-active: rgb(27, 27, 27); /* var(--piano-whites-active) */
+    --piano-whites-active-border1: rgba(0, 0, 0, 0.548); /* var(--piano-whites-active-border1) */
+    --piano-whites-active-bshadow1: rgba(0, 0, 0, 0.356); /* var(--piano-whites-active-bshadow1) */
+    --piano-whites-active-bshadow2: rgba(0, 0, 0, 0.301); /* var(--piano-whites-active-bshadow1) */
+
+    --piano-blacks-border: rgb(230, 34, 34); /* var(--piano-blacks-border) */
+    --piano-blacks-shadow1: rgba(63, 11, 11, 0.678); /* var(--piano-blacks-shadow1) */
+    --piano-blacks-shadow2: rgba(0,0,0,0.6); /* var(--piano-blacks-shadow2) */
+    --piano-blacks-shadow3: rgba(0,0,0,0.5); /* var(--piano-blacks-shadow3) */
+    --piano-blacks1: rgb(77, 23, 23); /* var(--piano-blacks1) */
+    --piano-blacks2: rgb(218, 60, 60); /* var(--piano-blacks2) */
+    --piano-blacks1-active: rgb(177, 18, 18); /* var(--piano-blacks1-active) */
+
+  }
   
   .set > * {
-    margin:0;
     padding:0;
     list-style:none;
     position:relative;
@@ -34,19 +42,17 @@
     height:60em;
     width:8em;
     z-index:-1;
-    border-left:1px solid #bbb;
-    border-bottom:1px solid #bbb;
+    border-left:1px solid var(--piano-whites-border);
+    border-bottom:1px solid var(--piano-whites-border);
     border-radius:0 0 5px 5px;
-    box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
-    background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+    box-shadow:-1px 0 0 var(--piano-whites-bshadow1) inset,0 0 5px var(--piano-whites-bshadow2) inset,0 0 3px var(--piano-whites-bshadow2);
+    background:linear-gradient(to bottom,var(--piano-whites2) 0%,var(--piano-whites1) 100%)
   }
   
   ul .white:active {
-    border-top:1px solid #777;
-    border-left:1px solid #999;
-    border-bottom:1px solid #999;
-    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+    border-top:1px solid var(--piano-whites-active-border1);
+    box-shadow:2px 0 3px var(--piano-whites-active-bshadow1) inset,-5px 1px 20px var(--piano-whites-active-bshadow2) inset,0 0 3px var(--piano-whites-active-bshadow2);
+    background:linear-gradient(to bottom,var(--piano-whites1) 0%,var(--piano-whites-active) 100%)
   }
   
   .black {
@@ -56,13 +62,13 @@
     z-index:0;
     border:1px solid #000;
     border-radius:0 0 3px 3px;
-    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
-    background:linear-gradient(45deg,#222 0%,#555 100%)
+    box-shadow:-2px -2px 4px var(--piano-blacks-shadow1) inset,0 -10px 3px 4px var(--piano-blacks-shadow2) inset,0 3px 5px var(--piano-blacks-shadow3);
+    background:linear-gradient(45deg,var(--piano-blacks1) 0%,var(--piano-blacks2) 100%)
   }
   
   .black:active {
-    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-    background:linear-gradient(to right,#444 0%,#222 100%)
+    box-shadow:-2px -2px 4px var(--piano-blacks-shadow1) inset,0 -3px 3px 4px var(--piano-blacks-shadow2) inset,0 1px 2px var(--piano-blacks-shadow3);
+    background:linear-gradient(95deg,var(--piano-blacks1-active) 0%,var(--piano-blacks1) 100%)
   }
   
   .a,.g,.f,.d,.c {

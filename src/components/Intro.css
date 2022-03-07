@@ -20,7 +20,6 @@ mark.dark-blue {
 .piano {
   object-fit: cover;
   height: 100vh;
-  background-color: #000000;
   filter: brightness(90%) contrast(106%);
   width: 100%;
   position: fixed;
@@ -48,6 +47,7 @@ mark.dark-blue {
 }
 
 .intro-parallax {
+  pointer-events: none;
   width: 100%;
   display: flex;
   position: fixed;
@@ -56,6 +56,7 @@ mark.dark-blue {
 }
 
 .intro-text {
+  pointer-events: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
   display: flex;
@@ -149,6 +150,7 @@ mark.dark-blue {
 }
 
 .intro-btns {
+  pointer-events: all;
   margin-top: 32px;
   /* controls the distance of the intro section from the top */
   margin-bottom: 40px;
@@ -195,8 +197,8 @@ mark.dark-blue {
 }
 
 .to-cards-button {
-  position: absolute;
-  width: 100%;
+  pointer-events: all;
+  position: fixed;
   bottom: -10vh;
   display: flex;
   justify-content: center;
