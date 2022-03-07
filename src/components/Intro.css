@@ -154,7 +154,7 @@ mark.dark-blue {
   margin-top: 32px;
   /* controls the distance of the intro section from the top */
   margin-bottom: 40px;
-  width: 50%;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;

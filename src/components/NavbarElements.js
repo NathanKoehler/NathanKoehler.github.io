@@ -11,7 +11,7 @@ export const Nav = styled.nav`
 
   --darkgray: ${({ scrollNav }) => (scrollNav ? "#eeeeee" : "#dbdbdb")};
 
-  --vivid: ${({ scrollNav }) => (scrollNav ? "#2373db" : "#fcc83f")};\
+  --vivid: ${({ scrollNav }) => (scrollNav ? "#2373db" : "#fcc83f")};
 
   --rotate: ${({ scrollNav }) => (scrollNav ? "0deg" : "360deg")};
 
