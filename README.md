@@ -4,7 +4,7 @@ I made this website in my Sophomore year of college. Even today, I am in the pro
 
 ## About Me
 
-I am a Sophmore Student studying Interaction Design and Media within the Computational Media Major at the Georgia Institute of Technology. I plan on doing Graphics Design or UI/UX out of college.
+I am a Sophmore Student studying Interaction Design and Media within the Computational Media Major at the Georgia Institute of Technology. I plan on doing design or programming out of college.
 
 If you would like to contact me, you can reach my email:
 
@@ -22,4 +22,4 @@ If you have any criticisms, please feel free to contact me!
 
 ## Quote of The Week
 
-Which is more memorable, the hours spent cooped into a room or the minutes spent with friends?
+Fret the little things in life if you wish to live a perfectly small one.
