@@ -13,12 +13,10 @@ function Intro() {
       <div id="top" className="intro-container">
         <Piano className="piano" />
         <Parallax
-          translateY={[30, -40]}
-          /* determines the speed of the parallax */ className="intro-parallax"
+          translateY={[30, -40]} /* determines the speed of the parallax */ 
+          className="intro-parallax"
         >
-          <h1 className="intro-text" /*
-            NATE IS A <ScrollLink goTo="footer" vOffset={-250}><mark className="light-blue">UI/UX</mark></ScrollLink> DESIGNER
-          */>
+          <h1 className="intro-text">
             NATE IS A
             <div>
               <ul>

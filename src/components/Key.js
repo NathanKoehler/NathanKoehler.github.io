@@ -1,35 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Piano.css";
 
 function Key(props) {
-    /* const KEY_TO_NOTE = {
-        'q': 'fh',
-        'w': 'gh',
-        'e': 'ah',
-        'r': 'bh',
-        't': 'ch',
-        'y': 'dh',
-        'u': 'eh',
-        'i': 'fhh',
-        'o': 'ghh',
-        'p': 'ahh',
-        '[': 'bhh',
-      }; */
-
+  const [isClicked, setClicked] = useState(false);
   const [isPressed, setPressed] = useState(false);
 
-  const keyDown = (e) => {
-      e.preventDefault();
+  if (isPressed && !props.pressedKeys.includes(props.note)) {
+    setPressed(false);
+  } else if (!isPressed && props.pressedKeys.includes(props.note)) {
     setPressed(true);
-    props.audio(e, props.note);
+  }
+
+  const keyClick = (e) => {
+      e.preventDefault();
+    setClicked(true);
+    props.audio(props.note);
   };
 
   return (
     <li
-      className={`${props.defaultStyle} ${isPressed ? "active" : ""}`}
-      onMouseDown={(e) => keyDown(e)}
-      onMouseLeave={() => setPressed(false)}
-      onMouseUp={() => setPressed(false)}
+      className={`${props.defaultStyle} ${(isClicked || isPressed) ? "active" : ""}`}
+      onMouseDown={(e) => keyClick(e)}
+      onMouseLeave={() => setClicked(false)}
+      onMouseUp={() => setClicked(false)}
     ></li>
   );
 }
