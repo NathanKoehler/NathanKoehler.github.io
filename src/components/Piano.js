@@ -34,6 +34,9 @@ const KEY_TO_NOTE = {
     '4': 'as',
     '6': 'csh',
     '7': 'dsh',
+    '9': 'fsh',
+    '0': 'gsh',
+    '-': 'ash',
 
     'z': 'chh',
     'x': 'dhh',
