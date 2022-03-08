@@ -13,7 +13,7 @@ function Intro() {
       <div id="top" className="intro-container">
         <Piano className="piano" />
         <Parallax
-          translateY={[30, -40]} /* determines the speed of the parallax */ 
+          translateY={5} /* determines the speed of the parallax */ 
           className="intro-parallax"
         >
           <h1 className="intro-text">

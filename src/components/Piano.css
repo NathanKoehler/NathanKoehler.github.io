@@ -12,7 +12,7 @@
 
     
     --piano-whites1: rgb(41, 41, 41); /* var(--piano-whites1) */
-    --piano-whites2: rgb(54, 54, 54); /* var(--piano-whites2) */
+    --piano-whites2: rgb(71, 71, 71); /* var(--piano-whites2) */
     --piano-whites-border: rgb(15, 15, 15); /* var(--piano-whites-border) */
     --piano-whites-bshadow1: rgba(0, 0, 0, 0.034); /* var(--piano-whites-bshadow1) */
     --piano-whites-bshadow2: rgba(0, 0, 0, 0.397); /* var(--piano-whites-bshadow2) */ 
@@ -21,18 +21,19 @@
     --piano-whites-active-bshadow1: rgba(0, 0, 0, 0.356); /* var(--piano-whites-active-bshadow1) */
     --piano-whites-active-bshadow2: rgba(0, 0, 0, 0.301); /* var(--piano-whites-active-bshadow1) */
 
-    --piano-blacks-border: rgb(230, 34, 34); /* var(--piano-blacks-border) */
-    --piano-blacks-shadow1: rgba(63, 11, 11, 0.678); /* var(--piano-blacks-shadow1) */
+    --piano-blacks-border: rgb(88, 88, 88); /* var(--piano-blacks-border) */
+    --piano-blacks-shadow1: rgba(35, 39, 43, 0.678); /* var(--piano-blacks-shadow1) */
     --piano-blacks-shadow2: rgba(0,0,0,0.6); /* var(--piano-blacks-shadow2) */
     --piano-blacks-shadow3: rgba(0,0,0,0.5); /* var(--piano-blacks-shadow3) */
-    --piano-blacks1: rgb(77, 23, 23); /* var(--piano-blacks1) */
-    --piano-blacks2: rgb(218, 60, 60); /* var(--piano-blacks2) */
-    --piano-blacks1-active: rgb(177, 18, 18); /* var(--piano-blacks1-active) */
+    --piano-blacks1: rgb(60, 71, 71); /* var(--piano-blacks1) */
+    --piano-blacks2: rgb(23, 24, 27); /* var(--piano-blacks2) */
+    --piano-blacks1-active: rgb(20, 20, 20); /* var(--piano-blacks1-active) */
 
   }
   
   .set > * {
     padding:0;
+    cursor: pointer;
     list-style:none;
     position:relative;
     float:left
