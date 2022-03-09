@@ -79,7 +79,7 @@ function Navbar() {
             </li>
             <li className="nav-item" /* second element in the navbar */>
               <a
-                href="resources/Nathaniel-Resume.pdf" // takes you to the resume pdf
+                href="resources/NathanielKoehler_Resume.pdf" // takes you to the resume pdf
                 target="_blank"
                 /* changes the URL */ className="nav-links"
               >
@@ -92,7 +92,7 @@ function Navbar() {
                 /* changes the URL */ className="nav-links"
                 onClick={closeMobileMenu}
               >
-                ARTWORK
+                GALLERY
               </Link>
             </li>
             <li className="nav-item" /* third element in the navbar */>
