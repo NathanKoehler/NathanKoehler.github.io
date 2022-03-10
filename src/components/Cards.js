@@ -81,6 +81,14 @@ function Cards() {
                           aPath={new URL('https://bluebokehs.github.io/rollerrush/', )} // takes to another site
                         />
                         <CardItem
+                          src="images/RealityMedia.png"
+                          srcAlt="images/RealityMedia-Background.png"
+                          text="User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.  Click to try it out:"
+                          label="User Experience"
+                          path="/"
+                          aPath={new URL('https://realitymedia.digital/notLoggedIn/', )} // takes to another site
+                        /> 
+                        <CardItem
                           src="images/Todo.png"
                           srcAlt="images/Todo-Background.png"
                           text="Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:"
