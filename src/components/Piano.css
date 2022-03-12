@@ -90,7 +90,7 @@
     width: 100%;
     text-align: center;
     font-family: "Roboto";
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(17, 17, 17);
     color: transparent;
     -webkit-backgroud-clip: text;
     background-clip: text;
@@ -98,7 +98,7 @@
 
   .black .key-text {
     bottom: 6%;
-    text-shadow: 0px 1px 2px var(--piano-blacks1);
+    text-shadow: 0px 1px 2px #2f3133;
   }
 
   .black .key-text.active {
@@ -107,13 +107,13 @@
 
   .white .key-text {
     font-size: 2em;
-    bottom: 3%;
-    text-shadow: 0px 1px 2px #222222;
+    bottom: 4.5%;
+    text-shadow: 0px 2px 2px #969e9e;
   }
 
   .white .key-text.active {
-    bottom: 2.5%;
-    text-shadow: 0px 1px 2px #111111;
+    bottom: 4%;
+    text-shadow: 0px 2px 2px #303030;
   }
   
 @media screen and (max-width: 1320px) {
