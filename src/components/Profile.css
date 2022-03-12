@@ -95,6 +95,10 @@ mark.red {
   margin-right: 10vw;
 }
 
+.profile-top-text {
+  backdrop-filter: blur(2px) contrast(70%) brightness(120%);
+}
+
 .profile-top-text h2 {
   padding-bottom: 3vh;
   font-size: 1.6rem;
@@ -150,7 +154,9 @@ mark.red {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 120px;
   z-index: 0;
+  
 }
+
 
 /* credit to Jake Jarvis on https://jarv.is/notes/css-waving-hand-emoji/ */
 .wave {
@@ -191,11 +197,12 @@ mark.red {
 @media screen and (max-width: 960px) {
   .text-over-image h1 {
     margin-top: 5vh;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .profile-top-content {
     margin: 0 0 0 0;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -211,18 +218,18 @@ mark.red {
   .profile-top-content h2 {
     width: 80%;
     padding-bottom: 3vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   .profile-top-content p {
     width: 80%;
     margin-top: 2vh;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
   }
   mark.small-red {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .about-footer-button {

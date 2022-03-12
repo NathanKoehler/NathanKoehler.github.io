@@ -46,7 +46,7 @@ function Profile() {
           </h1>
         </div>
         <Parallax
-          translateY={-50}
+          translateY={-15}
           className="profile-top-container"
         >
           <img
@@ -107,15 +107,15 @@ function Profile() {
                     co-ops.
                   </Link>
                 </mark>
-                <span>&nbsp;&#128640;&nbsp;</span>
+                <span role="img" aria-label="Spaceship">&nbsp;&#128640;&nbsp;</span>
               </p>
               <p>
                 If you're just browsing, check out my work in the art gallery,
-                too. <span>&#127912;&nbsp;</span>
+                too. <span role="img" aria-label="Pointer">&#127912;&nbsp;</span>
               </p>
               <p>
                 I also have a huge addication to game jams and hackathons.
-                <span>&nbsp;&#128198;&nbsp;</span>
+                <span role="img" aria-label="Calender">&nbsp;&#128198;&nbsp;</span>
               </p>
               <p>
                 If you want any website or app created today&nbsp;
@@ -124,7 +124,7 @@ function Profile() {
                     let me know!
                   </Link>
                 </mark>&nbsp;
-                <span className="wave">&#128075;&nbsp;</span>
+                <span role="img" aria-label="Wave" className="wave">&#128075;&nbsp;</span>
               </p>
             </div>
             <div

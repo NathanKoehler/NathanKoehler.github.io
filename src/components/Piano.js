@@ -15,11 +15,6 @@ function Piano() {
         'dshh', 'dhh', 'cshh', 'chh', 
     ];
 
-const VALID_KEYS = ['q', '2', 'w', '3', 'e', '4', 'r', 't', 
-                    '6', 'y', '7', 'u', 'i', '9', 'o', '0', 
-                    'p', '-', '[', 'z', 's', 'x' ,'d', 'c', 
-                    'v', 'g' ,'b', 'h', 'n', 'j', 'm'];
-
 const KEY_TO_NOTE = {
     'q': 'f',
     'w': 'g',
@@ -64,6 +59,7 @@ const KEY_TO_NOTE = {
             window.removeEventListener('keydown', handleKeyDown);
             window.removeEventListener('keyup', handleKeyUp);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     
 
