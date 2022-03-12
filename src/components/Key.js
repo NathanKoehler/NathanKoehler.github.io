@@ -74,7 +74,6 @@ function Key(props) {
   const [isClicked, setClicked] = useState(false);
   const [isPressed, setPressed] = useState(false);
 
-  const keyStyle = KEY_TO_STYLE[props.keyboard];
   const note = KEY_TO_NOTE[props.keyboard];
 
   if (isPressed && !props.pressedKeys.includes(note)) {
@@ -91,11 +90,11 @@ function Key(props) {
 
   return (
     <li
-      className={`${keyStyle} ${(isClicked || isPressed) ? "active" : ""}`}
+      className={`${KEY_TO_STYLE[props.keyboard]} ${(isClicked || isPressed) ? "active" : ""}`}
       onMouseDown={(e) => keyClick(e)}
       onMouseLeave={() => setClicked(false)}
       onMouseUp={() => setClicked(false)}
-    ><h3 className={`key-text ${(isClicked || isPressed) ? "active" : ""}`}>{props.keyboard}</h3></li>
+    ><h3 className={`key-text ${(isClicked || isPressed) ? "active" : ""}`}>{props.keyboard.toUpperCase()}</h3></li>
   );
 }
 

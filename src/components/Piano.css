@@ -1,4 +1,5 @@
   .set {
+    pointer-events: all;
     height:100vh;
     width:100%;
     display: flex;

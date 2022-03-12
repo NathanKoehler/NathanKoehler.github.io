@@ -15,10 +15,10 @@ function Piano() {
         'dshh', 'dhh', 'cshh', 'chh', 
     ];
 
-const VALID_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 
-                    'o', 'p', '[', '2', '3', '4', '6', '7', 
-                    '9', '0', '-', 'z', 'x', 'c' ,'v', 'b', 
-                    'n', 'm' ,'s', 'd', 'g', 'h', 'j'];
+const VALID_KEYS = ['q', '2', 'w', '3', 'e', '4', 'r', 't', 
+                    '6', 'y', '7', 'u', 'i', '9', 'o', '0', 
+                    'p', '-', '[', 'z', 's', 'x' ,'d', 'c', 
+                    'v', 'g' ,'b', 'h', 'n', 'j', 'm'];
 
 const KEY_TO_NOTE = {
     'q': 'f',
@@ -56,7 +56,6 @@ const KEY_TO_NOTE = {
   };
 
     const [pressedKeys, setKeys] = useState([]);
-    const [keyPressed, setPressed] = useState({});
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
@@ -88,7 +87,7 @@ const KEY_TO_NOTE = {
         if (event.repeat) {
           return;
         }
-        let note = KEY_TO_NOTE[event.key];
+        const note = KEY_TO_NOTE[event.key];
         if (!pressedKeys.includes(note) && NOTES.includes(note)) {
             setKeys((oldKeys) => [...oldKeys, note]);
             playSound(note);
@@ -105,11 +104,10 @@ const KEY_TO_NOTE = {
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='q'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='2'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='w'></Key>
-                <Key pressedKeys={pressedKeys} audio={playSound}  keyboard='3'></Key>
+                <Key pressedKeys={pressedKeys} audio={playSound} keyboard='3'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='e'></Key>
-                <Key pressedKeys={pressedKeys} audio={playSound}  keyboard='4'></Key>
+                <Key pressedKeys={pressedKeys} audio={playSound} keyboard='4'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='r'></Key>
-                
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='t'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='6'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='y'></Key>
