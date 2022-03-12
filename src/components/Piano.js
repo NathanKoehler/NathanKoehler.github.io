@@ -15,7 +15,10 @@ function Piano() {
         'dshh', 'dhh', 'cshh', 'chh', 
     ];
 
-const VALID_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '['];
+const VALID_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 
+                    'o', 'p', '[', '2', '3', '4', '6', '7', 
+                    '9', '0', '-', 'z', 'x', 'c' ,'v', 'b', 
+                    'n', 'm' ,'s', 'd', 'g', 'h', 'j'];
 
 const KEY_TO_NOTE = {
     'q': 'f',
@@ -99,40 +102,40 @@ const KEY_TO_NOTE = {
 
     return (
             <ul className="set">
-                <Key defaultStyle="white b l" pressedKeys={pressedKeys} audio={playSound} note='f'></Key>
-                <Key defaultStyle="black as l" pressedKeys={pressedKeys} audio={playSound} note='fs'></Key>
-                <Key defaultStyle="white a l" pressedKeys={pressedKeys} audio={playSound} note='g'></Key>
-                <Key defaultStyle="black gs l" pressedKeys={pressedKeys} audio={playSound} note='gs'></Key>
-                <Key defaultStyle="white g l" pressedKeys={pressedKeys} audio={playSound} note='a'></Key>
-                <Key defaultStyle="black fs l" pressedKeys={pressedKeys} audio={playSound} note='as'></Key>
-                <Key defaultStyle="white f l" pressedKeys={pressedKeys} audio={playSound} note='b'></Key>
+                <Key defaultStyle="white f l" pressedKeys={pressedKeys} audio={playSound} note='f' keyboard='Q'></Key>
+                <Key defaultStyle="black fs l" pressedKeys={pressedKeys} audio={playSound} note='fs' keyboard='2'></Key>
+                <Key defaultStyle="white g l" pressedKeys={pressedKeys} audio={playSound} note='g' keyboard='W'></Key>
+                <Key defaultStyle="black gs l" pressedKeys={pressedKeys} audio={playSound} note='gs' keyboard='3'></Key>
+                <Key defaultStyle="white a l" pressedKeys={pressedKeys} audio={playSound} note='a' keyboard='E'></Key>
+                <Key defaultStyle="black as l" pressedKeys={pressedKeys} audio={playSound} note='as' keyboard='4'></Key>
+                <Key defaultStyle="white b l" pressedKeys={pressedKeys} audio={playSound} note='b' keyboard='R'></Key>
                 
-                <Key defaultStyle="white e" pressedKeys={pressedKeys} audio={playSound} note='ch'></Key>
-                <Key defaultStyle="black ds" pressedKeys={pressedKeys} audio={playSound} note='csh'></Key>
-                <Key defaultStyle="white d" pressedKeys={pressedKeys} audio={playSound} note='dh'></Key>
-                <Key defaultStyle="black cs" pressedKeys={pressedKeys} audio={playSound} note='dsh'></Key>
-                <Key defaultStyle="white c" pressedKeys={pressedKeys} audio={playSound} note='eh'></Key>
+                <Key defaultStyle="white c" pressedKeys={pressedKeys} audio={playSound} note='ch' keyboard='T'></Key>
+                <Key defaultStyle="black cs" pressedKeys={pressedKeys} audio={playSound} note='csh' keyboard='6'></Key>
+                <Key defaultStyle="white d" pressedKeys={pressedKeys} audio={playSound} note='dh' keyboard='Y'></Key>
+                <Key defaultStyle="black ds" pressedKeys={pressedKeys} audio={playSound} note='dsh' keyboard='7'></Key>
+                <Key defaultStyle="white e" pressedKeys={pressedKeys} audio={playSound} note='eh' keyboard='U'></Key>
 
-                <Key defaultStyle="white b h" pressedKeys={pressedKeys} audio={playSound} note='fh'></Key>
-                <Key defaultStyle="black as h" pressedKeys={pressedKeys} audio={playSound} note='fsh'></Key>
-                <Key defaultStyle="white a h" pressedKeys={pressedKeys} audio={playSound} note='gh'></Key>
-                <Key defaultStyle="black gs h" pressedKeys={pressedKeys} audio={playSound} note='gsh'></Key>
-                <Key defaultStyle="white g h" pressedKeys={pressedKeys} audio={playSound} note='ah'></Key>
-                <Key defaultStyle="black fs h" pressedKeys={pressedKeys} audio={playSound} note='ash'></Key>
-                <Key defaultStyle="white f h" pressedKeys={pressedKeys} audio={playSound} note='bh'></Key>
+                <Key defaultStyle="white f h" pressedKeys={pressedKeys} audio={playSound} note='fh' keyboard='I'></Key>
+                <Key defaultStyle="black fs h" pressedKeys={pressedKeys} audio={playSound} note='fsh' keyboard='9'></Key>
+                <Key defaultStyle="white g h" pressedKeys={pressedKeys} audio={playSound} note='gh' keyboard='O'></Key>
+                <Key defaultStyle="black gs h" pressedKeys={pressedKeys} audio={playSound} note='gsh' keyboard='0'></Key>
+                <Key defaultStyle="white a h" pressedKeys={pressedKeys} audio={playSound} note='ah' keyboard='P'></Key>
+                <Key defaultStyle="black as h" pressedKeys={pressedKeys} audio={playSound} note='ash' keyboard='-'></Key>
+                <Key defaultStyle="white b h" pressedKeys={pressedKeys} audio={playSound} note='bh' keyboard='['></Key>
 
-                <Key defaultStyle="white e hh" pressedKeys={pressedKeys} audio={playSound} note='chh'></Key>
-                <Key defaultStyle="black ds hh" pressedKeys={pressedKeys} audio={playSound} note='cshh'></Key>
-                <Key defaultStyle="white d hh" pressedKeys={pressedKeys} audio={playSound} note='dhh'></Key>
-                <Key defaultStyle="black cs hh" pressedKeys={pressedKeys} audio={playSound} note='dshh'></Key>
-                <Key defaultStyle="white c hh" pressedKeys={pressedKeys} audio={playSound} note='ehh'></Key>
-                <Key defaultStyle="white b hh" pressedKeys={pressedKeys} audio={playSound} note='fhh'></Key>
-                <Key defaultStyle="black as hh" pressedKeys={pressedKeys} audio={playSound} note='fshh'></Key>
-                <Key defaultStyle="white a hh" pressedKeys={pressedKeys} audio={playSound} note='ghh'></Key>
-                <Key defaultStyle="black gs hh" pressedKeys={pressedKeys} audio={playSound} note='gshh'></Key>
-                <Key defaultStyle="white g hh" pressedKeys={pressedKeys} audio={playSound} note='ahh'></Key>
-                <Key defaultStyle="black fs hh" pressedKeys={pressedKeys} audio={playSound} note='ashh'></Key>
-                <Key defaultStyle="white f hh" pressedKeys={pressedKeys} audio={playSound} note='bhh'></Key>
+                <Key defaultStyle="white c hh" pressedKeys={pressedKeys} audio={playSound} note='chh' keyboard='Z'></Key>
+                <Key defaultStyle="black cs hh" pressedKeys={pressedKeys} audio={playSound} note='cshh' keyboard='S'></Key>
+                <Key defaultStyle="white d hh" pressedKeys={pressedKeys} audio={playSound} note='dhh' keyboard='X'></Key>
+                <Key defaultStyle="black ds hh" pressedKeys={pressedKeys} audio={playSound} note='dshh' keyboard='D'></Key>
+                <Key defaultStyle="white e hh" pressedKeys={pressedKeys} audio={playSound} note='ehh' keyboard='C'></Key>
+                <Key defaultStyle="white f hh" pressedKeys={pressedKeys} audio={playSound} note='fhh' keyboard='V'></Key>
+                <Key defaultStyle="black fs hh" pressedKeys={pressedKeys} audio={playSound} note='fshh' keyboard='G'></Key>
+                <Key defaultStyle="white g hh" pressedKeys={pressedKeys} audio={playSound} note='ghh' keyboard='B'></Key>
+                <Key defaultStyle="black gs hh" pressedKeys={pressedKeys} audio={playSound} note='gshh' keyboard='H'></Key>
+                <Key defaultStyle="white a hh" pressedKeys={pressedKeys} audio={playSound} note='ahh' keyboard='N'></Key>
+                <Key defaultStyle="black as hh" pressedKeys={pressedKeys} audio={playSound} note='ashh' keyboard='J'></Key>
+                <Key defaultStyle="white b hh" pressedKeys={pressedKeys} audio={playSound} note='bhh' keyboard='M'></Key>
                 {audioFiles}
             </ul>
                 

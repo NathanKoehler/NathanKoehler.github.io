@@ -23,7 +23,7 @@ function Key(props) {
       onMouseDown={(e) => keyClick(e)}
       onMouseLeave={() => setClicked(false)}
       onMouseUp={() => setClicked(false)}
-    ></li>
+    ><h3 className={`key-text ${(isClicked || isPressed) ? "active" : ""}`}>{props.keyboard}</h3></li>
   );
 }
 
