@@ -176,11 +176,11 @@
 
 .set li { /* deal with the intro animation of the keyboard */
   transition: opacity 1000ms cubic-bezier(.56,.08,.43,.92);
-  opacity: 0%;
+  opacity: 0;
 }
 
 .set.active li {
-  opacity: 100%;
+  opacity: 100;
 }
 
 .set.active li:nth-child(1) {
