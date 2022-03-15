@@ -2,59 +2,61 @@ import React, { useEffect, useState } from "react";
 import "./Piano.css";
 import Key from "./Key";
 
-function Piano() {
-    const NOTES = [
-        'b00', 'a01', 'a00', 'g01',
-        'g00', 'f01', 'f00', 'e00',
-        'd01', 'd00', 'c01', 'c00', 
-        'b10', 'a11', 'a10', 'g11', 
-        'g10', 'f11', 'f10', 'e10', 
-        'd11', 'd10', 'c11', 'c10', 
-        'b20', 'a21', 'a20', 'g21', 
-        'g20', 'f21', 'f20', 'e20', 
-        'd21', 'd20', 'c21', 'c20', 
-    ];
+const NOTES = [
+    'b00', 'a01', 'a00', 'g01',
+    'g00', 'f01', 'f00', 'e00',
+    'd01', 'd00', 'c01', 'c00', 
+    'b10', 'a11', 'a10', 'g11', 
+    'g10', 'f11', 'f10', 'e10', 
+    'd11', 'd10', 'c11', 'c10', 
+    'b20', 'a21', 'a20', 'g21', 
+    'g20', 'f21', 'f20', 'e20', 
+    'd21', 'd20', 'c21', 'c20', 
+];
 
 const KEY_TO_NOTE = {
-    'q': 'f00',
-    'w': 'g00',
-    'e': 'a00',
-    'r': 'b00',
-    't': 'c10',
-    'y': 'd10',
-    'u': 'e10',
-    'i': 'f10',
-    'o': 'g10',
-    'p': 'a10',
-    '[': 'b10',
-    '2': 'f01',
-    '3': 'g01',
-    '4': 'a01',
-    '6': 'c11',
-    '7': 'd11',
-    '9': 'f11',
-    '0': 'g11',
-    '-': 'a11',
+'q': 'f00',
+'w': 'g00',
+'e': 'a00',
+'r': 'b00',
+'t': 'c10',
+'y': 'd10',
+'u': 'e10',
+'i': 'f10',
+'o': 'g10',
+'p': 'a10',
+'[': 'b10',
+'2': 'f01',
+'3': 'g01',
+'4': 'a01',
+'6': 'c11',
+'7': 'd11',
+'9': 'f11',
+'0': 'g11',
+'-': 'a11',
 
-    'z': 'c20',
-    'x': 'd20',
-    'c': 'e20',
-    'v': 'f20',
-    'b': 'g20',
-    'n': 'a20',
-    'm': 'b20',
-    's': 'c21',
-    'd': 'd21',
-    'g': 'f21',
-    'h': 'g21',
-    'j': 'a21',
-  };
+'z': 'c20',
+'x': 'd20',
+'c': 'e20',
+'v': 'f20',
+'b': 'g20',
+'n': 'a20',
+'m': 'b20',
+'s': 'c21',
+'d': 'd21',
+'g': 'f21',
+'h': 'g21',
+'j': 'a21',
+};
 
+function Piano() {
     const [pressedKeys, setKeys] = useState([]);
+    const [fadeIn, setFadeIn] = useState("");
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
         window.addEventListener('keyup', handleKeyUp);
+        setFadeIn("active");
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
             window.removeEventListener('keyup', handleKeyUp);
@@ -74,20 +76,25 @@ const KEY_TO_NOTE = {
     });
 
     const playSound = (note) => {
-        const noteAudio = new Audio(document.getElementById(note).src);
-        noteAudio.play();
+        if (window.scrollY < 900) { // likely impossible if piano is out of view, failsafe
+            const noteAudio = new Audio(document.getElementById(note).src);
+            noteAudio.play();
+        }
     }
 
     const handleKeyDown = (event) => {
         event.preventDefault();
         if (event.repeat) {
-          return;
+          return; // key down does not repeat and key returns if no visible
         }
-        const note = KEY_TO_NOTE[event.key];
-        if (!pressedKeys.includes(note) && NOTES.includes(note)) {
-            setKeys((oldKeys) => [...oldKeys, note]);
-            playSound(note);
+        if (window.scrollY < 900) {
+            const note = KEY_TO_NOTE[event.key];
+            if (!pressedKeys.includes(note) && NOTES.includes(note)) {
+                setKeys((oldKeys) => [...oldKeys, note]);
+                playSound(note);
+            }
         }
+
       }
     
     const handleKeyUp = (event) => {
@@ -96,7 +103,7 @@ const KEY_TO_NOTE = {
     }
 
     return (
-            <ul className="set">
+            <ul className={`set ${fadeIn}`}>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='q'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='2'></Key>
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='w'></Key>
@@ -132,7 +139,6 @@ const KEY_TO_NOTE = {
                 <Key pressedKeys={pressedKeys} audio={playSound} keyboard='m'></Key>
                 {audioFiles}
             </ul>
-                
     )
 }
 
