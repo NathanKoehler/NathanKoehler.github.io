@@ -70,7 +70,14 @@ function Intro() {
             </div>
           )}
         </ReactVisibilitySensor>
+        
         </Parallax>
+        <div className="bottom-made-in-react">
+          <p>Made in React JS</p>
+          <span class="react-logo">
+            <span class="nucleo"></span>
+          </span>
+        </div>
       </div>
     </div>
   );
