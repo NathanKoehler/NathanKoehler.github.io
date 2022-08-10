@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
+import ResumePDF from "../resources/NathanKoehler_Resume.pdf";
 
 function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
@@ -79,8 +80,9 @@ function Navbar() {
             </li>
             <li className="nav-item" /* second element in the navbar */>
               <a
-                href="resources/NathanKoehler_Resume.pdf" // takes you to the resume pdf
+                href={ResumePDF} // takes you to the resume pdf
                 target="_blank"
+                rel="noopener noreferrer"
                 /* changes the URL */ className="nav-links"
               >
                 RESUME

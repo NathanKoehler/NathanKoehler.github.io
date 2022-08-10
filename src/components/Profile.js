@@ -3,6 +3,7 @@ import "./Profile.css";
 import { Parallax } from 'react-scroll-parallax';
 import { Link } from "react-scroll";
 import { ScrollButton } from "./Scroll";
+import HeadshotImg from "../images/Headshot.png";
 
 function Profile() {
   const [offsetY, setOffsetY] = useState(0);
@@ -54,8 +55,8 @@ function Profile() {
               /* changes the opacity to help the parallax effect */
               opacity: `${100 - offsetY * 100}%`,
             }}
-            src="/images/selfie.png"
-            alt="Selfie"
+            src={HeadshotImg}
+            alt="Headshot"
             className="profile-img"
           />
           <div className="profile-top-content">

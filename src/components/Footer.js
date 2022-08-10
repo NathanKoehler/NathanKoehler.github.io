@@ -55,7 +55,9 @@ function Footer() {
       iicon.current.dispatchEvent(event);
 
       setTimeout(() => {
-        iicon.current.dispatchEvent(event2);
+        if (iicon && iicon.current) {
+          iicon.current.dispatchEvent(event2);
+        }
       }, 500); // delay ensures that the view has time to see the effect
     }
   };

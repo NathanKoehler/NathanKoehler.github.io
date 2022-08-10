@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import "./Intro.css";
 import Piano from "./Piano";
 import { Parallax } from 'react-scroll-parallax';
 import { ScrollButton, ScrollLink } from "./Scroll";
 import { Link } from "react-router-dom";
-import ReactVisibilitySensor from "react-visibility-sensor";
+
+
+
 
 function Intro() {
+  const [isToCardsVisible, setIsToCardsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsToCardsVisible(true);
+  }, [])
+
   return (
     <div className="intro-invisible-width">
       <div id="top" className="intro-container">
@@ -46,11 +54,9 @@ function Intro() {
               CONTACT
             </ScrollLink>
           </div>
-          <ReactVisibilitySensor delayedCall="true"  intervalDelay="1000">
-          {({ isVisible }) => (
             <div
               className="to-cards-button"
-              style={isVisible ? { opacity: 1 } : { opacity: 0 }}
+              style={isToCardsVisible ? { opacity: 1 } : { opacity: 0 }}
             >
               <ScrollButton
                 goTo="cards"
@@ -68,9 +74,6 @@ function Intro() {
                 </div>
               </ScrollButton>
             </div>
-          )}
-        </ReactVisibilitySensor>
-        
         </Parallax>
         <div className="bottom-made-in-react">
           <p>Made in React JS</p>

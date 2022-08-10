@@ -3,6 +3,52 @@ import ReactVisibilitySensor from "react-visibility-sensor";
 import "./Gallery.css";
 import { GalleryCard } from "./GalleryElements";
 import useProgressiveImg from "./useProgressiveImg";
+import bpillar from "../images/gallery/blurred/bpillar.jpg";
+import pillar from "../images/gallery/pillar.png";
+import btree from "../images/gallery/blurred/btree.jpg";
+import tree from "../images/gallery/tree.png";
+import banta from "../images/gallery/blurred/banta.jpg";
+import anta from "../images/gallery/anta.png";
+import bnewrohcawback from "../images/gallery/blurred/bnewrohcawback.jpg";
+import newrohcawback from "../images/gallery/newrohcawback.jpg";
+import bglaveborn from "../images/gallery/blurred/bglaveborn.jpg";
+import glaveborn from "../images/gallery/glaveborn.png";
+import bmountain from "../images/gallery/blurred/bmountain.jpg";
+import mountain from "../images/gallery/mountain.png";
+import bwinter from "../images/gallery/blurred/bwinter.jpg";
+import winter from "../images/gallery/winter.png";
+import bfire from "../images/gallery/blurred/bfire.jpg";
+import fire from "../images/gallery/fire.png";
+import bbarter from "../images/gallery/blurred/bbarter.jpg";
+import barter from "../images/gallery/barter.png";
+import btemple from "../images/gallery/blurred/btemple.jpg";
+import temple from "../images/gallery/temple.png";
+import bnewrohcaw from "../images/gallery/blurred/bnewrohcaw.jpg";
+import newrohcaw from "../images/gallery/newrohcaw.jpg";
+import bfish from "../images/gallery/blurred/bfish.jpg";
+import fish from "../images/gallery/fish.png";
+import bbubblebakers from "../images/gallery/blurred/bbubblebakers.jpg";
+import bubblebakers from "../images/gallery/bubblebakers.png";
+import bfoundry from "../images/gallery/blurred/bfoundry.jpg";
+import foundry from "../images/gallery/foundry.png";
+import bsit from "../images/gallery/blurred/bsit.jpg";
+import sit from "../images/gallery/sit.jpeg";
+import bwater from "../images/gallery/blurred/bwater.jpg";
+import water from "../images/gallery/water.png";
+import bpirate from "../images/gallery/blurred/bpirate.jpg";
+import pirate from "../images/gallery/pirate.png";
+import bcrown from "../images/gallery/blurred/bcrown.jpg";
+import crown from "../images/gallery/crown.png";
+import bice from "../images/gallery/blurred/bice.jpg";
+import ice from "../images/gallery/ice.png";
+import bmononokeredesign from "../images/gallery/blurred/bmononokeredesign.jpg";
+import mononokeredesign from "../images/gallery/mononokeredesign.png";
+import bthehollowknight from "../images/gallery/blurred/bthehollowknight.jpg";
+import thehollowknight from "../images/gallery/thehollowknight.png";
+import bsorcerer from "../images/gallery/blurred/bsorcerer.jpg";
+import sorcerer from "../images/gallery/sorcerer.jpeg";
+import bwall from "../images/gallery/blurred/bwall.jpg";
+import wall from "../images/gallery/wall.png";
 
 const Gallery = () => {
 
@@ -11,140 +57,140 @@ const Gallery = () => {
       id: 1,
       height: 2400,
       width: 1800,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bpillar.jpg", "images/gallery/pillar.png"),
+      imgSrc: useProgressiveImg(bpillar, pillar),
     },
     {
       id: 2,
       height: 2341,
       width: 3300,
-      imgSrc: useProgressiveImg("images/gallery/blurred/btree.jpg", "images/gallery/tree.png"),
+      imgSrc: useProgressiveImg(btree, tree),
     },
     {
       id: 3,
       height: 1400,
       width: 1400,
-      imgSrc: useProgressiveImg("images/gallery/blurred/banta.jpg", "images/gallery/anta.png"),
+      imgSrc: useProgressiveImg(banta, anta),
     },
     {
       id: 4,
       height: 3600,
       width: 1500,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bnewrohcaw.jpg", "images/gallery/newrohcaw.jpg"),
+      imgSrc: useProgressiveImg(bnewrohcaw, newrohcaw),
     },
     
     {
       id: 5,
       height: 1333,
       width: 2400,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bglaveborn.jpg", "images/gallery/glaveborn.png"),
+      imgSrc: useProgressiveImg(bglaveborn, glaveborn),
     },
     {
       id: 6,
       height: 612,
       width: 1500,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bmountain.jpg", "images/gallery/mountain.png"),
+      imgSrc: useProgressiveImg(bmountain, mountain),
     },
     {
       id: 7,
       height: 1853,
       width: 1133,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bwinter.jpg", "images/gallery/winter.png"),
+      imgSrc: useProgressiveImg(bwinter, winter),
     },
     {
       id: 8,
       height: 1668,
       width: 2434,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bfire.jpg", "images/gallery/fire.png"),
+      imgSrc: useProgressiveImg(bfire, fire),
     },
     {
       id: 9,
       height: 2128,
       width: 2856,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bbarter.jpg", "images/gallery/barter.png"),
+      imgSrc: useProgressiveImg(bbarter, barter),
     },
     {
       id: 10,
       height: 2808,
       width: 2152,
-      imgSrc: useProgressiveImg("images/gallery/blurred/btemple.jpg", "images/gallery/temple.png"),
+      imgSrc: useProgressiveImg(btemple, temple),
     },
     {
       id: 11,
       height: 3600,
       width: 1500,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bnewrohcawback.jpg", "images/gallery/newrohcawback.jpg"),
+      imgSrc: useProgressiveImg(bnewrohcawback, newrohcawback),
     },
     {
       id: 12,
       height: 3300,
       width: 2550,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bfish.jpg", "images/gallery/fish.png"),
+      imgSrc: useProgressiveImg(bfish, fish),
     },
     {
       id: 13,
       height: 1285,
       width: 1285,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bbubblebakers.jpg", "images/gallery/bubblebakers.png"),
+      imgSrc: useProgressiveImg(bbubblebakers, bubblebakers),
     },
     {
       id: 14,
       height: 2400,
       width: 1800,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bfoundry.jpg", "images/gallery/foundry.png"),
+      imgSrc: useProgressiveImg(bfoundry, foundry),
     },
     {
       id: 15,
       height: 1960,
       width: 1441,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bsit.jpg", "images/gallery/sit.jpeg"),
+      imgSrc: useProgressiveImg(bsit, sit),
     },
     {
       id: 16,
       height: 2550,
       width: 3300,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bwater.jpg", "images/gallery/water.png"),
+      imgSrc: useProgressiveImg(bwater, water),
     },
     {
       id: 17,
       height: 1101,
       width: 845,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bpirate.jpg", "images/gallery/pirate.png"),
+      imgSrc: useProgressiveImg(bpirate, pirate),
     },
     {
       id: 18,
       height: 2956,
       width: 2683,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bcrown.jpg", "images/gallery/crown.png"),
+      imgSrc: useProgressiveImg(bcrown, crown),
     },
     {
       id: 19,
       height: 2956,
       width: 2683,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bice.jpg", "images/gallery/ice.png"),
+      imgSrc: useProgressiveImg(bice, ice),
     },
     {
       id: 20,
       height: 2244,
       width: 1452,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bmononokeredesign.jpg", "images/gallery/mononokeredesign.png"),
+      imgSrc: useProgressiveImg(bmononokeredesign, mononokeredesign),
     },
     {
       id: 21,
       height: 1964,
       width: 1538,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bthehollowknight.jpg", "images/gallery/thehollowknight.png"),
+      imgSrc: useProgressiveImg(bthehollowknight, thehollowknight),
     },
     {
       id: 22,
       height: 3300,
       width: 2550,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bsorcerer.jpg", "images/gallery/sorcerer.jpeg"),
+      imgSrc: useProgressiveImg(bsorcerer, sorcerer),
     },
     {
       id: 23,
       height: 2400,
       width: 1800,
-      imgSrc: useProgressiveImg("images/gallery/blurred/bwall.jpg", "images/gallery/wall.png"),
+      imgSrc: useProgressiveImg(bwall, wall),
     },
   ];
 

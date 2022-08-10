@@ -5,6 +5,10 @@
   font-family: 'Comfortaa', sans-serif;
 }
 
+.animated-router {
+  overflow-x: hidden;
+}
+
 .home,
 .services,
 .products,

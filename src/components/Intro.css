@@ -200,12 +200,12 @@ mark.dark-blue {
 
 .to-cards-button {
   pointer-events: all;
-  position: fixed;
+  position: absolute;
   bottom: -6vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s all ease-in-out;
+  transition: 1s 1.6s opacity ease-in-out;
 }
 
 .to-cards-arrow i {
