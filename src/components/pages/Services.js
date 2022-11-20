@@ -6,7 +6,6 @@ import pageVariants, { pageTransition } from "../Transition";
 export default function Services() {
   return (
     <motion.div
-      style={{ position: "absolute", width: "100%" }}
       initial="initial"
       animate="in"
       exit="out"

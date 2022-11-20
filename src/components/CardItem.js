@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Cards.css";
 import { Card } from "./CardsElements";
 
+
 function CardItem(props) {
   const elementRef = useRef(null);
   const [elemWidth, setWidth] = useState(0);
@@ -51,9 +52,10 @@ function CardItem(props) {
               onMouseEnter={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
               onClick={() => { // for rare cards that take you to a new page entirely
-                if (props.aPath != null) {
-                  window.open(props.aPath, '_blank')
-                }
+                props.setCardDrawerOpen(true);
+                // if (props.aPath != null) {
+                //   window.open(props.aPath, '_blank')
+                // }
               }}
               to={props.path}
             >

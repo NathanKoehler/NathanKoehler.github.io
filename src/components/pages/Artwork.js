@@ -9,7 +9,6 @@ export default function Artwork() {
   
   return (
     <motion.div
-      style={{ position: "absolute", width: "100%" }}
       initial="initial"
       animate="in"
       exit="out"

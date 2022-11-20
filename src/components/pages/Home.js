@@ -10,8 +10,7 @@ import Slider from "../Slider";
 function Home(props) {
   return (
     <motion.div
-      style={{ position: "absolute", width: "100%" }}
-      initial="initial"
+      initial="homeInit"
       animate="in"
       exit="out"
       variants={pageVariants}

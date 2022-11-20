@@ -8,7 +8,6 @@ import pageVariants, { pageTransition } from "../Transition";
 export default function AboutMe() {
   return (
     <motion.div
-      style={{ position: "absolute", width: "100%" }}
       initial="initial"
       animate="in"
       exit="out"
