@@ -191,48 +191,50 @@ function Cards() {
 
 
   return (
-    <section className='cards'>
+    <React.Fragment>
       <CardDialog open={cardDrawerOpen} setOpen={setCardDrawerOpen} />
-      <h1 className='card__title'>Work</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul id='cards' className='cards__items'>
-            
-            {NCRRETAILCard}
-            {FingersCrossedCard}
-            
-            {SliderCard}
-          </ul>
-          <ul
-            className='cards__items' /* makes the 3 item row in the second column */
-          >
-            {CurrencyCard}
-            {NCRHOSPCard}
-            
-            
-          </ul>
-          <ul
-            className='cards__items' /* makes the 2 item container in the 3rd row */
-          >
-            {RollerCard}
-            {AframeCard}
-            {TodoCard}
-          </ul>
-          <ul
-            className='cards__items' /* makes the 2 item container in the 4th row */
-          >
-            
-            {PostCardCard}
-            {TheAscentCard}
-          </ul>
-          <ul id='cards' className='cards__items'>
-            {AHSRoboticsCard}
-            {UGAHacksCard}
-            {RealityMedia}
-          </ul>
+      <section className='cards'>
+        <h1 className='card__title'>Work</h1>
+        <div className='cards__container'>
+          <div className='cards__wrapper'>
+            <ul id='cards' className='cards__items'>
+              
+              {NCRRETAILCard}
+              {FingersCrossedCard}
+              
+              {SliderCard}
+            </ul>
+            <ul
+              className='cards__items' /* makes the 3 item row in the second column */
+            >
+              {CurrencyCard}
+              {NCRHOSPCard}
+              
+              
+            </ul>
+            <ul
+              className='cards__items' /* makes the 2 item container in the 3rd row */
+            >
+              {RollerCard}
+              {AframeCard}
+              {TodoCard}
+            </ul>
+            <ul
+              className='cards__items' /* makes the 2 item container in the 4th row */
+            >
+              
+              {PostCardCard}
+              {TheAscentCard}
+            </ul>
+            <ul id='cards' className='cards__items'>
+              {AHSRoboticsCard}
+              {UGAHacksCard}
+              {RealityMedia}
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </React.Fragment>
   );
 }
 
