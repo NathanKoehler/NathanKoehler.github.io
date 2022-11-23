@@ -42,7 +42,7 @@ function Navbar() {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="navbar-invisible-box" />
       <Nav scrollNav={scrollNav} className={click ? "navbar active" : "navbar"}>
         <section className="navbar-container">
@@ -109,7 +109,7 @@ function Navbar() {
           </ul>
         </section>
       </Nav>
-    </>
+    </React.Fragment>
   );
 }
 export default Navbar;

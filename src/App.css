@@ -5,15 +5,16 @@
   font-family: 'Comfortaa', sans-serif;
 }
 
-.animated-router {
+/* .animated-router {
   overflow-x: hidden;
-}
+} */
 
 .home,
 .services,
 .products,
 .sign-up {
   display: flex;
+  width: 100%;
   height: 90vh;
   align-items: center;
   justify-content: center;
