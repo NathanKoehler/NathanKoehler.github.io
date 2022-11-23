@@ -5,6 +5,10 @@
   font-family: 'Comfortaa', sans-serif;
 }
 
+:root {
+  --Navbar_right_offset: 0;
+}
+
 /* .animated-router {
   overflow-x: hidden;
 } */

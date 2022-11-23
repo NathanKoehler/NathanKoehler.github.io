@@ -33,9 +33,10 @@ function Navbar() {
     }
   }, [path]);
 
-  /* used to ensure the 'sign up' button is invisible on reload */
+  
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    console.log("hello");
     return () => {
       window.removeEventListener("scroll", changeNav);
     }

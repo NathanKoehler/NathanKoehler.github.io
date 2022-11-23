@@ -8,13 +8,15 @@ import Collapse from '@mui/material/Collapse';
 import CloseIcon from "@mui/icons-material/Close";
 import { TransitionProps } from '@mui/material/transitions';
 
+const addNavbarOffset = () => {
+  document.documentElement.style.setProperty("--Navbar_right_offset", 17);
+}
 
-const Transition = React.forwardRef(function Transition(
-  props: TransitionProps & {
-    children: React.ReactElement;
-  },
-  ref: React.Ref<unknown>,
-) {
+const removeNavbarOffset = () => {
+  document.documentElement.style.setProperty("--Navbar_right_offset", 0);
+}
+
+const Transition = React.forwardRef(function Transition(props, ref) {
   return <Collapse orientation="vertical" ref={ref} {...props} />;
 });
 
@@ -25,6 +27,7 @@ function CardDialog({ open, setOpen, children }) {
       fullScreen
       open={open}
       TransitionComponent={Transition}
+      TransitionProps={{ onEnter: addNavbarOffset, onExited: removeNavbarOffset }}
     >
       <AppBar color="white" sx={{ position: "relative" }}>
         <Toolbar>

@@ -1,5 +1,6 @@
 .navbar {
   background: var(--background);
+  padding-right: calc(var(--Navbar_right_offset) * 1px);
   height: 80px;
   display: flex;
   width: 100%;
@@ -8,6 +9,8 @@
   font-size: 1.2rem;
   position: fixed;
   top: 0;
+  left: auto;
+  right: 0;
   z-index: 999;
   --background: #fff;
   --mobilebackground: #fff;
