@@ -33,7 +33,7 @@ function CardItem(props) {
     const onAnimationEnd = () => {
       if (!show) setVisible(false);
     };
-    const style = { animation: `${show ? "fadeIn" : "fadeOut"} .5s` };
+    const style = { display: `${show ? "flex" : "none"}`, animation: `${show ? "fadeIn" : "fadeOut"} .5s` };
     const fadeProps = {
       style,
       onAnimationEnd,
