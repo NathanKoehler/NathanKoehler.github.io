@@ -6,7 +6,6 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from "@mui/icons-material/Close";
-import { TransitionProps } from '@mui/material/transitions';
 
 const addNavbarOffset = () => {
   document.documentElement.style.setProperty("--Navbar_right_offset", 17);
@@ -21,7 +20,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 
-function CardDialog({ open, setOpen, children }) {
+function CardDialog({ open, setOpen, content }) {
   return (
     <Dialog
       fullScreen
@@ -40,7 +39,7 @@ function CardDialog({ open, setOpen, children }) {
             <CloseIcon />
           </IconButton>
           <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-            Card Specifics
+            {content.title}
           </Typography>
           <IconButton
             edge="start"

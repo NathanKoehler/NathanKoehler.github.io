@@ -1,9 +1,9 @@
 import React from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Artwork from "./pages/Artwork";
-import AboutMe from "./pages/AboutMe";
+import Home from "./_pages/Home";
+import Services from "./_pages/Services";
+import Artwork from "./_pages/Artwork";
+import AboutMe from "./_pages/AboutMe";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 

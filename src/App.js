@@ -1,12 +1,12 @@
 import React from "react";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar";
+import Navbar from "./_components/Navbar";
 import "./App.css";
 import { useLocation, BrowserRouter as Router } from "react-router-dom";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import AnimatedRoutes from "./_components/AnimatedRoutes";
 
 /**
  * custom theme that dictates all component styling

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
-import ResumePDF from "../resources/NathanKoehler_Resume.pdf";
+import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
 
 function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click

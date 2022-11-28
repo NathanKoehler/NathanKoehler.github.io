@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "../App.css";
+import "../../App.css";
 import "./Intro.css";
 import Piano from "./Piano";
 import { Parallax } from 'react-scroll-parallax';
-import { ScrollButton, ScrollLink } from "./Scroll";
+import { ScrollButton, ScrollLink } from "../Scroll";
 import { Link } from "react-router-dom";
 
 
@@ -77,8 +77,8 @@ function Intro() {
         </Parallax>
         <div className="bottom-made-in-react">
           <p>Made in React JS</p>
-          <span class="react-logo">
-            <span class="nucleo"></span>
+          <span className="react-logo">
+            <span className="nucleo"></span>
           </span>
         </div>
       </div>

@@ -54,14 +54,10 @@ export const ScrollButton = ({
 
 export const ScrollLink = ({
   children,
-  type,
   goTo,
-  onClick,
   classN,
   vOffset,
   vDuration,
-  buttonStyle,
-  buttonSize,
 }) => {
 
   return (

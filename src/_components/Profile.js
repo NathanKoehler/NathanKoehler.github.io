@@ -3,7 +3,7 @@ import "./Profile.css";
 import { Parallax } from 'react-scroll-parallax';
 import { Link } from "react-scroll";
 import { ScrollButton } from "./Scroll";
-import HeadshotImg from "../images/Headshot.png";
+import HeadshotImg from "../_images/Headshot.png";
 
 function Profile() {
   const [offsetY, setOffsetY] = useState(0);
