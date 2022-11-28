@@ -7,12 +7,18 @@ import AboutMe from "./_pages/AboutMe";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 
-function AnimatedRoutes() {
+function AnimatedRoutes({ triggerNav }) {
 const location = useLocation();
+
+const handlePageChange = () => {
+  window.scrollTo(0, 0);
+  console.log(triggerNav);
+  triggerNav();
+}
 
   return (
     <ParallaxProvider>
-        <AnimatePresence inital={false} exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
+        <AnimatePresence inital={false} exitBeforeEnter onExitComplete={handlePageChange}>
                 <Routes location={location} key={location.pathname}>
                     <Route exact path={`/`} element={<Home/>} />
                     <Route exact path={`/services`} element={<Services/>} />

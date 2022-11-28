@@ -4,10 +4,21 @@ import "./Navbar.css";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
 import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
 
-function Navbar() {
+function Navbar({ setHandleNav }) {
   const [click, setClick] = useState(false); // declares a state variable click
   const handleClick = () => setClick(!click); // arrow function that reverses the state of click
   const [scrollNav, setScrollNav] = useState(false);
+
+ const handleExternalNavchange = () => {
+    if (window.location.pathname === "/") {
+      setScrollNav(false);
+    } else {
+      setScrollNav(true);
+    }
+  }
+
+  
+  
 
   const closeMobileMenu = () => {
     setClick(false);
@@ -23,20 +34,15 @@ function Navbar() {
     }
   };
 
-  let path = window.location.pathname;
-  /* potentially changes navbar on page change */
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      setScrollNav(false);
-    } else {
-      setScrollNav(true);
-    }
-  }, [path]);
+  // /* potentially changes navbar on page change */
+  // useEffect(() => {
+    
+  // }, [triggerNav]);
 
   
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
-    console.log("hello");
+    setHandleNav(handleExternalNavchange);
     return () => {
       window.removeEventListener("scroll", changeNav);
     }

@@ -175,11 +175,13 @@ import AnimatedRoutes from "./_components/AnimatedRoutes";
 
 
 function App() {
+  const [triggerNav, setTriggerNav] = React.useState(undefined);
+
   return (
     <ThemeProvider theme={theme}>
         <Router>
-          <Navbar />
-          <AnimatedRoutes />
+          <Navbar setHandleNav={setTriggerNav} />
+          <AnimatedRoutes triggerNav={triggerNav} />
         </Router>
     </ThemeProvider>
   );
