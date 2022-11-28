@@ -3,19 +3,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
 import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
+import { useLocation } from 'react-router-dom';
 
-function Navbar({ setHandleNav }) {
+function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
   const handleClick = () => setClick(!click); // arrow function that reverses the state of click
   const [scrollNav, setScrollNav] = useState(false);
 
- const handleExternalNavchange = () => {
-    if (window.location.pathname === "/") {
-      setScrollNav(false);
-    } else {
-      setScrollNav(true);
-    }
-  }
 
   
   
@@ -34,15 +28,22 @@ function Navbar({ setHandleNav }) {
     }
   };
 
-  // /* potentially changes navbar on page change */
-  // useEffect(() => {
-    
-  // }, [triggerNav]);
+  /* potentially changes navbar on page change */
+  const location = useLocation()
 
+  useEffect(() => {
+    // runs on location, i.e. route, change
+    console.log("bwebwebw");
+      if (window.location.pathname === "/") {
+        setScrollNav(false);
+      } else {
+        setScrollNav(true);
+      }
+  }, [location])
   
+
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
-    setHandleNav(handleExternalNavchange);
     return () => {
       window.removeEventListener("scroll", changeNav);
     }

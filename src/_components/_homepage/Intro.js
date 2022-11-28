@@ -38,7 +38,7 @@ function Intro() {
           </h1>
           <p>
             Undergrad student at Georgia Tech studying Media and Interaction
-            Design looking for a 2022 internship.
+            Design looking for a 2023 internship / coop.
           </p>
           <div className="intro-btns">
             <ScrollLink goTo="cards" vOffset={-250}>

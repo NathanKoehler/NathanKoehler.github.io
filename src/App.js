@@ -180,7 +180,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
         <Router>
-          <Navbar setHandleNav={setTriggerNav} />
+          <Navbar triggerNav={triggerNav} setHandleNav={setTriggerNav} />
           <AnimatedRoutes triggerNav={triggerNav} />
         </Router>
     </ThemeProvider>

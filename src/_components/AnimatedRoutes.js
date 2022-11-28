@@ -7,13 +7,11 @@ import AboutMe from "./_pages/AboutMe";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 
-function AnimatedRoutes({ triggerNav }) {
+function AnimatedRoutes() {
 const location = useLocation();
 
 const handlePageChange = () => {
   window.scrollTo(0, 0);
-  console.log(triggerNav);
-  triggerNav();
 }
 
   return (
