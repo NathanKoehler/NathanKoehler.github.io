@@ -49,6 +49,8 @@ import bsorcerer from "../_images/gallery/blurred/bsorcerer.jpg";
 import sorcerer from "../_images/gallery/sorcerer.jpeg";
 import bwall from "../_images/gallery/blurred/bwall.jpg";
 import wall from "../_images/gallery/wall.png";
+import { Box } from "@mui/system";
+import PortfolioPDF from "../_resources/NathanKoehler_UIUXPortfolio.pdf";
 
 const Gallery = () => {
 
@@ -230,9 +232,21 @@ const Gallery = () => {
           <div className="gallery-title-text">
             <h1>Image Gallery</h1>
           </div>
-          <h2>"Done in Photoshop, Illustrator, and Traditional Mediums"</h2>
+          <h2>"Art Hobbiest And Digital-Traditional Illustrator"</h2>
         </div>
       </div>
+      <Box sx={{ pt: 2, pb: 5 }}>
+        <div className="gallery-subtitle">
+          <a
+                href={PortfolioPDF} // takes you to the portfolio pdf
+                target="_blank"
+                rel="noopener noreferrer"
+                /* changes the URL */ className="gallery-subtitle-links"
+              >
+                <h2>For A UI/UX Portfolio, Click Here:</h2>
+              </a>
+        </div>
+      </Box>
       <div className="gallery-wrapper">
         {images &&
           images.map((item, index) => {
