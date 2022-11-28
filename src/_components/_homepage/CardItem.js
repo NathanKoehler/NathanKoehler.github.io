@@ -78,7 +78,7 @@ function CardItem(props) {
                     className="cards__item__img__background"
                   />
                 </figure>
-                {(
+                {isVisible && (
                   <div {...fadeProps} className="cards__item__info">
                     <h5
                       style={{ fontSize: elemWidth / 22 }}
