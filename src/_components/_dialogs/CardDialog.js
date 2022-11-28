@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Box from '@mui/material/Box';
 import Dialog from "@mui/material/Dialog";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,7 +21,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 
-function CardDialog({ open, setOpen, content }) {
+export default function CardDialog({ open, setOpen, content }) {
   return (
     <Dialog
       fullScreen
@@ -30,19 +31,11 @@ function CardDialog({ open, setOpen, content }) {
     >
       <AppBar color="white" sx={{ position: "relative" }}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            onClick={() => setOpen(false)}
-            aria-label="close"
-          >
-            <CloseIcon />
-          </IconButton>
           <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-            {content.title}
+            {content ? content.title : "Specifics"}
           </Typography>
           <IconButton
-            edge="start"
+            edge="end"
             color="inherit"
             onClick={() => setOpen(false)}
             aria-label="close"
@@ -51,8 +44,16 @@ function CardDialog({ open, setOpen, content }) {
           </IconButton>
         </Toolbar>
       </AppBar>
+      {content ? 
+      <Box sx={{ 
+        width: "100%", 
+        height: "60vh", 
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(${content.banner})`, 
+        backgroundRepeat: "none", 
+        backgroundSize: "cover", 
+        backgroundPosition: "center" }}></Box>
+       : null}
+      
     </Dialog>
   )
 }
-
-export default CardDialog

@@ -4,7 +4,7 @@ import "./Cards.css";
 import { Card } from "./StyledCard";
 
 
-function CardItem(props) {
+function CardItem({path, src, srcAlt, text, label, aPath, handleCardDrawer, cardDrawerContents}) {
   const elementRef = useRef(null);
   const [elemWidth, setWidth] = useState(0);
 
@@ -52,12 +52,12 @@ function CardItem(props) {
               onMouseEnter={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
               onClick={() => { // for rare cards that take you to a new page entirely
-                props.setCardDrawerOpen(true);
-                // if (props.aPath != null) {
-                //   window.open(props.aPath, '_blank')
+                handleCardDrawer(true, cardDrawerContents);
+                // if (aPath != null) {
+                //   window.open(aPath, '_blank')
                 // }
               }}
-              to={props.path}
+              to={path}
             >
               <div
                 ref={elementRef}
@@ -65,15 +65,15 @@ function CardItem(props) {
               >
                 <figure
                   className="cards__item__pic-wrap" /* the image wrapper */
-                  data-category={props.label}
+                  data-category={label}
                 >
                   <img
-                    src={props.src}
+                    src={src}
                     alt="Work"
                     className="cards__item__img"
                   />
                   <img
-                    src={props.srcAlt}
+                    src={srcAlt}
                     alt="Work"
                     className="cards__item__img__background"
                   />
@@ -84,7 +84,7 @@ function CardItem(props) {
                       style={{ fontSize: elemWidth / 22 }}
                       className="cards__item__text"
                     >
-                      {props.text}
+                      {text}
                     </h5>
                   </div>
                 )}

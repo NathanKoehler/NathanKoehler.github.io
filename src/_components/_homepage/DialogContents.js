@@ -1,8 +1,11 @@
-export default class DialogContents {
-  constructor(title, banner, content) {
+export default class Dialogbodys {
+  title;
+  banner;
+  body;
+  constructor(title, banner, body) {
     this.title = title;
     this.banner = banner;
-    this.content = content;
+    this.body = body;
   }
 
   getTitle() {
@@ -13,11 +16,11 @@ export default class DialogContents {
     return this.banner;
   }
 
-  getContent() {
-    return this.content;
+  getbody() {
+    return this.body;
   }
 
   static new() {
-    return new DialogContents('Blank Title', []);
+    return new Dialogbodys('Blank Title', []);
   }
 }
