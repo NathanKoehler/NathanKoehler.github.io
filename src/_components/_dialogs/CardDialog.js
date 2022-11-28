@@ -44,7 +44,7 @@ export default function CardDialog({ open, setOpen, content }) {
           </IconButton>
         </Toolbar>
       </AppBar>
-      {content ? 
+      {content && (
       <Box sx={{ 
         width: "100%", 
         height: "60vh", 
@@ -52,7 +52,7 @@ export default function CardDialog({ open, setOpen, content }) {
         backgroundRepeat: "none", 
         backgroundSize: "cover", 
         backgroundPosition: "center" }}></Box>
-       : null}
+      )}
       
     </Dialog>
   )

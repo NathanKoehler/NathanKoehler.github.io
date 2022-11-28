@@ -4,7 +4,7 @@ import "./Cards.css";
 import { Card } from "./StyledCard";
 
 
-function CardItem({path, src, srcAlt, text, label, aPath, handleCardDrawer, cardDrawerContents}) {
+function CardItem(props) {
   const elementRef = useRef(null);
   const [elemWidth, setWidth] = useState(0);
 
@@ -33,7 +33,7 @@ function CardItem({path, src, srcAlt, text, label, aPath, handleCardDrawer, card
     const onAnimationEnd = () => {
       if (!show) setVisible(false);
     };
-    const style = { animation: `${show ? "fadeIn" : "fadeOut"} .3s` };
+    const style = { animation: `${show ? "fadeIn" : "fadeOut"} .5s` };
     const fadeProps = {
       style,
       onAnimationEnd,
@@ -52,12 +52,12 @@ function CardItem({path, src, srcAlt, text, label, aPath, handleCardDrawer, card
               onMouseEnter={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
               onClick={() => { // for rare cards that take you to a new page entirely
-                handleCardDrawer(true, cardDrawerContents);
-                // if (aPath != null) {
-                //   window.open(aPath, '_blank')
+                props.handleCardDrawer(true, props.cardDrawerContents);
+                // if (props.aPath != null) {
+                //   window.open(props.aPath, '_blank')
                 // }
               }}
-              to={path}
+              to={props.path}
             >
               <div
                 ref={elementRef}
@@ -65,26 +65,26 @@ function CardItem({path, src, srcAlt, text, label, aPath, handleCardDrawer, card
               >
                 <figure
                   className="cards__item__pic-wrap" /* the image wrapper */
-                  data-category={label}
+                  data-category={props.label}
                 >
                   <img
-                    src={src}
+                    src={props.src}
                     alt="Work"
                     className="cards__item__img"
                   />
                   <img
-                    src={srcAlt}
+                    src={props.srcAlt}
                     alt="Work"
                     className="cards__item__img__background"
                   />
                 </figure>
-                {isVisible && (
+                {(
                   <div {...fadeProps} className="cards__item__info">
                     <h5
                       style={{ fontSize: elemWidth / 22 }}
                       className="cards__item__text"
                     >
-                      {text}
+                      {props.text}
                     </h5>
                   </div>
                 )}
