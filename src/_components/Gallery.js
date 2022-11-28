@@ -235,7 +235,7 @@ const Gallery = () => {
           <h2>"Art Hobbiest And Digital-Traditional Illustrator"</h2>
         </div>
       </div>
-      <Box sx={{ pt: 2, pb: 5 }}>
+      <Box sx={{ pt: 2, pb: 8 }}>
         <div className="gallery-subtitle">
           <a
                 href={PortfolioPDF} // takes you to the portfolio pdf
