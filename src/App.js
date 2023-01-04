@@ -47,6 +47,20 @@ import AnimatedRoutes from "./_components/AnimatedRoutes";
     }
   },
   components: {
+    MuiTypography: {
+      variants: [
+        {
+          props: { variant: "h4" },
+          style: {
+            fontSize: "2rem",
+            fontWeight: "bold",
+            fontFamily: "Comfortaa",
+            margin: 0,
+            padding: 0,
+          },
+        }
+      ]
+    },
     MuiCheckbox: {
       variants: [
         {

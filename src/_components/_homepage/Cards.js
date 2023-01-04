@@ -209,7 +209,7 @@ function Cards() {
 
   return (
     <React.Fragment>
-      <CardDialog open={cardDrawerOpen} setOpen={handleCardDrawer} content={cardDrawerContent} />
+      <CardDialog open={cardDrawerOpen} setOpen={setCardDrawerOpen} content={cardDrawerContent} />
       <section className='cards'>
         <h1 className='card__title'>Work</h1>
         <div className='cards__container'>

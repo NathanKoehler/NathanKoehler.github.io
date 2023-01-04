@@ -61,18 +61,18 @@ function Navbar() {
           >
             <div className="navbar-name">
               <Name className="navbar-name-front" scrollNav={scrollNav}>
-                NATE KOEHLER{" "}
+                NATE KOEHLER&nbsp;
                 <i className="fas fa-palette" /* text and icon for link*/></i>
               </Name>
               <NameMiddle scrollNav={scrollNav} className="navbar-name-middle">
-                NATE KOEHLER{" "}
+                NATE KOEHLER&nbsp;
                 <i className="fas fa-palette" /* text and icon for link*/></i>
               </NameMiddle>
               <NameBackdrop
                 scrollNav={scrollNav}
                 className="navbar-name-backdrop"
               >
-                NATE KOEHLER{" "}
+                NATE KOEHLER&nbsp;
                 <i className="fas fa-palette" /* text and icon for link*/></i>
               </NameBackdrop>
             </div>
