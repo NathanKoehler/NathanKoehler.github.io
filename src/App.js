@@ -33,6 +33,9 @@ import AnimatedRoutes from "./_components/AnimatedRoutes";
       main: "#eeeeee",
       highlighted: "#edf8ff",
       dark: "#000000",
+      navbar_opaque: "rgba(238, 238, 238, 1)",
+      navbar_transparent: "rgba(0, 0, 0, 0.2)",
+
     },
     text: {
       primary: "rgba(0, 0, 0, 0.77)",

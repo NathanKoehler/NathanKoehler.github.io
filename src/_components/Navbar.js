@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
 import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
 import { useLocation } from 'react-router-dom';
+import { AppBar, Toolbar } from "@mui/material";
 
 function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
@@ -33,8 +34,8 @@ function Navbar() {
 
   useEffect(() => {
     // runs on location, i.e. route, change
-    console.log("bwebwebw");
-      if (window.location.pathname === "/") {
+    console.log(location);
+      if (window.location.pathname === "/" && !(window.scrollY >= 200)) {
         setScrollNav(false);
       } else {
         setScrollNav(true);
@@ -53,69 +54,71 @@ function Navbar() {
     <React.Fragment>
       <div className="navbar-invisible-box" />
       <Nav scrollNav={scrollNav} className={click ? "navbar active" : "navbar"}>
-        <section className="navbar-container">
-          <Link
-            to="/"
-            className="navbar-logo"
-            onClick={closeMobileMenu} /* close mobile menu when topleft is clicked */
-          >
-            <div className="navbar-name">
-              <Name className="navbar-name-front" scrollNav={scrollNav}>
-                NATE KOEHLER&nbsp;
-                <i className="fas fa-palette" /* text and icon for link*/></i>
-              </Name>
-              <NameMiddle scrollNav={scrollNav} className="navbar-name-middle">
-                NATE KOEHLER&nbsp;
-                <i className="fas fa-palette" /* text and icon for link*/></i>
-              </NameMiddle>
-              <NameBackdrop
-                scrollNav={scrollNav}
-                className="navbar-name-backdrop"
-              >
-                NATE KOEHLER&nbsp;
-                <i className="fas fa-palette" /* text and icon for link*/></i>
-              </NameBackdrop>
+        <AppBar color="transparent" sx={{ height: "80px" }}>
+          <Toolbar disableGutters sx={{ height: "100%", justifyContent: "space-between", marginX: "6rem" }}>
+            <Link
+              to="/"
+              className="navbar-logo"
+              onClick={closeMobileMenu} /* close mobile menu when topleft is clicked */
+            >
+              <div className="navbar-name">
+                <Name className="navbar-name-front" scrollNav={scrollNav}>
+                  NATE KOEHLER&nbsp;
+                  <i className="fas fa-palette" /* text and icon for link*/></i>
+                </Name>
+                <NameMiddle scrollNav={scrollNav} className="navbar-name-middle">
+                  NATE KOEHLER&nbsp;
+                  <i className="fas fa-palette" /* text and icon for link*/></i>
+                </NameMiddle>
+                <NameBackdrop
+                  scrollNav={scrollNav}
+                  className="navbar-name-backdrop"
+                >
+                  NATE KOEHLER&nbsp;
+                  <i className="fas fa-palette" /* text and icon for link*/></i>
+                </NameBackdrop>
+              </div>
+            </Link>
+            <div className="menu-icon" onClick={handleClick}>
+              <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item" /* first element in the navbar */>
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                HOME
-              </Link>
-            </li>
-            <li className="nav-item" /* second element in the navbar */>
-              <a
-                href={ResumePDF} // takes you to the resume pdf
-                target="_blank"
-                rel="noopener noreferrer"
-                /* changes the URL */ className="nav-links"
-              >
-                RESUME
-              </a>
-            </li>
-            <li className="nav-item" /* third element in the navbar */>
-              <Link
-                to="/artwork"
-                /* changes the URL */ className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                GALLERY
-              </Link>
-            </li>
-            <li className="nav-item" /* third element in the navbar */>
-              <Link
-                to="/about-me"
-                /* changes the URL */ className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                ABOUT
-              </Link>
-            </li>
-          </ul>
-        </section>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item" /* first element in the navbar */>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  HOME
+                </Link>
+              </li>
+              <li className="nav-item" /* second element in the navbar */>
+                <a
+                  href={ResumePDF} // takes you to the resume pdf
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  /* changes the URL */ className="nav-links"
+                >
+                  RESUME
+                </a>
+              </li>
+              <li className="nav-item" /* third element in the navbar */>
+                <Link
+                  to="/artwork"
+                  /* changes the URL */ className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  GALLERY
+                </Link>
+              </li>
+              <li className="nav-item" /* third element in the navbar */>
+                <Link
+                  to="/about-me"
+                  /* changes the URL */ className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  ABOUT
+                </Link>
+              </li>
+            </ul>
+          </Toolbar>
+        </AppBar>
       </Nav>
     </React.Fragment>
   );
