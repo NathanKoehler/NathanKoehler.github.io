@@ -55,7 +55,7 @@ function Navbar() {
       <div className="navbar-invisible-box" />
       <Nav scrollNav={scrollNav} className={click ? "navbar active" : "navbar"}>
         <AppBar color="transparent" sx={{ height: "80px" }}>
-          <Toolbar disableGutters sx={{ height: "100%", justifyContent: "space-between", marginX: "6rem" }}>
+          <Toolbar sx={{ height: "100%", justifyContent: "space-between" }}>
             <Link
               to="/"
               className="navbar-logo"

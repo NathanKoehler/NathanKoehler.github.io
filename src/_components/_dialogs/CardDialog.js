@@ -30,11 +30,12 @@ export default function CardDialog({ open, setOpen, content }) {
       TransitionProps={{ onEnter: addNavbarOffset, onExited: removeNavbarOffset }}
     >
       <AppBar color="white" sx={{ position: "relative", height: "80px" }}>
-        <Toolbar sx={{ height: "100%" }}>
-          <Typography sx={{ ml: 2, flex: 1, textShadow: "4px 4px rgb(0 173 181 / 30%)", paddingLeft: "100px" }} variant="h4" component="div">
+        <Toolbar sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <Typography sx={{ textShadow: "4px 4px rgb(0 173 181 / 30%)" }} variant="h4" component="div">
             {content ? content.title : "Specifics"}
           </Typography>
-          <IconButton
+          <IconButton 
+            sx={{ position: "absolute", right: "18px" }}
             edge="end"
             color="inherit"
             onClick={() => setOpen(false)}

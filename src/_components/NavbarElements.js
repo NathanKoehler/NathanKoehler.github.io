@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   --background: ${({ scrollNav }) =>
-    scrollNav ? "rgba(238, 238, 238, 1)" : "rgba(0, 0, 0, 0.2)"};
+    scrollNav ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 0.2)"};
 
   --mobilebackground: ${({ scrollNav }) =>
     scrollNav ? "#eeeeee" : "#111111"};
