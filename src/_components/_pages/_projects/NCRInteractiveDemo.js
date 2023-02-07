@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import "../../App.css";
-import Footer from "../Footer";
-import Profile from "../Profile";
-import pageVariants, { pageTransition } from "../Transition";
+import "../../../App.css";
+import Footer from "../../Footer";
+import pageVariants, { pageTransition } from "../../Transition";
 // need an image
 import ImgNCRInteractiveDemo from "../../../_images/AlohaCloudPOS.jpg";
 import ImgNCRDemoFrontpage from "../../../_images/NCRHOSP-Background.jpg";
@@ -27,7 +26,6 @@ export default function AboutMe() {
                 <Typography variant="h4"></Typography>
             </div>
         </div>
-      
       <Footer />
     </motion.div>
   );

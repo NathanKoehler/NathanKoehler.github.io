@@ -4,6 +4,7 @@ import Home from "./_pages/Home";
 import Services from "./_pages/Services";
 import Artwork from "./_pages/Artwork";
 import AboutMe from "./_pages/AboutMe";
+import NCRInteractiveDemo from "./_pages/_projects/NCRInteractiveDemo";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 
@@ -16,12 +17,13 @@ const handlePageChange = () => {
 
   return (
     <ParallaxProvider>
-        <AnimatePresence inital={false} exitBeforeEnter onExitComplete={handlePageChange}>
+        <AnimatePresence inital={false} onExitComplete={handlePageChange}>
                 <Routes location={location} key={location.pathname}>
                     <Route exact path={`/`} element={<Home/>} />
                     <Route exact path={`/services`} element={<Services/>} />
                     <Route exact path={`/artwork`} element={<Artwork/>} />
                     <Route exact path={`/about-me`} element={<AboutMe/>} />
+                    <Route exact path={`/ncr-interactive-demo`} element={<NCRInteractiveDemo/>} />
                 </Routes>
         </AnimatePresence>
     </ParallaxProvider>

@@ -62,7 +62,7 @@ function Cards() {
       srcAlt={NCRHOSPBackgroundImg}
       text='Lead the UX design and software of the Aloha Cloud Interactive Demo within my Summer 2022 SWE and Product Marketing role at NCR. Implimented Marketo and Salesforce API integrations and programmed the webapp in React and MUI.'
       label='Middleware + React.js'
-      path='/'
+      path='/ncr-interactive-demo'
       cardDrawerContents={new DialogContents("NCR Aloha Cloud Interactive Demo", NCRHOSPBackgroundImg, "Lead the UX design and software of the Aloha Cloud Interactive Demo within my Summer 2022 SWE and Product Marketing role at NCR. Implimented Marketo and Salesforce API integrations and programmed the webapp in React and MUI.")}
       handleCardDrawer={handleCardDrawer}
     />
