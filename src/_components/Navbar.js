@@ -34,9 +34,12 @@ function Navbar() {
 
   useEffect(() => {
     // runs on location, i.e. route, change
-    console.log(location);
-      if (window.location.pathname === "/" && !(window.scrollY >= 200)) {
-        setScrollNav(false);
+      if (window.location.pathname === "/") {
+        if (window.scrollY >= 200) {
+          setScrollNav(true);
+        } else {
+          setScrollNav(false);
+        }
       } else {
         setScrollNav(true);
       }

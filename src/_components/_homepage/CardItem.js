@@ -52,10 +52,10 @@ function CardItem(props) {
               onMouseEnter={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
               onClick={() => { // for rare cards that take you to a new page entirely
-                props.handleCardDrawer(true, props.cardDrawerContents);
-                // if (props.aPath != null) {
-                //   window.open(props.aPath, '_blank')
-                // }
+                // props.handleCardDrawer(true, props.cardDrawerContents);
+                if (props.aPath != null) {
+                  window.open(props.aPath, '_blank')
+                }
               }}
               to={props.path}
             >
