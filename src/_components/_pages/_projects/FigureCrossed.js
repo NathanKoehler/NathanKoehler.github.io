@@ -22,25 +22,25 @@ export default function AboutMe() {
       transition={pageTransition}
     >
       <div className="banner">
-        <Parallax className="banner-img" translateY={[30, -30]} rotateX={[-90, 90]} rotateZ={[-40, 40]} opacity={[6, -0.2]} >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth="md">
+        <Parallax className="banner-img" translateY={[50, -50]} rotateX={[-90, 90]} rotateZ={[-40, 40]} opacity={[6, -0.2]} >
+          <Container disableGutters maxWidth="md">
             <img src={ImgNCRDemoFrontpage} alt="NCR Interactive Demo Frontpage" />
           </Container>
         </Parallax>
         <Parallax
           className="banner-title-container top"
           shouldDisableScalingTranslations={true}
-          translateY={[2, -2]}
+          translateY={-4}
         >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
+          <Container maxWidth="lg">
             <h1 className="banner-title MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
           </Container>
         </Parallax>
         <Parallax
           className="banner-title-container bottom"
-          translateY={[2, -2]}
+          translateY={-4}
         >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
+          <Container maxWidth="lg">
             <h1 className="banner-title-bg MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
           </Container>
         </Parallax>
@@ -51,7 +51,7 @@ export default function AboutMe() {
         <ScrollButton
           goTo="content"
           vDuration={800}
-          vOffset={-200}
+          vOffset={-230}
           className="btns"
           buttonStyle="btn--invisible"
           buttonSize="btn--large--invisible"
@@ -65,8 +65,8 @@ export default function AboutMe() {
         </ScrollButton>
         </Parallax>
       </div>
-      <Parallax className="banner-dots" opacity={[4, -1]} translateY={70}>
-        <ul className="dots-inside width-spanned-list">
+      <Parallax className="banner-dots" translateY={[0, -600]} opacity={[2, -1]}>
+        <ul className="width-spanned-list">
           <li style={{ backgroundColor: "#a931b6" }}>UI/UX</li>
           <li style={{ backgroundColor: "#a931b6" }}>Project Management</li>
           <li style={{ backgroundColor: "#a931b6" }}>Frontend</li>
