@@ -22,7 +22,17 @@ export default function AboutMe() {
       transition={pageTransition}
     >
       <div className="banner">
-        <Parallax className="banner-img" translateY={[30, -30]} rotateX={[-90, 90]} rotateZ={[-40, 40]} opacity={[6, -0.2]} >
+        <Parallax 
+          className="banner-img" 
+          translateX={[0, 35, 'easeInCubic']} 
+          translateY={[0, 130]} 
+          rotateX={[0, 80, 'easeInCubic']} 
+          scale={[0.95, 1, 'easeOutCubic']}
+          rotateZ={[0, 35, 'easeInQuad']} 
+          opacity={[2, -0.5, 'easeInQuad']} 
+          shouldAlwaysCompleteAnimation={true}
+          shouldDisableScalingTranslations={true}
+        >
           <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth="md">
             <img src={ImgNCRDemoFrontpage} alt="NCR Interactive Demo Frontpage" />
           </Container>
@@ -30,7 +40,7 @@ export default function AboutMe() {
         <Parallax
           className="banner-title-container top"
           shouldDisableScalingTranslations={true}
-          translateY={[2, -2]}
+          translateY={-1}
         >
           <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
             <h1 className="banner-title MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
@@ -38,21 +48,30 @@ export default function AboutMe() {
         </Parallax>
         <Parallax
           className="banner-title-container bottom"
-          translateY={[2, -2]}
+          shouldDisableScalingTranslations={true}
+          translateY={-1}
         >
           <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
             <h1 className="banner-title-bg MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
           </Container>
         </Parallax>
-        <Parallax
+     </div>
+      <Parallax className="banner-dots" opacity={[4, -1]} translateY={-25}>
+        <ul className="dots-inside width-spanned-list">
+          <li style={{ backgroundColor: "#a931b6" }}>UI/UX</li>
+          <li style={{ backgroundColor: "#a931b6" }}>Project Management</li>
+          <li style={{ backgroundColor: "#a931b6" }}>Frontend</li>
+        </ul>
+      </Parallax>
+      <Parallax
           className="banner-title-btn"
-          translateY={-2}
+          translateY={-25}
         >
         <ScrollButton
           goTo="content"
           vDuration={800}
-          vOffset={-200}
-          className="btns"
+          vOffset={-240}
+          className="btns btn-inside"
           buttonStyle="btn--invisible"
           buttonSize="btn--large--invisible"
         >
@@ -64,14 +83,6 @@ export default function AboutMe() {
           </div>
         </ScrollButton>
         </Parallax>
-      </div>
-      <Parallax className="banner-dots" opacity={[4, -1]} translateY={70}>
-        <ul className="dots-inside width-spanned-list">
-          <li style={{ backgroundColor: "#a931b6" }}>UI/UX</li>
-          <li style={{ backgroundColor: "#a931b6" }}>Project Management</li>
-          <li style={{ backgroundColor: "#a931b6" }}>Frontend</li>
-        </ul>
-      </Parallax>
       <div className="content">
         <Container maxWidth="lg" id="content" >
           <div className="two-column">

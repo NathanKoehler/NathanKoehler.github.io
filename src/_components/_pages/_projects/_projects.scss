@@ -75,7 +75,7 @@
 }
 
 .banner-img {
-  position: fixed;
+  position: absolute;
   img {
     width: 100%;
     height: auto;
@@ -104,17 +104,19 @@
 }
 
 .banner-title-btn {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -44vh;
+  width: 100%;
   z-index: 4;
+  display: flex;
+  justify-content: center;
 }
 
 // text to go over the banner image of the page
 .banner-title {
   font-size: 7em;
-  letter-spacing: 6px;
   font-weight: 100;
-  position: fixed;
+  position: absolute;
   color: #000000;
   text-align: center;
   font-family: 'KG OUTLINE', 'Courier New';
@@ -123,18 +125,16 @@
 
 .banner-title-bg {
   font-size: 7em;
-  letter-spacing: 6px;
   font-weight: normal;
-  position: fixed;
+  position: absolute;
   color: #000000;
   text-align: center;
   font-family: 'KG SOLID', 'Courier New';
 }
 
 .banner-dots {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 20%;
   z-index: 3;
   height: 100%;
   bottom: 0;
