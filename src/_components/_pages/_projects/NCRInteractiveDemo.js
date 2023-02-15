@@ -9,10 +9,8 @@ import ImgOneNCRInteractiveDemo from "../../../_images/HOSPDemoOne.png";
 import ImgTwoNCRInteractiveDemo from "../../../_images/HOSPDemoTwo.png";
 import ImgThreeNCRInteractiveDemo from "../../../_images/HOSPDemoThree.png";
 import ImgNCRFrontpage from "../../../_images/NCRHOSP-Background.jpg";
-import { Divider, Grid, div } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
-import { Parallax } from "react-scroll-parallax";
-import { ScrollButton } from "../../Scroll";
 import ProjectBanner from "./ProjectBanner";
 import { Link } from "react-router-dom";
 

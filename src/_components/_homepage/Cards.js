@@ -30,9 +30,6 @@ import RealityMediaBackgroundImg from '../../_images/RealityMedia-Background.png
 
 import CardDialog from "../_dialogs/CardDialog";
 
-import DialogContents from "./DialogContents";
-
-
 function Cards() {
   const [cardDrawerOpen, setCardDrawerOpen] = useState(false);
   const [cardDrawerContent, setCardDrawerContent] = useState(null);

@@ -1,10 +1,8 @@
 import React from "react";
-import { AnimatePresence } from "framer-motion";
 import Navbar from "./_components/Navbar";
 import "./App.css";
 import './stylesheet.css';
-import { useLocation, BrowserRouter as Router } from "react-router-dom";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import AnimatedRoutes from "./_components/AnimatedRoutes";

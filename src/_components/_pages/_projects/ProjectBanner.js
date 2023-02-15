@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Container } from "@mui/system";
 import { Parallax } from "react-scroll-parallax";
 import { ScrollButton } from "../../Scroll";
