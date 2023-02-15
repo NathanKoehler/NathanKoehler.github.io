@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./_pages/Home";
 import Services from "./_pages/Services";
@@ -9,23 +9,65 @@ import FingersCrossed from './_pages/_projects/FigureCrossed';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 
+const projects = [
+  {
+    name: "NCR Interactive Demo",
+    path: "/ncr-interactive-demo",
+    function: <NCRInteractiveDemo />,
+  },
+  {
+    name: "Fingers Crossed",
+    path: "/fingers-crossed",
+    function: <FingersCrossed />,
+  },
+]
+
 function AnimatedRoutes() {
 const location = useLocation();
+const prevLoc = React.useRef(location);
+const homeScrollY = React.useRef(0);
+const preventScroll = React.useRef(false);
 
-const handlePageChange = () => {
-  window.scrollTo(0, 0);
+
+
+useLayoutEffect(() => {
+  
+  if (location) { 
+    if (prevLoc.current.pathname === "/" && location.pathname !== "/") {
+      homeScrollY.current = window.scrollY;
+    }
+    
+    if(location.pathname === "/" && projects.some((project) => project.path === prevLoc.current.pathname)) {
+      window.scrollTo(0, homeScrollY.current);
+      preventScroll.current = true;
+    }
+    prevLoc.current = location;
+  }
+}, [location])
+
+const handleExitComplete = () => {
+  if (preventScroll.current) {
+    preventScroll.current = false;
+  } else {
+    window.scrollTo(0, 0);
+  }
 }
 
   return (
     <ParallaxProvider>
-        <AnimatePresence onExitComplete={handlePageChange}>
+        <AnimatePresence initial={false} mode="wait" onExitComplete={handleExitComplete}>
                 <Routes location={location} key={location.pathname}>
                     <Route exact path={`/`} element={<Home/>} />
                     <Route exact path={`/services`} element={<Services/>} />
                     <Route exact path={`/artwork`} element={<Artwork/>} />
                     <Route exact path={`/about-me`} element={<AboutMe/>} />
-                    <Route exact path={`/ncr-interactive-demo`} element={<NCRInteractiveDemo/>} />
-                    <Route exact path={`/fingers-crossed`} element={<FingersCrossed/>} />
+                    {
+                      projects.map((project) => {
+                        return (
+                          <Route exact path={project.path} element={project.function} />
+                        )
+                      })
+                    }
                 </Routes>
         </AnimatePresence>
     </ParallaxProvider>

@@ -87,7 +87,7 @@ export default function NCRInteractiveDemo() {
               <div className="left-column">
                   <Divider />
                   <Grid container className="my-2">
-                    <Grid xs={8}>
+                    <Grid item xs={8}>
                       <div className="section-subtitle">PROBLEMS - </div>
                       <ul className="section-capture list my-1 mr-2">
                         <li>How can we create an intuitive roleplaying experience for children 8 - 12?</li>
@@ -95,7 +95,7 @@ export default function NCRInteractiveDemo() {
                         <li>How can we make people aware of "Fingers Crossed", a game designed and created by Georgia Tech students?</li>
                       </ul>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={4}>
                       <div>
                         <div className="section-subtitle">ROLE - </div>
                         <ul className="list my-1">
@@ -141,7 +141,7 @@ export default function NCRInteractiveDemo() {
                   </div>
                   <Divider />
                   <Grid container className="my-2">
-                    <Grid xs={8}>
+                    <Grid item xs={8}>
                       <div className="section-subtitle my-1">PROJECT GOALS -</div>
                       <ul className="list my-1">
                         <li>Generate interest in social deduction tabletop games</li>
@@ -151,10 +151,10 @@ export default function NCRInteractiveDemo() {
                         <li>Launch a successful kickstarter project for Finger's Crossed (Team Goal)</li>
                       </ul>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={4}>
                       <div className="section-subtitle my-1">TOOLS -</div>
                       <Grid container>
-                        <Grid xs={6}>
+                        <Grid item xs={6}>
                           <ul className="list">
                             <li>Figma</li>
                             <li>Paper Modeling</li>
@@ -165,7 +165,7 @@ export default function NCRInteractiveDemo() {
                             <li>Blender</li>
                           </ul>
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid item xs={6}>
                         <ul className="list">
                           <li>[Design]</li>
                           <li><br/></li>

@@ -36,7 +36,7 @@ export default function NCRInteractiveDemo() {
               <div className="left-column">
                   <Divider />
                   <Grid container className="my-2">
-                    <Grid xs={8}>
+                    <Grid item xs={8}>
                       <div className="section-subtitle">BUSINESS PROBLEMS - </div>
                       <ul className="section-capture list my-1 mr-2">
                         <li>How do we decrease the distance between our customers and our hardware?</li>
@@ -44,7 +44,7 @@ export default function NCRInteractiveDemo() {
                         <li>How can we populate the website with quality, relevant content?</li>
                       </ul>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={4}>
                       <div>
                         <div className="section-subtitle">ROLE - </div>
                         <ul className="list my-1">
@@ -79,7 +79,7 @@ export default function NCRInteractiveDemo() {
                   </div>
                   <Divider />
                   <Grid container className="my-2">
-                    <Grid xs={8}>
+                    <Grid item xs={8}>
                       <div className="section-subtitle my-1">INTERACTIVE DEMO GOALS -</div>
                       <ul className="list my-1">
                         <li>Increase Site Engagement</li>
@@ -88,10 +88,10 @@ export default function NCRInteractiveDemo() {
                         <li>Obtain Higher Quality Leads (HOSP Goal)</li>
                       </ul>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={4}>
                       <div className="section-subtitle my-1">TOOLS -</div>
                       <Grid container>
-                        <Grid xs={6}>
+                        <Grid item xs={6}>
                           <ul className="list">
                             <li>Figma (Design)</li>
                             <li>React (Platform)</li>
@@ -99,7 +99,7 @@ export default function NCRInteractiveDemo() {
                             <li>Material UI</li>
                           </ul>
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid item xs={6}>
                         <ul className="list">
                           <li>JavaScript</li>
                           <li>HTML</li>
@@ -136,7 +136,7 @@ export default function NCRInteractiveDemo() {
                   </div>
                   <Divider />
                   <Grid container className="my-2">
-                    <Grid xs={8}>
+                    <Grid item xs={8}>
                     <div className="section-subtitle my-1">IMAGES -</div>
                       <ul className="list horizontal my-1">
                         <li>
@@ -150,7 +150,7 @@ export default function NCRInteractiveDemo() {
                         </li>
                       </ul>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={4}>
                       <div className="section-subtitle my-1">LINKS -</div>
                       <ul className="list my-1">
                         <Link to="/aloha-cloud-interactive-demo/">July 2022 Prototype</Link>

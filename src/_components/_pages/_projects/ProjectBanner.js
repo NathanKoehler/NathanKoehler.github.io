@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Container } from "@mui/system";
 import { Parallax } from "react-scroll-parallax";
 import { ScrollButton } from "../../Scroll";
 
 export default function ProjectBanner({ image, title, background, titleColor, roles }) {
+  const [scroll, setScroll] = React.useState(0);
   return <div className="banner" style={{ backgroundColor: `${background}` }}>
     <Parallax
       className="banner-img"
-      translateX={[0, 35, 'easeInCubic']}
       translateY={[0, 100]}
-      rotateX={[0, 70, 'easeIn']}
-      rotateZ={[0, 25, 'easeInQuad']}
-      opacity={[2, -0.5, 'easeIn']}
+      opacity={[2, -0.1, 'easeInQuad']}
       shouldAlwaysCompleteAnimation={true}
       shouldDisableScalingTranslations={true}
-      onChange={(element) => element.progress}
+      onChange={(element) => setScroll(element.progress)}
+      style={{ clipPath: `polygon(${0 + scroll * 30}% ${10 - scroll * 15}%, ${0 + scroll * 15}% 95%, ${100 - scroll * 30}% ${95 + scroll * 15}%, ${100 - scroll * 15}% 10%)` }}
     >
       <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth="md">
         <img src={image} alt="NCR Interactive Demo Frontpage" />
@@ -22,8 +21,9 @@ export default function ProjectBanner({ image, title, background, titleColor, ro
     </Parallax>
     <Parallax
       className="banner-title-container top"
+      shouldAlwaysCompleteAnimation={true}
       shouldDisableScalingTranslations={true}
-      translateY={2}
+      translateY={4}
     >
       <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
         <h1 className="banner-title MuiContainer-maxWidthLg" style={{ color: titleColor }}>{title}</h1>
@@ -31,8 +31,9 @@ export default function ProjectBanner({ image, title, background, titleColor, ro
     </Parallax>
     <Parallax
       className="banner-title-container bottom"
+      shouldAlwaysCompleteAnimation={true}
       shouldDisableScalingTranslations={true}
-      translateY={2}
+      translateY={4}
     >
       <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
         <h1 className="banner-title-bg MuiContainer-maxWidthLg" style={{ color: titleColor }}>{title}</h1>
