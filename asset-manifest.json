@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06d54833.css",
-    "main.js": "/static/js/main.ad5e32a3.js",
+    "main.css": "/static/css/main.923b9455.css",
+    "main.js": "/static/js/main.a6432721.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
     "static/media/crown.png": "/static/media/crown.d36079741ef8a4cd89a4.png",
@@ -38,12 +38,16 @@
     "static/media/RollerRush.png": "/static/media/RollerRush.99219456a3c0c9333df4.png",
     "static/media/RollerRush-Background.png": "/static/media/RollerRush-Background.2c02f2dbc299a272177d.png",
     "static/media/mountain.png": "/static/media/mountain.100814287de65ac4366a.png",
+    "static/media/FingersCrossedTwo.png": "/static/media/FingersCrossedTwo.a8c2040c5ebe002ef203.png",
     "static/media/FingersCrossed-Background.png": "/static/media/FingersCrossed-Background.fd4992e0cc297040a583.png",
     "static/media/TheAscentTitleScreen.png": "/static/media/TheAscentTitleScreen.9c76b01edcd001f48169.png",
     "static/media/AHS-Robotics-Background.png": "/static/media/AHS-Robotics-Background.5ffcd0b7b416a8f442ed.png",
     "static/media/bubblebakers.png": "/static/media/bubblebakers.e6dd49fcac3d65f27a48.png",
     "static/media/UGAHacks6-Background.png": "/static/media/UGAHacks6-Background.c25c4cbe21b90d786a13.png",
     "static/media/Headshot.png": "/static/media/Headshot.b14ebf46296cbadc804c.png",
+    "static/media/FingersCrossedOne.jpg": "/static/media/FingersCrossedOne.e69e76e0d4011d910937.jpg",
+    "static/media/FingersCrossedThree.jpg": "/static/media/FingersCrossedThree.9e9d832b8de124a771ab.jpg",
+    "static/media/HOSPDemoThree.png": "/static/media/HOSPDemoThree.553977dad6ead31ff698.png",
     "static/media/AHS-Robotics.png": "/static/media/AHS-Robotics.2b1ecb9a1972219f58f8.png",
     "static/media/Todo-Background.png": "/static/media/Todo-Background.c1af97a7a94fbbfa9221.png",
     "static/media/Todo.png": "/static/media/Todo.198be26ac5338703cc6b.png",
@@ -53,11 +57,14 @@
     "static/media/UGAHacks6.png": "/static/media/UGAHacks6.ca679fe91faa21f50567.png",
     "static/media/NCRRETAIL-Background.png": "/static/media/NCRRETAIL-Background.b3d1eccabd4c76b1d7f3.png",
     "static/media/bnewrohcaw.jpg": "/static/media/bnewrohcaw.24d2f8c5356203f58f7d.jpg",
+    "static/media/FingersCrossedFour.png": "/static/media/FingersCrossedFour.b49e1cf9c3a437687c0b.png",
     "static/media/bnewrohcawback.jpg": "/static/media/bnewrohcawback.4b210d9bfe0a883bf731.jpg",
     "static/media/bsorcerer.jpg": "/static/media/bsorcerer.e0d89021bcb151ecac4e.jpg",
+    "static/media/HOSPDemoTwo.png": "/static/media/HOSPDemoTwo.d89b078f96c2e05ceb9b.png",
     "static/media/bfish.jpg": "/static/media/bfish.1a8b483efc50368e536d.jpg",
     "static/media/NCRRETAIL.jpg": "/static/media/NCRRETAIL.61a1948dd2087b5a5c64.jpg",
     "static/media/bwater.jpg": "/static/media/bwater.6a79274a63a295026644.jpg",
+    "static/media/HOSPDemoOne.png": "/static/media/HOSPDemoOne.03611e16edebc4eee302.png",
     "static/media/bwall.jpg": "/static/media/bwall.95edae5a05373d71109c.jpg",
     "static/media/bpillar.jpg": "/static/media/bpillar.e551b6827e40c694c42b.jpg",
     "static/media/bfire.jpg": "/static/media/bfire.930e6dfa3741291755cf.jpg",
@@ -75,11 +82,11 @@
     "static/media/bice.jpg": "/static/media/bice.9308f64cd6a7a208e55c.jpg",
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
-    "main.06d54833.css.map": "/static/css/main.06d54833.css.map",
-    "main.ad5e32a3.js.map": "/static/js/main.ad5e32a3.js.map"
+    "main.923b9455.css.map": "/static/css/main.923b9455.css.map",
+    "main.a6432721.js.map": "/static/js/main.a6432721.js.map"
   },
   "entrypoints": [
-    "static/css/main.06d54833.css",
-    "static/js/main.ad5e32a3.js"
+    "static/css/main.923b9455.css",
+    "static/js/main.a6432721.js"
   ]
 }
