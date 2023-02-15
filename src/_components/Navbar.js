@@ -47,7 +47,7 @@ function Navbar() {
       } else {
         setScrollNav(true);
 
-        if (!backButton && !['about-me', 'artwork', 'services'].includes(location.pathname)) {
+        if (!backButton && !['/about-me', '/artwork', '/services'].includes(location.pathname)) {
           setBackButton(true);
         }
       }
