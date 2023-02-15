@@ -5,14 +5,18 @@ import "./_projects.scss";
 import Footer from "../../Footer";
 import pageVariants, { pageTransition } from "../../Transition";
 // need an image
-import ImgNCRInteractiveDemo from "../../../_images/AlohaCloudPOS.jpg";
-import ImgNCRDemoFrontpage from "../../../_images/NCRHOSP-Background.jpg";
+import ImgOneNCRInteractiveDemo from "../../../_images/HOSPDemoOne.png";
+import ImgTwoNCRInteractiveDemo from "../../../_images/HOSPDemoTwo.png";
+import ImgThreeNCRInteractiveDemo from "../../../_images/HOSPDemoThree.png";
+import ImgNCRFrontpage from "../../../_images/NCRHOSP-Background.jpg";
 import { Divider, Grid, div } from "@mui/material";
 import { Container } from "@mui/system";
 import { Parallax } from "react-scroll-parallax";
 import { ScrollButton } from "../../Scroll";
+import ProjectBanner from "./ProjectBanner";
+import { Link } from "react-router-dom";
 
-export default function AboutMe() {
+export default function NCRInteractiveDemo() {
   return (
     <motion.div
       initial="initial"
@@ -21,68 +25,11 @@ export default function AboutMe() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <div className="banner">
-        <Parallax 
-          className="banner-img" 
-          translateX={[0, 35, 'easeInCubic']} 
-          translateY={[0, 130]} 
-          rotateX={[0, 80, 'easeInCubic']} 
-          scale={[0.95, 1, 'easeOutCubic']}
-          rotateZ={[0, 35, 'easeInQuad']} 
-          opacity={[2, -0.5, 'easeInQuad']} 
-          shouldAlwaysCompleteAnimation={true}
-          shouldDisableScalingTranslations={true}
-        >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth="md">
-            <img src={ImgNCRDemoFrontpage} alt="NCR Interactive Demo Frontpage" />
-          </Container>
-        </Parallax>
-        <Parallax
-          className="banner-title-container top"
-          shouldDisableScalingTranslations={true}
-          translateY={-1}
-        >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
-            <h1 className="banner-title MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
-          </Container>
-        </Parallax>
-        <Parallax
-          className="banner-title-container bottom"
-          shouldDisableScalingTranslations={true}
-          translateY={-1}
-        >
-          <Container sx={{ display: 'flex', justifyContent: 'center' }} maxWidth="lg">
-            <h1 className="banner-title-bg MuiContainer-maxWidthLg">NCR INTERACTIVE DEMO</h1>
-          </Container>
-        </Parallax>
-     </div>
-      <Parallax className="banner-dots" opacity={[4, -1]} translateY={-25}>
-        <ul className="dots-inside width-spanned-list">
-          <li style={{ backgroundColor: "#a931b6" }}>UI/UX</li>
-          <li style={{ backgroundColor: "#a931b6" }}>Project Management</li>
-          <li style={{ backgroundColor: "#a931b6" }}>Frontend</li>
-        </ul>
-      </Parallax>
-      <Parallax
-          className="banner-title-btn"
-          translateY={-25}
-        >
-        <ScrollButton
-          goTo="content"
-          vDuration={800}
-          vOffset={-240}
-          className="btns btn-inside"
-          buttonStyle="btn--invisible"
-          buttonSize="btn--large--invisible"
-        >
-          <div
-            className="banner-icon about-footer-arrow"
-            aria-label="Scroll To Bottom"
-          >
-            <i className="fas fa-chevron-down"></i>
-          </div>
-        </ScrollButton>
-        </Parallax>
+      <ProjectBanner image={ImgNCRFrontpage} title="ALOHA INTERACTIVE DEMO" background="#51b948" roles={[
+        { role: "Project Lead", color: "#a931b6" },
+        { role: "UX Designer", color: "#a931b6" },
+        { role: "Programmer", color: "#a931b6" },
+      ]} />
       <div className="content">
         <Container maxWidth="lg" id="content" >
           <div className="two-column">
@@ -120,13 +67,13 @@ export default function AboutMe() {
                   <div className="my-2">
                     <div className="section-subtitle my-1">TIMELINE - </div>
                     <p className="my-1 text">
-                      The Hospitality team asked for improvements on their product, the Aloha Cloud Point of Sale, pages from
-                      a UI/UX perspective. I started with a site audit that cleaned high-traffic pages and spoke with web team
-                      members about site retention. I correlated the decline in-site retention to the site pages lacking the
+                      The Hospitality team asked for improvements on the Aloha Cloud Point of Sale product pages from
+                      a UI/UX perspective in early May. I started with a site audit that cleaned high-traffic pages and spoke with web team
+                      members about site retention from May to June, and correlated the decline in-site retention to the site pages lacking the
                       relevance customers asked for.
                       <br /><br />
-                      Come June, I performed a competitor analysis of competitor web user experiences, including a
-                      breakdown of what our competitors lacked on their pages. I organized conferences with the head of
+                      Come Mid-June, I performed a competitor analysis of competitor web user experiences, including a
+                      breakdown of what our competitors lacked on their pages. In July I organized conferences with the head of
                       hospitality marketing and product managers to pitch the idea of a Web Demo for the Aloha Cloud POS
                     </p>
                   </div>
@@ -176,6 +123,10 @@ export default function AboutMe() {
                       feature videos, integrated forms on the left sidebar, descriptions of hardware features, and translations
                       of a swipeable interface into mouse and keyboard.
                       <br /><br />
+                      For APIs, I worked with the sales team and marketing team to host marketo and salesforce APIs on a
+                      Node.js server. I also worked with the Web Team to optimize the demo for the best user experience. 
+                      I tested the APIs using Postman and helped finialize the demo with the Aloha POS Product Team.
+                      <br /><br />
                       I pitched the project several times with other teams to pose the interactive demo as a cross-BSU project
                       with applications in marketing, sales, and product teams. I spoke with senior developers to establish a
                       quality assurance pipeline during August and wrote out explanations for my code and design documents
@@ -183,6 +134,29 @@ export default function AboutMe() {
                       also spent my last day in conferences with web devs and product managers to clarify any questions.
                     </p>
                   </div>
+                  <Divider />
+                  <Grid container className="my-2">
+                    <Grid xs={8}>
+                    <div className="section-subtitle my-1">IMAGES -</div>
+                      <ul className="list horizontal my-1">
+                        <li>
+                          <img className="list-img" src={ImgOneNCRInteractiveDemo} alt="NCR Aloha POS" />
+                        </li>
+                        <li>
+                          <img className="list-img" src={ImgTwoNCRInteractiveDemo} alt="NCR Aloha POS" />
+                        </li>
+                        <li>
+                          <img className="list-img" src={ImgThreeNCRInteractiveDemo} alt="NCR Aloha POS" />
+                        </li>
+                      </ul>
+                    </Grid>
+                    <Grid xs={4}>
+                      <div className="section-subtitle my-1">LINKS -</div>
+                      <ul className="list my-1">
+                        <Link to="/aloha-cloud-interactive-demo/">July 2022 Prototype</Link>
+                      </ul>
+                    </Grid>
+                  </Grid>
               </div>
               <div className="right-column">
               </div>
@@ -193,3 +167,4 @@ export default function AboutMe() {
     </motion.div>
   );
 }
+

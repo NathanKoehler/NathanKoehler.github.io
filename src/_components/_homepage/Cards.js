@@ -43,30 +43,42 @@ function Cards() {
   }
 
 
-  const RollerCard = (
-    <CardItem
-      src={RollerRushImg}
-      srcAlt={RollerRushBackgroundImg}
-      text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program. Click to try it out:"
-      label='JavaScript'
-      path='/'
-      cardDrawerContents={new DialogContents("Roller Rush", RollerRushBackgroundImg, "Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program. Click to try it out:")}
-      handleCardDrawer={handleCardDrawer}
-      aPath={new URL('https://bluebokehs.github.io/rollerrush/')} // takes to another site
-    />
-  );
-  
   const NCRHOSPCard = (
     <CardItem
       src={NCRHOSPImg}
       srcAlt={NCRHOSPBackgroundImg}
-      text='Lead the UX design and software of the Aloha Cloud Interactive Demo within my Summer 2022 SWE and Product Marketing role at NCR. Implimented Marketo and Salesforce API integrations and programmed the webapp in React and MUI.'
+      text='Aloha Cloud POS Software Demo for NCR in May - August 2022.'
+      redText='Case Study'
       label='Middleware + React.js'
       path='/ncr-interactive-demo'
-      cardDrawerContents={new DialogContents("NCR Aloha Cloud Interactive Demo", NCRHOSPBackgroundImg, "Lead the UX design and software of the Aloha Cloud Interactive Demo within my Summer 2022 SWE and Product Marketing role at NCR. Implimented Marketo and Salesforce API integrations and programmed the webapp in React and MUI.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
+
+  
+  const RealityMedia = (
+    <CardItem
+      src={RealityMediaImg}
+      srcAlt={RealityMediaBackgroundImg}
+      text='User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.  Click to try it out:'
+      label='User Experience'
+      path='/'
+      aPath={new URL('https://realitymedia.digital/notLoggedIn/')} // takes to another site
+    />
+  );
+  
+  const FingersCrossedCard = (
+    <CardItem
+      src={FingersCrossedImg}
+      srcAlt={FingersCrossedBackgroundImg}
+      text='Student-led game startup from Fall 2021 to Spring 2022.'
+      redText='Case Study'
+      label='UI / UX + 3D Illustration'
+      path='/fingers-crossed'
+      handleCardDrawer={handleCardDrawer}
+    />
+  );
+  
   
   const PostCardCard = (
     <CardItem
@@ -75,7 +87,6 @@ function Cards() {
       text='Graphics Design work for a series of digitally illustrated postcards and stamps. The series took an honorable mention within the Summer 2021 UGA Digital Illustration review.'
       label='Graphics Design'
       path='/'
-      cardDrawerContents={new DialogContents("Postcard Series", PostCardBackgroundImg, "Graphics Design work for a series of digitally illustrated postcards and stamps. The series took an honorable mention within the Summer 2021 UGA Digital Illustration review.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -87,11 +98,22 @@ function Cards() {
       text='Drafting and illustration work two sets of mock currency during the spring and summer of 2021, later posted for a UGA illustration and design competition within the Lamar Dodd School of Art the same year.'
       label='Graphics Design'
       path='/'
-      cardDrawerContents={new DialogContents("Currency Mockups", CurrencyMockupBackgroundImg, "Drafting and illustration work two sets of mock currency during the spring and summer of 2021, later posted for a UGA illustration and design competition within the Lamar Dodd School of Art the same year.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
   
+  const RollerCard = (
+    <CardItem
+      src={RollerRushImg}
+      srcAlt={RollerRushBackgroundImg}
+      text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program. Click to try it out:"
+      label='JavaScript'
+      path='/'
+      handleCardDrawer={handleCardDrawer}
+      aPath={new URL('https://bluebokehs.github.io/rollerrush/')} // takes to another site
+    />
+  );
+
   const TodoCard = (
     <CardItem
       src={TodoImg}
@@ -99,23 +121,12 @@ function Cards() {
       text='Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:'
       label='Web Dev'
       path='/'
-      cardDrawerContents={new DialogContents("Todo App", TodoBackgroundImg, "Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:")}
       handleCardDrawer={handleCardDrawer}
       aPath='/fall2021-dev-takehome/'
     />
   );
   
-  const FingersCrossedCard = (
-    <CardItem
-      src={FingersCrossedImg}
-      srcAlt={FingersCrossedBackgroundImg}
-      text='UX and 3D-Modeling for a 8+ tabletop board game Fingers Crossed. I led team visual design and created 3D virtual and physical mockups for the tabletop game in Maya, and worked to publish the game in 2021.'
-      label='UI / UX + 3D Illustration'
-      path='/'
-      cardDrawerContents={new DialogContents("Fingers Crossed", FingersCrossedBackgroundImg, "UX and 3D-Modeling for a 8+ tabletop board game Fingers Crossed. I led team visual design and created 3D virtual and physical mockups for the tabletop game in Maya, and worked to publish the game in 2021.")}
-      handleCardDrawer={handleCardDrawer}
-    />
-  );
+  
   
   const AframeCard = (
     <CardItem
@@ -125,7 +136,6 @@ function Cards() {
       label='AR / VR'
       path='/'
       aPath='/Aframe-3D-Replica/'
-      cardDrawerContents={new DialogContents("Aframe VR Environment", AframeBackgroundImg, "Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration. Click to try it out:")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -137,7 +147,6 @@ function Cards() {
       text='Web design and illustration work to redesign the website and digital marketing for the Alpharetta Robotics Team. My role as head of marketing was to redesign the online webpage and the social media platforms.'
       label='Web Dev'
       path='/'
-      cardDrawerContents={new DialogContents("AHS Robotics", AHSRoboticsBackgroundImg, "Web design and illustration work to redesign the website and digital marketing for the Alpharetta Robotics Team. My role as head of marketing was to redesign the online webpage and the social media platforms.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -149,7 +158,6 @@ function Cards() {
       text='Illustration and C# coding for the Ascent, a 2D platformer built in built in Unity Game Engine. I led the project to win 1st at the Georgia FBLA 2020 Conference for Game Development and Simulation.'
       label='Game Design'
       path='/'
-      cardDrawerContents={new DialogContents("The Ascent", TheAscentBackgroundImg, "Illustration and C# coding for the Ascent, a 2D platformer built in built in Unity Game Engine. I led the project to win 1st at the Georgia FBLA 2020 Conference for Game Development and Simulation.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -161,7 +169,6 @@ function Cards() {
       text='Graphics Design and C# coding work for the coop indie game Swap. I led the project with my work in art and programming and was featured on the 2021 UGAHacks6 Hackathion social media page.'
       label='Game Design'
       path='/'
-      cardDrawerContents={new DialogContents("Swap", UGAHacksBackgroundImg, "Graphics Design and C# coding work for the coop indie game Swap. I led the project with my work in art and programming and was featured on the 2021 UGAHacks6 Hackathion social media page.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -173,7 +180,6 @@ function Cards() {
       text='React.js and Material UI programming and Figma UI design for the Retail Catalog UI within my summer 2022 SWE role within NCR Corporation. Also conducted API testing with Postman.'
       label='UI / UX + React.js'
       path='/'
-      cardDrawerContents={new DialogContents("NCR Retail Catalog", NCRRetailBackgroundImg, "React.js and Material UI programming and Figma UI design for the Retail Catalog UI within my summer 2022 SWE role within NCR Corporation. Also conducted API testing with Postman.")}
       handleCardDrawer={handleCardDrawer}
     />
   );
@@ -185,22 +191,8 @@ function Cards() {
       text='Led 2D Illustration and game design within the C# and Unity-based indie game Slider, currently published and available as a demo on Steam. Click visit our Steam Store page:'
       label='Game Development'
       path='/'
-      cardDrawerContents={new DialogContents("Slider", SliderBackgroundImg, "Led 2D Illustration and game design within the C# and Unity-based indie game Slider, currently published and available as a demo on Steam. Click visit our Steam Store page:")}
       handleCardDrawer={handleCardDrawer}
       aPath={new URL('https://store.steampowered.com/app/1916890/Slider/')} // takes to another site
-    />
-  );
-  
-  const RealityMedia = (
-    <CardItem
-      src={RealityMediaImg}
-      srcAlt={RealityMediaBackgroundImg}
-      text='User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.  Click to try it out:'
-      label='User Experience'
-      path='/'
-      cardDrawerContents={new DialogContents("Reality Media", RealityMediaBackgroundImg, "User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.  Click to try it out:")}
-      handleCardDrawer={handleCardDrawer}
-      aPath={new URL('https://realitymedia.digital/notLoggedIn/')} // takes to another site
     />
   );
 
@@ -216,37 +208,42 @@ function Cards() {
           <div className='cards__wrapper'>
             <ul id='cards' className='cards__items'>
               
-              {NCRRETAILCard}
+              
+              {NCRHOSPCard}
               {FingersCrossedCard}
               
-              {SliderCard}
+              
             </ul>
             <ul
               className='cards__items' /* makes the 3 item row in the second column */
             >
-              {CurrencyCard}
-              {NCRHOSPCard}
               
+              {SliderCard}
+              {RealityMedia}
               
             </ul>
+            <h1 className='card__title'>Projects</h1>
             <ul
               className='cards__items' /* makes the 2 item container in the 3rd row */
             >
-              {RollerCard}
               {AframeCard}
               {TodoCard}
+              {CurrencyCard}
             </ul>
             <ul
               className='cards__items' /* makes the 2 item container in the 4th row */
             >
-              
+              {NCRRETAILCard}
               {PostCardCard}
               {TheAscentCard}
             </ul>
             <ul id='cards' className='cards__items'>
               {AHSRoboticsCard}
               {UGAHacksCard}
-              {RealityMedia}
+              {RollerCard}
+              
+              
+              
             </ul>
           </div>
         </div>

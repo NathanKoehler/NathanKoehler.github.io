@@ -45,7 +45,7 @@ function CardItem(props) {
 
   return (
     <>
-        <Card show="true">
+        <Card show="true" style={{ cursor: "default" }}>
           <li className="cards__item">
             <Link /* when hovering over a card, display more info and a new image/video */
               className="cards__item__link"
@@ -71,6 +71,7 @@ function CardItem(props) {
                     src={props.src}
                     alt="Work"
                     className="cards__item__img"
+                    style={{ cursor: props.path !== '/' || props.aPath != null ? "pointer" : "default" }}
                   />
                   <img
                     src={props.srcAlt}
@@ -85,6 +86,14 @@ function CardItem(props) {
                       className="cards__item__text"
                     >
                       {props.text}
+                      {
+                        props.redText &&
+                          <>
+                              <br />
+                              <br />
+                              <span style={{ color: "#87f3ff" }}>{props.redText}</span>
+                          </>
+                      }
                     </h5>
                   </div>
                 )}
