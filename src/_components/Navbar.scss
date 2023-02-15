@@ -88,11 +88,22 @@
   text-align: center;
   width: 70vw;
   justify-content: end;
+  overflow-y: hidden;
 }
 
 .nav-item {
   height: 80px;
   margin-left: 10px;
+  &.switch {
+    transition: transform 1s ease;
+    transform: translateY(0);
+    &.active {
+      transform: translateY(-100%);
+    }
+    :nth-child(2) {
+      color: rgba(0, 171, 180, 1);
+    }
+  }
 }
 
 .nav-links {
@@ -103,6 +114,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 0px solid #fff;
+  justify-content: center;
 }
 
 .nav-links:hover {

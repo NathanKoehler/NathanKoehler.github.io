@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Navbar.scss";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
 import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
 import { useLocation } from 'react-router-dom';
@@ -10,7 +10,7 @@ function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
   const handleClick = () => setClick(!click); // arrow function that reverses the state of click
   const [scrollNav, setScrollNav] = useState(false);
-
+  const [backButton, setBackButton] = useState(false);
 
   
   
@@ -34,15 +34,24 @@ function Navbar() {
 
   useEffect(() => {
     // runs on location, i.e. route, change
-      if (window.location.pathname === "/") {
+      if (location.pathname === "/") {
         if (window.scrollY >= 200) {
           setScrollNav(true);
         } else {
           setScrollNav(false);
         }
+
+        if (backButton) {
+          setBackButton(false);
+        }
       } else {
         setScrollNav(true);
+
+        if (!backButton && !['about-me', 'artwork', 'services'].includes(location.pathname)) {
+          setBackButton(true);
+        }
       }
+      
   }, [location])
   
 
@@ -86,9 +95,12 @@ function Navbar() {
               <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item" /* first element in the navbar */>
+              <li className={`nav-item switch ${backButton ? 'active' : ''}` } /* first element in the navbar */>
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   HOME
+                </Link>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  BACK
                 </Link>
               </li>
               <li className="nav-item" /* second element in the navbar */>
