@@ -22,4 +22,4 @@ If you have any criticisms, please feel free to contact me!
 
 ## Quote of The Week
 
-Fret the little things in life if you wish to live a perfectly small one.
+Don't make regret all you take from a missed opportunity.
