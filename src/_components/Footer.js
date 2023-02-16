@@ -91,28 +91,28 @@ function Footer() {
               onChange={(isVisible) => triggerRippleHover(isVisible)}
             >
               <div className="social-icons">
-                <Link
+                <a
                   className="social-icon-link github"
-                  to={{
-                    pathname: "https://github.com/NathanKoehler",
-                  }}
+                  href="https://github.com/NathanKoehler"
+                  rel="noopener noreferrer"
                   target="_blank" /* allows the link to open to another window */
                   aria-label="Github"
                 >
                   <i
                     className="fab fa-github" /* this puts the github icon */
                   />
-                </Link>
+                </a>
                 <div
                   className="holder"
                   onMouseOver={() => setScrollNav(true)}
                   onMouseLeave={() => setScrollNav(false)}
                 >
-                  <Link
+                  <a
                     ref={iicon}
                     className="instagram"
-                    to={{ pathname: "https://www.instagram.com/nate_koe/" }}
+                    href="https://www.instagram.com/nate_koe/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Instagram"
                   >
                     <div className="instagram-background">
@@ -125,7 +125,7 @@ function Footer() {
                       scrollNav={scrollNav}
                       className="fab fa-instagram"
                     />
-                  </Link>
+                  </a>
                 </div>
 
                 <a
@@ -134,25 +134,23 @@ function Footer() {
                 >
                   <i className="far fa-envelope" />
                 </a>
-                <Link
+                <a
                   className="social-icon-link twitter"
-                  to={{ pathname: "https://twitter.com/Natpoki" }}
-                  target="_blank"
+                  href="https://twitter.com/Natpoki"
+                  rel="noopener noreferrer"
                   aria-label="Twitter"
                 >
                   <i className="fab fa-twitter" />
-                </Link>
-                <Link
+                </a>
+                <a
                   className="social-icon-link linkedin"
-                  to={{
-                    pathname:
-                      "https://www.linkedin.com/in/natekoehler/",
-                  }}
+                  href="https://www.linkedin.com/in/natekoehler/"
+                  rel="noopener noreferrer"
                   target="_blank"
                   aria-label="LinkedIn"
                 >
                   <i className="fab fa-linkedin" />
-                </Link>
+                </a>
               </div>
             </ReactVisibilitySensor>
           </div>

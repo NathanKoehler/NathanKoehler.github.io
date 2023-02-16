@@ -151,7 +151,12 @@ export default function NCRInteractiveDemo() {
                     <Grid item xs={4}>
                       <div className="section-subtitle my-1">LINKS -</div>
                       <ul className="list my-1">
-                        <Link to="/aloha-cloud-interactive-demo/">July 2022 Prototype</Link>
+                        <a 
+                          href="https://www.natekoe.com/aloha-cloud-interactive-demo/" 
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          aria-label="Aloha Cloud Demo Site"
+                        >July 2022 Prototype</a>
                       </ul>
                     </Grid>
                   </Grid>
