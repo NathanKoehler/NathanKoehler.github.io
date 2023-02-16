@@ -46,7 +46,7 @@ function Cards() {
     <CardItem
       src={NCRHOSPImg}
       srcAlt={NCRHOSPBackgroundImg}
-      text='Aloha Cloud POS Software Demo for NCR in May - August 2022.'
+      text='Aloha Cloud POS Software Demo for NCR in May to August 2022.'
       redText='Case Study'
       label='Middleware + React.js'
       path='/ncr-interactive-demo'
@@ -59,7 +59,8 @@ function Cards() {
     <CardItem
       src={RealityMediaImg}
       srcAlt={RealityMediaBackgroundImg}
-      text='User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.  Click to try it out:'
+      text='User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab.'
+      redText='Click to learn more:'
       label='User Experience'
       path='/'
       aPath={new URL('https://realitymedia.digital/notLoggedIn/')} // takes to another site
@@ -70,7 +71,8 @@ function Cards() {
     <CardItem
       src={EmpathyBytesImg}
       srcAlt={EmpathyBytesBackgroundImg}
-      text='Aloha Cloud POS Software Demo for NCR in May - August 2022.'
+      text='Web Development Work for Empathy Bytes from August 2021 to January 2022.'
+      redText='Case Study'
       label='Web UI / UX'
       path='/empathy-bytes'
     />
@@ -115,7 +117,8 @@ function Cards() {
     <CardItem
       src={RollerRushImg}
       srcAlt={RollerRushBackgroundImg}
-      text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program. Click to try it out:"
+      text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program."
+      redText='Click to try it out:'
       label='JavaScript'
       path='/'
       handleCardDrawer={handleCardDrawer}
@@ -127,7 +130,8 @@ function Cards() {
     <CardItem
       src={TodoImg}
       srcAlt={TodoBackgroundImg}
-      text='Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing. Click to try it out:'
+      text='Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing.'
+      redText='Click to try it out:'
       label='Web Dev'
       path='/'
       handleCardDrawer={handleCardDrawer}
@@ -141,7 +145,8 @@ function Cards() {
     <CardItem
       src={AframeImg}
       srcAlt={AframeBackgroundImg}
-      text='Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration. Click to try it out:'
+      text='Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration.'
+      redText='Click to try it out:'
       label='AR / VR'
       path='/'
       aPath='/Aframe-3D-Replica/'
@@ -197,7 +202,8 @@ function Cards() {
     <CardItem
       src={SliderImg}
       srcAlt={SliderBackgroundImg}
-      text='Led 2D Illustration and game design within the C# and Unity-based indie game Slider, currently published and available as a demo on Steam. Click visit our Steam Store page:'
+      text='2D Illustration and game programming within the C# and Unity indie title Slider, available as a demo on Steam. Currently an Indepedent Games Festival 2023 finalist.'
+      redText='Click visit the Steam Store page:'
       label='Game Development'
       path='/'
       handleCardDrawer={handleCardDrawer}
@@ -222,38 +228,43 @@ function Cards() {
               {FingersCrossedCard}
               
               
+              
             </ul>
             <ul
               className='cards__items' /* makes the 3 item row in the second column */
             >
-              
-              {SliderCard}
               {EmpathyBytes}
+              {SliderCard}
               {RealityMedia}
-              
             </ul>
             <h1 className='card__title'>Projects</h1>
             <ul
               className='cards__items' /* makes the 2 item container in the 3rd row */
             >
+              
+              
+              {NCRRETAILCard}
+              {RollerCard}
               {AframeCard}
-              {TodoCard}
-              {CurrencyCard}
+              
+              
+              
             </ul>
             <ul
               className='cards__items' /* makes the 2 item container in the 4th row */
             >
-              {NCRRETAILCard}
+              
               {PostCardCard}
-              {TheAscentCard}
+              {TodoCard}
+              {CurrencyCard}
+              
+              
             </ul>
             <ul id='cards' className='cards__items'>
-              {AHSRoboticsCard}
+              {TheAscentCard}
+              
               {UGAHacksCard}
-              {RollerCard}
-              
-              
-              
+              {AHSRoboticsCard}
             </ul>
           </div>
         </div>

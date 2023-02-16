@@ -49,6 +49,8 @@ function Navbar() {
 
         if (!backButton && !['/about-me', '/artwork', '/services'].includes(location.pathname)) {
           setBackButton(true);
+        } else if (backButton) {
+          setBackButton(false);
         }
       }
       
