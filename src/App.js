@@ -184,6 +184,23 @@ import AnimatedRoutes from "./_components/AnimatedRoutes";
             }
           },
         },
+        {
+          props: { variant: "landing" },
+          style: {
+            border: "1px solid #54b948",
+            color: "#ffffff",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            boxShadow: "0px 1px 8px 0px rgba(255, 255, 255, 0.6)",
+            "&:hover": {
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
+              color: "#ffffff",
+            },
+            "&:disabled": {
+              border: "1px solid transparent",
+              color: "rgba(255,255, 255, 0.5)",
+            }
+          },
+        },
       ],
     },
   },

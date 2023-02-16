@@ -3,7 +3,7 @@ import { Container } from "@mui/system";
 import { Parallax } from "react-scroll-parallax";
 import { ScrollButton } from "../../Scroll";
 
-export default function ProjectBanner({ image, title, background, titleColor, roles }) {
+export default function ProjectBanner({ image, title, background, titleColor, roles, maxWidth }) {
   const [scroll, setScroll] = React.useState(0);
   return <div className="banner" style={{ backgroundColor: `${background}` }}>
     <Parallax
@@ -15,7 +15,7 @@ export default function ProjectBanner({ image, title, background, titleColor, ro
       onChange={(element) => setScroll(element.progress)}
       style={{ clipPath: `polygon(${0 + scroll * 30}% ${10 - scroll * 15}%, ${0 + scroll * 15}% 95%, ${100 - scroll * 30}% ${95 + scroll * 15}%, ${100 - scroll * 15}% 10%)` }}
     >
-      <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth="md">
+      <Container sx={{ display: 'flex', justifyContent: 'center' }} disableGutters maxWidth={maxWidth ? maxWidth : "md"}>
         <img src={image} alt="NCR Interactive Demo Frontpage" />
       </Container>
     </Parallax>

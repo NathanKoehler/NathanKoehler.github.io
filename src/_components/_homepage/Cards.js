@@ -27,6 +27,8 @@ import SliderImg from '../../_images/Slider.jpg';
 import SliderBackgroundImg from '../../_images/Slider-Background.gif';
 import RealityMediaImg from '../../_images/RealityMedia.png';
 import RealityMediaBackgroundImg from '../../_images/RealityMedia-Background.png';
+import EmpathyBytesImg from '../../_images/EmpathyBytes.jpg';
+import EmpathyBytesBackgroundImg from '../../_images/EmpathyBytes-Background.jpg';
 
 import CardDialog from "../_dialogs/CardDialog";
 
@@ -61,6 +63,16 @@ function Cards() {
       label='User Experience'
       path='/'
       aPath={new URL('https://realitymedia.digital/notLoggedIn/')} // takes to another site
+    />
+  );
+
+  const EmpathyBytes = (
+    <CardItem
+      src={EmpathyBytesImg}
+      srcAlt={EmpathyBytesBackgroundImg}
+      text='Aloha Cloud POS Software Demo for NCR in May - August 2022.'
+      label='Web UI / UX'
+      path='/empathy-bytes'
     />
   );
   
@@ -216,6 +228,7 @@ function Cards() {
             >
               
               {SliderCard}
+              {EmpathyBytes}
               {RealityMedia}
               
             </ul>

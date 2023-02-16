@@ -6,6 +6,7 @@ import Artwork from "./_pages/Artwork";
 import AboutMe from "./_pages/AboutMe";
 import NCRInteractiveDemo from "./_pages/_projects/NCRInteractiveDemo";
 import FingersCrossed from './_pages/_projects/FigureCrossed';
+import EmpathyBytes from './_pages/_projects/EmpathyBytes';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AnimatePresence } from 'framer-motion';
 
@@ -19,6 +20,11 @@ const projects = [
     name: "Fingers Crossed",
     path: "/fingers-crossed",
     function: <FingersCrossed />,
+  },
+  {
+    name: "Empathy Bytes",
+    path: "/empathy-bytes",
+    function: <EmpathyBytes />,
   },
 ]
 

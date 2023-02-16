@@ -25,8 +25,8 @@ export default function NCRInteractiveDemo() {
     >
       <ProjectBanner image={ImgNCRFrontpage} title="ALOHA INTERACTIVE DEMO" background="#51b948" roles={[
         { role: "Project Lead", color: "#a931b6" },
+        { role: "Software Engineer", color: "#a931b6" },
         { role: "UX Designer", color: "#a931b6" },
-        { role: "Programmer", color: "#a931b6" },
       ]} />
       <div className="content">
         <Container maxWidth="lg" id="content" >
