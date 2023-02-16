@@ -14,7 +14,7 @@ If you would like to contact me, you can reach my email:
 
 I made this website public to hopefully give people a better understanding of what I did to make it and as a way to allow people to suggest edits and additions to the page. I also encourage others to steal bits and pieces of it as they choose. 
 
-I believe that the internet is a beautiful thing and that the bricks that comprise it should all be polished and shined to pristine quality. 
+I believe that the internet is a beautiful thing and that the bricks that comprise it are for beyond the intentions of a single mason. 
 
 I aim to exemplify my own belief and help others to beautify their web pages too. 
 
