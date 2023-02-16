@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.47a601f4.css",
-    "main.js": "/static/js/main.412c0b74.js",
+    "main.js": "/static/js/main.6014d8e0.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
     "static/media/crown.png": "/static/media/crown.d36079741ef8a4cd89a4.png",
@@ -14,7 +14,9 @@
     "static/media/foundry.png": "/static/media/foundry.03b3d5779e0014d36628.png",
     "static/media/PostCard-Background.png": "/static/media/PostCard-Background.e4f6c047da963c1bb8de.png",
     "static/media/barter.png": "/static/media/barter.63486ee3de62b7f0603c.png",
+    "static/media/EmpathyBytesOne.jpg": "/static/media/EmpathyBytesOne.284925b2ff271aee3ee0.jpg",
     "static/media/CurrencyMockup.png": "/static/media/CurrencyMockup.e545722a4379c50a7c17.png",
+    "static/media/EmpathyBytesTwo.jpg": "/static/media/EmpathyBytesTwo.e92450fe9d5f3a9161fa.jpg",
     "static/media/newrohcaw.jpg": "/static/media/newrohcaw.435443503d7b808fe764.jpg",
     "static/media/CurrencyMockup-Background.png": "/static/media/CurrencyMockup-Background.94bd49ff8405747c2e3f.png",
     "static/media/anta.png": "/static/media/anta.94bd49ff8405747c2e3f.png",
@@ -25,6 +27,7 @@
     "static/media/fire.png": "/static/media/fire.5a5e751e4075930bce1f.png",
     "static/media/RealityMedia.png": "/static/media/RealityMedia.9853168c733c0f7226fe.png",
     "static/media/NathanKoehler_UIUXPortfolio.pdf": "/static/media/NathanKoehler_UIUXPortfolio.6bc9cb5df7ec8c4d011e.pdf",
+    "static/media/EmpathyBytesThree.png": "/static/media/EmpathyBytesThree.682873c97100f2baff43.png",
     "static/media/thehollowknight.png": "/static/media/thehollowknight.dc924eb7c93418f9d758.png",
     "static/media/glaveborn.png": "/static/media/glaveborn.55d635803ebd81b6d582.png",
     "static/media/Slider-Background.gif": "/static/media/Slider-Background.7ad1a29b00e028bf567f.gif",
@@ -53,6 +56,7 @@
     "static/media/Todo.png": "/static/media/Todo.198be26ac5338703cc6b.png",
     "static/media/NathanKoehler_Resume.pdf": "/static/media/NathanKoehler_Resume.844ea59b63f65fd1bd28.pdf",
     "static/media/NCRHOSP-Background.jpg": "/static/media/NCRHOSP-Background.14e4c99f39f7344362a9.jpg",
+    "static/media/EmpathyBytes-Background.jpg": "/static/media/EmpathyBytes-Background.98ce2ddb5aba34081f53.jpg",
     "static/media/btree.jpg": "/static/media/btree.a48e8b9e959dfb2afbe6.jpg",
     "static/media/UGAHacks6.png": "/static/media/UGAHacks6.ca679fe91faa21f50567.png",
     "static/media/NCRRETAIL-Background.png": "/static/media/NCRRETAIL-Background.b3d1eccabd4c76b1d7f3.png",
@@ -66,6 +70,7 @@
     "static/media/bwater.jpg": "/static/media/bwater.6a79274a63a295026644.jpg",
     "static/media/HOSPDemoOne.png": "/static/media/HOSPDemoOne.03611e16edebc4eee302.png",
     "static/media/bwall.jpg": "/static/media/bwall.95edae5a05373d71109c.jpg",
+    "static/media/EmpathyBytes.jpg": "/static/media/EmpathyBytes.a7e59c760e7e89528f3e.jpg",
     "static/media/bpillar.jpg": "/static/media/bpillar.e551b6827e40c694c42b.jpg",
     "static/media/bfire.jpg": "/static/media/bfire.930e6dfa3741291755cf.jpg",
     "static/media/bbarter.jpg": "/static/media/bbarter.e690a73a7a93ba1d5389.jpg",
@@ -83,10 +88,10 @@
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
     "main.47a601f4.css.map": "/static/css/main.47a601f4.css.map",
-    "main.412c0b74.js.map": "/static/js/main.412c0b74.js.map"
+    "main.6014d8e0.js.map": "/static/js/main.6014d8e0.js.map"
   },
   "entrypoints": [
     "static/css/main.47a601f4.css",
-    "static/js/main.412c0b74.js"
+    "static/js/main.6014d8e0.js"
   ]
 }
