@@ -4,7 +4,7 @@ I made this website in my Sophomore year of college. Even today, I am in the pro
 
 ## About Me
 
-I am a Sophmore Student studying Interaction Design and Media within the Computational Media Major at the Georgia Institute of Technology. I plan on doing design or programming out of college.
+I am a Junior Student studying Interaction Design and Media within the Computational Media Major at the Georgia Institute of Technology. I plan on doing design or programming out of college.
 
 If you would like to contact me, you can reach my email:
 
