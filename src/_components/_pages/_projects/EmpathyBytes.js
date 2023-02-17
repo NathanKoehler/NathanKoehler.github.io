@@ -10,13 +10,13 @@ import ImgTwoEmpathyBytes from "../../../_images/EmpathyBytes-Background.jpg";
 import ImgThreeEmpathyBytes from "../../../_images/EmpathyBytesOne.jpg";
 import ImgFourEmpathyBytes from "../../../_images/EmpathyBytesTwo.jpg";
 import ImgFiveEmpathyBytes from "../../../_images/EmpathyBytesThree.png";
-import { Divider, Grid, ImageList, ImageListItem, ImageListItemBar, IconButton } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
-import InfoIcon from '@mui/icons-material/Info';
 import ProjectBanner from "./ProjectBanner";
+import ProjectImageList from "./ProjectImageList";
 
 
-const itemData = [
+const imageListData = [
 {
     img: ImgThreeEmpathyBytes,
     title: 'Interview Team Prototype',
@@ -49,16 +49,6 @@ const itemData = [
     },
 
 ];
-
-function srcset(image, size, rows = 1, cols = 1) {
-  return {
-    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${size * cols}&h=${
-      size * rows
-    }&fit=crop&auto=format&dpr=2 2x`,
-  };
-}
-
 
 export default function EmpathyBytes() {
   return (
@@ -178,32 +168,7 @@ export default function EmpathyBytes() {
               <Grid container spacing={4} className="my-2">
                     <Grid item xs={8}>
                         <div className="section-subtitle my-1">IMAGES -</div>
-                        <ImageList
-                        variant="quilted"
-                        cols={6}
-                        rowHeight={121}
-                        >
-                            {itemData.map((item) => (
-                                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                                <img
-                                    {...srcset(item.img, 121, item.rows, item.cols)}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                                <ImageListItemBar
-                                    title={item.title}
-                                    actionIcon={
-                                    <IconButton
-                                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                        aria-label={`info about ${item.title}`}
-                                    >
-                                        <InfoIcon />
-                                    </IconButton>
-                                    }
-                                />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
+                          <ProjectImageList imageListData={imageListData} />
                     </Grid>
                     <Grid item xs={4}>
                         <div className="section-subtitle my-1">LINKS -</div>

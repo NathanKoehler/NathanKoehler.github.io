@@ -12,13 +12,13 @@ import ImgFourFingersCrossed from "../../../_images/FingersCrossedTwo.png";
 import ImgFiveFingersCrossed from "../../../_images/FingersCrossedThree.jpg";
 import ImgSixFingersCrossed from "../../../_images/FingersCrossedFour.png";
 import ImgFingersCrossed from "../../../_images/FingersCrossed.png";
-import { Divider, Grid, ImageList, ImageListItem, ImageListItemBar, IconButton } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
-import InfoIcon from '@mui/icons-material/Info';
 import ProjectBanner from "./ProjectBanner";
+import ProjectImageList from "./ProjectImageList";
 
 
-const itemData = [
+const imageListData = [
   {
     img: ImgOneFingersCrossed,
     title: '3D Render',
@@ -58,14 +58,7 @@ const itemData = [
   },
 ];
 
-function srcset(image, size, rows = 1, cols = 1) {
-  return {
-    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${size * cols}&h=${
-      size * rows
-    }&fit=crop&auto=format&dpr=2 2x`,
-  };
-}
+
 
 
 export default function NCRInteractiveDemo() {
@@ -208,32 +201,7 @@ export default function NCRInteractiveDemo() {
               </div>
               <div className="my-2">
               <div className="section-subtitle my-1">IMAGES -</div>
-                <ImageList
-                  variant="quilted"
-                  cols={6}
-                  rowHeight={121}
-                >
-                  {itemData.map((item) => (
-                    <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                      <img
-                        {...srcset(item.img, 121, item.rows, item.cols)}
-                        alt={item.title}
-                        loading="lazy"
-                      />
-                      <ImageListItemBar
-                        title={item.title}
-                        actionIcon={
-                          <IconButton
-                            sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                            aria-label={`info about ${item.title}`}
-                          >
-                            <InfoIcon />
-                          </IconButton>
-                        }
-                      />
-                    </ImageListItem>
-                  ))}
-                </ImageList>
+                <ProjectImageList imageListData={imageListData} />
               </div>
               <div className="right-column">
               </div>

@@ -1,0 +1,57 @@
+.model {
+  width: 100%;
+  height: calc((100vh) - 80px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s ease, visbility 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.model.open{
+  visibility: visible;
+  opacity: 1;
+}
+
+.model img {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(0.5);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+.model.open img {
+transform: scale(1);
+}
+
+.model.open i {
+  position: fixed;
+  z-index: 6;
+  top: 90px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  color: #ffffff;
+  transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.model i:hover {
+transform: scale3d(1.2, 1.2, 1);
+color: #32c9ce;
+}

@@ -51,6 +51,7 @@ import bwall from "../_images/gallery/blurred/bwall.jpg";
 import wall from "../_images/gallery/wall.png";
 import { Box } from "@mui/system";
 import PortfolioPDF from "../_resources/NathanKoehler_UIUXPortfolio.pdf";
+import { FocusImage } from "./FocusImage";
 
 const Gallery = () => {
 
@@ -219,13 +220,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className={modal ? "model open" : "model"}>
-        <img src={tempImgSrc} alt="Focus" />
-        <i
-          className="fas fa-times"
-          onClick={() => setModal(false)}
-        ></i>
-      </div>
+      <FocusImage modal={modal} tempImgSrc={tempImgSrc} setModal={setModal} />
       <section className="gallery-page">
       <div className="gallery-title">
         <div className="gallery-title-box">
@@ -291,3 +286,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

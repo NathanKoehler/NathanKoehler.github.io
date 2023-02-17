@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import "../../../App.css";
 import "./_projects.scss";
 import Footer from "../../Footer";
@@ -12,9 +12,33 @@ import ImgNCRFrontpage from "../../../_images/NCRHOSP-Background.jpg";
 import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import ProjectBanner from "./ProjectBanner";
-import { Link } from "react-router-dom";
+import { FocusImage } from "../../FocusImage";
+import ProjectImageList from "./ProjectImageList";
+
+const imageListData = [
+  {
+    img: ImgOneNCRInteractiveDemo,
+    title: "NCR Aloha Cloud Demo - Detailed Item View",
+    rows: 3,
+    cols: 6,
+  },
+  {
+    img: ImgTwoNCRInteractiveDemo,
+    title: "NCR Aloha Cloud Demo - Payments",
+    rows: 3,
+    cols: 6,
+  },
+  {
+    img: ImgThreeNCRInteractiveDemo,
+    title: "NCR Aloha Cloud Demo - Unique Features",
+    rows: 3,
+    cols: 6,
+  },
+]
 
 export default function NCRInteractiveDemo() {
+  
+
   return (
     <motion.div
       initial="initial"
@@ -23,6 +47,7 @@ export default function NCRInteractiveDemo() {
       variants={pageVariants}
       transition={pageTransition}
     >
+      
       <ProjectBanner image={ImgNCRFrontpage} title="ALOHA INTERACTIVE DEMO" background="#51b948" roles={[
         { role: "Project Lead", color: "#a931b6" },
         { role: "Software Engineer", color: "#a931b6" },
@@ -133,20 +158,10 @@ export default function NCRInteractiveDemo() {
                     </p>
                   </div>
                   <Divider />
-                  <Grid container className="my-2">
-                    <Grid item xs={8}>
+                  <Grid container spacing={4} className="my-2">
+                    <Grid item xs={8} >
                     <div className="section-subtitle my-1">IMAGES -</div>
-                      <ul className="list horizontal my-1">
-                        <li>
-                          <img className="list-img" src={ImgOneNCRInteractiveDemo} alt="NCR Aloha POS" />
-                        </li>
-                        <li>
-                          <img className="list-img" src={ImgTwoNCRInteractiveDemo} alt="NCR Aloha POS" />
-                        </li>
-                        <li>
-                          <img className="list-img" src={ImgThreeNCRInteractiveDemo} alt="NCR Aloha POS" />
-                        </li>
-                      </ul>
+                      <ProjectImageList imageListData={imageListData} />
                     </Grid>
                     <Grid item xs={4}>
                       <div className="section-subtitle my-1">LINKS -</div>
