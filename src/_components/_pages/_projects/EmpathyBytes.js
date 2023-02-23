@@ -182,7 +182,7 @@ export default function EmpathyBytes() {
           </div>
         </Container>
       </div>
-      <Footer />
+      <Footer  />
     </motion.div>
   );
 }

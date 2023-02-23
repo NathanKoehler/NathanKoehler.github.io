@@ -30,10 +30,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  &.dots-inside {
-    position: relative;
-    bottom: -80vh;
-  }
   
   li {
     margin: 2rem 2rem;
@@ -94,10 +90,10 @@
 }
 
 .banner-title-container {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
-  top: 8vh;
+  top: 11vh;
   font-weight: 100;
   &.top {
     z-index: 3;
@@ -112,7 +108,7 @@
 
 .banner-title-btn {
   position: absolute;
-  bottom: -36vh;
+  bottom: 2vh;
   width: 100%;
   z-index: 4;
   display: flex;
@@ -143,14 +139,14 @@
   position: absolute;
   width: 100%;
   z-index: 3;
-  height: 100%;
-  bottom: 0;
+  bottom: 12vh;
 }
 
 .banner {
-  position: relative;
+  position: fixed;
+  overflow-y: clip;
+  z-index: 100;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +158,7 @@
 
 .content {
   z-index: 10;
+  padding-top: 130vh;
   background-color: #fff;
   position: relative;
   .text {

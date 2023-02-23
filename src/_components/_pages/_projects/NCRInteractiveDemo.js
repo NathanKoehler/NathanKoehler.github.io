@@ -78,10 +78,10 @@ export default function NCRInteractiveDemo() {
                       </div>
                       <div className="my-2">
                         <div className="section-subtitle">TEAM - </div> 
-                        <div className="my-1">NCR Hospitadivty Marketing Web Team</div>
+                        <div className="my-1">NCR Hospitality Marketing Web Team</div>
                       </div>
                       <div>
-                        <div className="section-subtitle">DATE - </div> 
+                        <div className="section-subtitle">DATE - </div>   
                         <div className="my-1">May 2022 - August 2022</div>
                       </div>
                     </Grid>
@@ -181,7 +181,7 @@ export default function NCRInteractiveDemo() {
           </div>
         </Container>
       </div>
-      <Footer />
+      <Footer  />
     </motion.div>
   );
 }

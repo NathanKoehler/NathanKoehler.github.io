@@ -208,7 +208,7 @@ export default function NCRInteractiveDemo() {
           </div>
         </Container>
       </div>
-      <Footer />
+      <Footer  />
     </motion.div>
   );
 }
