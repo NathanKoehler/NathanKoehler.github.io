@@ -37,7 +37,7 @@ const imageListData = [
 ]
 
 export default function NCRInteractiveDemo() {
-  
+  const [banner, setBanner] = React.useState(false);
 
   return (
     <motion.div
@@ -48,7 +48,7 @@ export default function NCRInteractiveDemo() {
       transition={pageTransition}
     >
       
-      <ProjectBanner image={ImgNCRFrontpage} title="ALOHA INTERACTIVE DEMO" background="#51b948" roles={[
+      <ProjectBanner hide={banner} image={ImgNCRFrontpage} title="ALOHA INTERACTIVE DEMO" background="#51b948" roles={[
         { role: "Project Lead", color: "#a931b6" },
         { role: "Software Engineer", color: "#a931b6" },
         { role: "UX Designer", color: "#a931b6" },
@@ -161,7 +161,7 @@ export default function NCRInteractiveDemo() {
                   <Grid container spacing={4} className="my-2">
                     <Grid item xs={8} >
                     <div className="section-subtitle my-1">IMAGES -</div>
-                      <ProjectImageList imageListData={imageListData} />
+                      <ProjectImageList imageListData={imageListData} onChange={(value) => setBanner(value)} />
                     </Grid>
                     <Grid item xs={4}>
                       <div className="section-subtitle my-1">LINKS -</div>

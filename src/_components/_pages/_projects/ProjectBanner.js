@@ -10,10 +10,10 @@ export default function ProjectBanner({
   titleColor,
   roles,
   maxWidth,
+  hide,
 }) {
   const [scroll, setScroll] = React.useState(0);
 
-  console.log(scroll);
   return (
     <div
       className="banner"
@@ -22,7 +22,9 @@ export default function ProjectBanner({
       style={{
         backgroundColor: `${background}`,
         height: `${100 - scroll * 100}vh`,
-        transition: "opacity 1s ease-in-out",
+        opacity: `${hide ? 0 : 100}%`,
+        pointerEvents: `${hide ? "none" : "auto"}`,
+        transition: "opacity 0.5s ease-in-out",
       }}
     >
       <Parallax
