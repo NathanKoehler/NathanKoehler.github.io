@@ -51,6 +51,8 @@ const imageListData = [
 ];
 
 export default function EmpathyBytes() {
+  const [banner, setBanner] = React.useState(false);
+
   return (
     <motion.div
       initial="initial"
@@ -59,7 +61,7 @@ export default function EmpathyBytes() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <ProjectBanner maxWidth={"xs"} image={ImgOneEmpathyBytes} title="EMPATHY BYTES ABOUT US" titleColor="#ffffff" background="#326ba8" roles={[
+      <ProjectBanner hide={banner} maxWidth={"xs"} image={ImgOneEmpathyBytes} title="EMPATHY BYTES ABOUT US" titleColor="#ffffff" background="#326ba8" roles={[
         { role: "Software Engineer", color: "#a931b6" },
         { role: "UX Designer", color: "#a931b6" },
       ]}  />
@@ -168,7 +170,7 @@ export default function EmpathyBytes() {
               <Grid container spacing={4} className="my-2">
                     <Grid item xs={8}>
                         <div className="section-subtitle my-1">IMAGES -</div>
-                          <ProjectImageList imageListData={imageListData} />
+                          <ProjectImageList imageListData={imageListData} onChange={(value) => setBanner(value)} />
                     </Grid>
                     <Grid item xs={4}>
                         <div className="section-subtitle my-1">LINKS -</div>

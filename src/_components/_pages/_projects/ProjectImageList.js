@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-export default function ProjectImageList({ imageListData }) {
+export default function ProjectImageList({ imageListData, onChange }) {
 
   function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -22,7 +22,12 @@ export default function ProjectImageList({ imageListData }) {
 
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
-    setModal(true);
+    handleModal(true);
+  };
+
+  const handleModal = (value) => {
+    onChange(value);
+    setModal(value);
   };
 
   return <>
@@ -31,7 +36,7 @@ export default function ProjectImageList({ imageListData }) {
       cols={6}
       rowHeight={121}
     >
-      <FocusImage modal={modal} tempImgSrc={tempImgSrc} setModal={setModal} />
+      <FocusImage modal={modal} tempImgSrc={tempImgSrc} setModal={() => handleModal(false)} />
       {imageListData.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
           <img

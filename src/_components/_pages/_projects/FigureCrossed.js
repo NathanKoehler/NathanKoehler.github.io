@@ -62,6 +62,8 @@ const imageListData = [
 
 
 export default function NCRInteractiveDemo() {
+  const [banner, setBanner] = React.useState(false);
+  
   return (
     <motion.div
       initial="initial"
@@ -70,7 +72,7 @@ export default function NCRInteractiveDemo() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <ProjectBanner image={ImgFingersCrossed} title="FINGERS CROSSED" titleColor="#ffffff" background="#84b7d1" roles={[
+      <ProjectBanner hide={banner} image={ImgFingersCrossed} title="FINGERS CROSSED" titleColor="#ffffff" background="#84b7d1" roles={[
         { role: "Marketing", color: "#ff427a" },
         { role: "UX Designer", color: "#a931b6" },
       ]}  />
@@ -201,7 +203,7 @@ export default function NCRInteractiveDemo() {
               </div>
               <div className="my-2">
               <div className="section-subtitle my-1">IMAGES -</div>
-                <ProjectImageList imageListData={imageListData} />
+                <ProjectImageList imageListData={imageListData} onChange={(value) => setBanner(value)} />
               </div>
               <div className="right-column">
               </div>
