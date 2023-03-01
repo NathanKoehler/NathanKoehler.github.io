@@ -16,8 +16,6 @@ export default function ProjectBanner({
   return (
     <div
       className="banner"
-      shouldAlwaysCompleteAnimation={true}
-      shouldDisableScalingTranslations={true}
       style={{
         backgroundColor: `${background}`,
         height: `${100 - scroll * 100}vh`,
@@ -30,8 +28,6 @@ export default function ProjectBanner({
         className="banner-img"
         translateY={[0, 20]}
         opacity={[2, -3, "easeInQuad"]}
-        shouldAlwaysCompleteAnimation={true}
-        shouldDisableScalingTranslations={true}
         onChange={(element) => setScroll(element.progress)}
         style={{
           visibility: `${scroll > 0.7 ? "hidden" : "visible"}`,
@@ -53,8 +49,6 @@ export default function ProjectBanner({
       <div
         style={{ top: `${11 - scroll * 2}vh` }}
         className="banner-title-container top"
-        shouldAlwaysCompleteAnimation={true}
-        shouldDisableScalingTranslations={true}
       >
         <Container
           sx={{ display: "flex", justifyContent: "center" }}
@@ -71,8 +65,6 @@ export default function ProjectBanner({
       <div
         style={{ top: `${11 - scroll * 2}vh` }}
         className="banner-title-container bottom"
-        shouldAlwaysCompleteAnimation={true}
-        shouldDisableScalingTranslations={true}
       >
         <Container
           sx={{ display: "flex", justifyContent: "center" }}
