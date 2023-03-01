@@ -12,8 +12,6 @@ export default function ProjectBanner({
   maxWidth,
 }) {
   const [scroll, setScroll] = React.useState(0);
-
-  console.log(scroll);
   return (
     <div
       className="banner"
