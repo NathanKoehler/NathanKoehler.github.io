@@ -17,7 +17,19 @@ function ProjectTimeline({ data }) {
     {
       borderColor: "#6b74fa",
       backgroundColor: "rgba(107, 116, 250, 0.15)",
-    }
+    },
+    {
+      borderColor: "#eb263d",
+      backgroundColor: "rgba(235, 38, 61, 0.15)",
+    },
+    {
+      borderColor: "#04baba",
+      backgroundColor: "rgba(4, 186, 186, 0.15)",
+    },
+    {
+      borderColor: "#6b74fa",
+      backgroundColor: "rgba(107, 116, 250, 0.15)",
+    },
   ]
 
   return (

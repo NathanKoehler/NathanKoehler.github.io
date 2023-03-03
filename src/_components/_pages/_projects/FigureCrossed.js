@@ -16,6 +16,7 @@ import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import ProjectBanner from "./ProjectBanner";
 import ProjectImageList from "./ProjectImageList";
+import ProjectTimeline from "./ProjectTimeline";
 
 
 const imageListData = [
@@ -59,6 +60,44 @@ const imageListData = [
 ];
 
 
+const timelineData = [
+  {
+    title: "Identify",
+    date: "August 2021 - September 2021",
+    description:
+      "I joined a student-led games startup to help create a new roleplaying game for children and young teens. I quickly identified key project goals and used 2020-2021 video game trends to gain insights about the target audience and established user stories.",
+  },
+  {
+    title: "Define",
+    date: "October 2021",
+    description:
+      "I helped reorganize the team's QA testing and established a marketing strategy. I worked with organizations at Georgia Tech, notably Georgia Tech VGDev and the Augmented Environments Lab, to gather UX research and find a network for gameplay testing.",
+  },
+  {
+    title: "Design",
+    date: "November 2021",
+    description:
+      "I worked with the team to create a demo for the game and a marketing video, finialized the design and marketing of the game, and began working on the kickstarter page and 3D game and marketing assets.",
+  },
+  {
+    title: "Protoype",
+    date: "December 2022",
+    description:
+      "I wrapped up the year by demoing the tabletop game at student organizations and marketing the game to the Georgia Tech community, and creating physical paper design mockups for the tabletop. I also worked on creating 3D game assets for an early online prototype.",
+  },
+  {
+    title: "Test",
+    date: "December 2022",
+    description:
+      "I looked back at the core mechanics and project goals of our game, then decided to validate the design decisions that led us to our prototype. I used our established network of testers to collect data from controlled QA testing and used it to finalize design decisions."
+  },
+  {
+    title: "Refine",
+    date: "January 2022",
+    description:
+      "I spent time refining the marketing materials for the game. I worked with the team to create a kickstarter page for online marketing and helped plan and film a demo video. I finialized the kickstarter page for the game's launch and created flyers and posters to increase awareness of the game in the early new year."
+  }
+]
 
 
 export default function NCRInteractiveDemo() {
@@ -76,7 +115,7 @@ export default function NCRInteractiveDemo() {
         { role: "Marketing", color: "#ff427a" },
         { role: "UX Designer", color: "#a931b6" },
       ]}  />
-      <div className="content">
+      <div className="content" style={{ "--project-color": "#84b7d1" }}>
         <Container maxWidth="lg" id="content" >
           <div className="two-column">
               <div className="left-column">
@@ -111,28 +150,10 @@ export default function NCRInteractiveDemo() {
                   </Grid>
                   <Divider />
                   <div className="my-2">
-                    <div className="section-subtitle my-1">TIMELINE - </div>
-                    <p className="my-1 text">
-                      In August I joined a student-led games startup to help create a new roleplaying game for children and 
-                      young teens. The team had already created an early prototype for the game and we iterated on the design
-                      through September and had an Alpha completed by October 2021.
-                      <br /><br />
-                      During November of 2021, I helped reorganize the team's QA testing and established a project timeline and 
-                      marketing strategy. 
-                      <br /><br />
-                      I worked with organizations at Georgia Tech, notably Georgia Tech VGDev and the
-                      Augmented Environments Lab, to gather UX research and find a network for quality assurance testing.
-                      <br /><br />
-                      In December, I worked with the team to create a demo for the game and a marketing video, finialized the
-                      design and marketing of the game, and began working on the kickstarter page and 3D game and marketing assets.
-                      <br /><br />
-                      I wrapped up the year by demoing the online tabletop game at student organizations and marketing the game
-                      to the Georgia Tech community, and creating physical paper design mockups for the tabletop.
-                      <br /><br />
-                      In January, I worked with the team to create a kickstarter page for online marketing and helped plan and 
-                      film a demo video. I finialized the kickstarter page for the game's launch and created flyers and posters
-                      to increase awareness of the game in the early new year.
-                    </p>
+                  <div className="section-subtitle my-1">TIMELINE - </div>
+                    <ProjectTimeline
+                        data={timelineData}
+                      />
                   </div>
                   <Divider />
                   <Grid container className="my-2">

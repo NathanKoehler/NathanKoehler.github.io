@@ -70,7 +70,7 @@ const handleExitComplete = () => {
                     {
                       projects.map((project) => {
                         return (
-                          <Route exact path={project.path} element={project.function} />
+                          <Route exact key={project.path} path={project.path} element={project.function} />
                         )
                       })
                     }

@@ -28,7 +28,12 @@ export default function ProjectBanner({
         className="banner-img"
         translateY={[0, 20]}
         opacity={[2, -3, "easeInQuad"]}
-        onChange={(element) => setScroll(element.progress)}
+        onChange={(element) => {
+          if (element.progress - scroll > 0.001 || element.progress - scroll < -0.001)
+            setScroll(element.progress)
+        }}
+        shouldAlwaysCompleteAnimation={true}
+        shouldDisableScalingTranslations={true}
         style={{
           visibility: `${scroll > 0.7 ? "hidden" : "visible"}`,
           clipPath: `polygon(${0 + scroll * 30}% ${10 - scroll * 15}%, ${

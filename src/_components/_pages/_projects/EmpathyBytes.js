@@ -50,6 +50,10 @@ const imageListData = [
 
 ];
 
+
+
+
+
 export default function EmpathyBytes() {
   const [banner, setBanner] = React.useState(false);
 
@@ -65,7 +69,7 @@ export default function EmpathyBytes() {
         { role: "Software Engineer", color: "#a931b6" },
         { role: "UX Designer", color: "#a931b6" },
       ]}  />
-      <div className="content">
+      <div className="content" style={{ "--project-color": "#326ba8" }}>
         <Container maxWidth="lg" id="content" >
           <div className="two-column">
               <div className="left-column">

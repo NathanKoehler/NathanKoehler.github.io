@@ -83,7 +83,7 @@ export default function NCRInteractiveDemo() {
           { role: "UX Designer", color: "#a931b6" },
         ]}
       />
-      <div className="content">
+      <div className="content" style={{ "--project-color": "#51b948" }}>
         <Container maxWidth="lg" id="content">
           <div className="two-column">
             <div className="left-column">
