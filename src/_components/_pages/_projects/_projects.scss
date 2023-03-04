@@ -150,9 +150,14 @@
         color: #333;
       }
       .timeline-item__text {
-        margin-top: 0.25rem;
-        font-size: 0.875rem;
-        color: #999;
+        > p {
+          margin-top: 0.25rem;
+          color: #999;
+          font-size: 0.875rem;
+          > strong {
+            color: #888;
+          }
+        }
       }
       .timeline-item__link {
         display: inline-block;

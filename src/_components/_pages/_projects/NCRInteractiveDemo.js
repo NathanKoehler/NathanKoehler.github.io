@@ -41,28 +41,57 @@ const timelineData = [
   {
     title: "Define & Identify",
     date: "May 2022",
-    description:
-      "The hospitality team requested improvements on Aloha Cloud Point of Sale product pages from a UI/UX perspective. I conducted a site audit, a hospitality POS competitior analysis (Toast, Square, Lightspace, Revel, Clover, etc.) to identify the problems and opportunities. I finalized May with meetings with web team members across business units regarding site retention and customer relevance.",
+    description: (
+      <p>
+        The hospitality team requested improvements on Aloha Cloud Point of Sale
+        product pages from a UI/UX perspective. I conducted a <strong>site audit</strong>, a
+        hospitality POS <strong>competitior analysis</strong> (Toast, Square, Lightspace, Revel,
+        Clover, etc.) to identify the problems and opportunities. I finalized
+        May <strong>holding meetings with web team members across business units regarding
+        site retention and customer relevance.</strong>
+      </p>
+    ),
   },
   {
     title: "Design & Prototype",
     date: "June 2022",
-    description:
-      "I created a detailed design system and wireframes for the new site. I also integrated potential features into existing design documents of the Aloha POS with product team members using Figma. I finalized the design and prototype with the marketing and product teams and presented it to executives of Hospitality at my June Project Pitch.",
+    description: (
+      <p>
+        I created a detailed design system and wireframes for the new site. I
+        also integrated potential features into existing design documents of the
+        Aloha POS with product team members using <strong>Figma</strong>. I finalized the design
+        and prototype with NCR Hospitality marketing and product teams <strong>and presented it to
+        executives of Hospitality at my June Project Pitch.</strong>
+      </p>
+    ),
   },
   {
     title: "Develop & Test",
     date: "July 2022",
-    description:
-      "I developed the new site using React, Framer Motion, and Material UI, with assistance from the Hospitality Web and Product teams. I also recieved feedback from the NCR Emerald team and Head of Development for the Aloha POS product line. I finalized the site and set up a route to QA testing and production with the Web Team and senior developers within the Business Unit.",
+    description: (
+      <p>
+        I developed the new site using <strong>React</strong>, <strong>Framer Motion</strong>, and <strong>Material UI</strong>,
+        with assistance from the Hospitality Web and Product teams. I also
+        recieved feedback from the NCR Emerald team and Head of Development for
+        the Aloha POS product line. I finalized the site and set up a route to <strong>QA testing</strong> and 
+        production with the Web Team and senior developers within the Hospitality Business Unit.
+      </p>
+    ),
   },
   {
     title: "Reflect & Document",
     date: "August 2022",
-    description:
-      "I reflected on the project and the process while leaving documentation for my project for potential deployment. I also presented the project within the internship showcase and spoke with the NCR Hospitality Aloha POS team, NCR Retail Emerald POS Team, and briefly with members of the NCR executive team."
-  }
-]
+    description: (
+      <p>
+        I reflected on the project and the process while <strong>leaving documentation</strong> for 
+        my project for potential deployment. I also presented the project
+        within the internship showcase and spoke with the <strong>NCR Hospitality Aloha
+        POS Team</strong>, <strong>NCR Retail Emerald POS Team</strong>, and briefly with members of the
+        NCR executive team.
+      </p>
+    ),
+  },
+];
 
 export default function NCRInteractiveDemo() {
   return (
@@ -130,9 +159,7 @@ export default function NCRInteractiveDemo() {
               <Divider />
               <div className="my-2">
                 <div className="section-subtitle my-1">TIMELINE - </div>
-                <ProjectTimeline
-                    data={timelineData}
-                  />
+                <ProjectTimeline data={timelineData} />
               </div>
               <Divider />
               <Grid container className="my-2">
@@ -194,7 +221,8 @@ export default function NCRInteractiveDemo() {
                   user experience. I tested the APIs using Postman and helped
                   finialize the demo with the Aloha POS Product Team.
                   <br />
-                  <br />I pitched the project several times with other teams to
+                  <br />
+                  I pitched the project several times with other teams to
                   pose the interactive demo as a cross-BSU project with
                   applications in marketing, sales, and product teams. I spoke
                   with senior developers to establish a quality assurance

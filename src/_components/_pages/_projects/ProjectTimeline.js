@@ -42,7 +42,7 @@ function ProjectTimeline({ data }) {
             <div className="timeline-item__content">
               <h2 className="timeline-item__title" style={{ color: `${sublineVariables[index].borderColor}` }}>{item.title}</h2>
               <h3 className="timeline-item__date text">{item.date}</h3>
-              <p className="timeline-item__text text">{item.description}</p>
+              <div className="timeline-item__text text">{item.description}</div>
             </div>
           </li>
         ))}
