@@ -94,6 +94,8 @@ const timelineData = [
 ];
 
 export default function NCRInteractiveDemo() {
+  const [banner, setBanner] = React.useState(false);
+
   return (
     <motion.div
       initial="initial"
@@ -103,6 +105,7 @@ export default function NCRInteractiveDemo() {
       transition={pageTransition}
     >
       <ProjectBanner
+        hide={banner}
         image={ImgNCRFrontpage}
         title="ALOHA INTERACTIVE DEMO"
         background="#51b948"
@@ -237,7 +240,10 @@ export default function NCRInteractiveDemo() {
               <Grid container spacing={4} className="my-2">
                 <Grid item xs={8}>
                   <div className="section-subtitle my-1">IMAGES -</div>
-                  <ProjectImageList imageListData={imageListData} />
+                  <ProjectImageList 
+                    imageListData={imageListData} 
+                    onChange={(value) => setBanner(value)} 
+                  />
                 </Grid>
                 <Grid item xs={4}>
                   <div className="section-subtitle my-1">LINKS -</div>
