@@ -152,7 +152,7 @@ class Favicon extends React.Component {
     var isAnimated = validAnimation && activeInstance.props.animated
     var moveToEnd = validAnimation && (activeInstance.props.once  || 
       activeInstance.props.animationIndex !== 0)
-      
+
     // clear any running animations
     var intervalId = null
     clearInterval(activeInstance.state.animationLoop)
@@ -273,3 +273,4 @@ Favicon.propTypes = {
 }
 
 module.exports = Favicon
+export default Favicon
