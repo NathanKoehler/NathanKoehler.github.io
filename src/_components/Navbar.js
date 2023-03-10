@@ -5,6 +5,8 @@ import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
 import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
 import { useLocation } from 'react-router-dom';
 import { AppBar, Toolbar } from "@mui/material";
+import Favicon from "./_favicon/Favicon";
+import animatedfavicon from "./_favicon/animatedfavicon";
 
 function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
@@ -67,6 +69,14 @@ function Navbar() {
 
   return (
     <React.Fragment>
+      <Favicon
+        animated={false}
+        once={scrollNav}
+        lerp={true}
+        url={animatedfavicon}
+        iconSize={16}
+        animationDelay={100}
+      />
       <div className="navbar-invisible-box" />
       <Nav scrollNav={scrollNav} className={click ? "navbar active" : "navbar"}>
         <AppBar color="transparent" sx={{ height: "80px" }}>

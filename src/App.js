@@ -6,6 +6,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import AnimatedRoutes from "./_components/AnimatedRoutes";
+import Favicon from "./_components/_favicon/Favicon";
+import animatedfavicon from "./_components/_favicon/animatedfavicon";
 
 /**
  * custom theme that dictates all component styling
