@@ -272,5 +272,4 @@ Favicon.propTypes = {
   ]).isRequired,
 }
 
-module.exports = Favicon
 export default Favicon

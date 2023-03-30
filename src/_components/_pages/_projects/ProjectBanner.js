@@ -5,6 +5,7 @@ import { ScrollButton } from "../../Scroll";
 
 export default function ProjectBanner({
   image,
+  hoverImage,
   title,
   background,
   titleColor,
@@ -12,6 +13,7 @@ export default function ProjectBanner({
   maxWidth,
   hide,
 }) {
+  const [hover, setHover] = React.useState(false);
   const [scroll, setScroll] = React.useState(0);
   return (
     <div
@@ -20,11 +22,12 @@ export default function ProjectBanner({
         backgroundColor: `${background}`,
         height: `${100 - scroll * 100}vh`,
         opacity: `${hide ? 0 : 100}%`,
-        pointerEvents: `${hide ? "none" : "auto"}`,
         transition: "opacity 0.5s ease-in-out",
       }}
     >
       <Parallax
+        onMouseEnter={(e) => { setHover(true) }}
+        onMouseLeave={(e) => { setHover(false) }}
         className="banner-img"
         translateY={[0, 20]}
         opacity={[2, -3, "easeInQuad"]}
@@ -32,10 +35,11 @@ export default function ProjectBanner({
           if (element.progress - scroll > 0.001 || element.progress - scroll < -0.001)
             setScroll(element.progress)
         }}
+        
         shouldAlwaysCompleteAnimation={true}
         shouldDisableScalingTranslations={true}
         style={{
-          visibility: `${scroll > 0.7 ? "hidden" : "visible"}`,
+          opacity: `${scroll > 0.7 ? "hidden" : "visible"}`,
           clipPath: `polygon(${0 + scroll * 30}% ${10 - scroll * 15}%, ${
             0 + scroll * 15
           }% 95%, ${100 - scroll * 30}% ${95 + scroll * 15}%, ${
@@ -47,7 +51,9 @@ export default function ProjectBanner({
           sx={{ display: "flex", justifyContent: "center", paddingY: `${maxWidth === "xs" ? 100 : 0}px` }}
           disableGutters
           maxWidth={maxWidth ? maxWidth : "md"}
+          
         >
+          <span style={{ opacity: hover ? "1" : "0", backgroundImage: `url(${hoverImage})` }}></span>
           <img src={image} alt="NCR Interactive Demo Frontpage" />
         </Container>
       </Parallax>
@@ -85,7 +91,7 @@ export default function ProjectBanner({
       </div>
       <div
         className="banner-dots"
-        style={{ opacity: `${100 - scroll * 180}%` }}
+        style={{ opacity: `${100 - scroll * 280}%` }}
       >
         <ul className="dots-inside width-spanned-list">
           {roles &&
@@ -113,6 +119,7 @@ export default function ProjectBanner({
           <div
             className="banner-icon about-footer-arrow"
             aria-label="Scroll To Bottom"
+            style={{ pointerEvents: "auto" }}
           >
             <i className="fas fa-chevron-down"></i>
           </div>

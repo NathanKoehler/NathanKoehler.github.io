@@ -4,7 +4,7 @@ import CardItem from './CardItem';
 import RollerRushImg from '../../_images/RollerRush.png';
 import RollerRushBackgroundImg from '../../_images/RollerRush-Background.png';
 import NCRHOSPImg from '../../_images/NCRHOSP.jpg';
-import NCRHOSPBackgroundImg from '../../_images/NCRHOSP-Background.jpg';
+import NCRHOSPBackgroundImg from '../../_images/NCRHOSP-AnimBackground.gif';
 import PostCardImg from '../../_images/PostCard.png';
 import PostCardBackgroundImg from '../../_images/PostCard-Background.png';
 import CurrencyMockupImg from '../../_images/CurrencyMockup.png';
@@ -26,7 +26,7 @@ import NCRRetailBackgroundImg from '../../_images/NCRRETAIL-Background.png';
 import SliderImg from '../../_images/Slider.jpg';
 import SliderBackgroundImg from '../../_images/Slider-Background.gif';
 import RealityMediaImg from '../../_images/RealityMedia.png';
-import RealityMediaBackgroundImg from '../../_images/RealityMedia-Background.png';
+import RealityMediaBackgroundImg from '../../_images/RealityMedia-AnimBackground.gif';
 import EmpathyBytesImg from '../../_images/EmpathyBytes.jpg';
 import EmpathyBytesBackgroundImg from '../../_images/EmpathyBytes-Background.jpg';
 

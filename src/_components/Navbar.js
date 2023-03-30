@@ -8,6 +8,7 @@ import { AppBar, Toolbar } from "@mui/material";
 import Favicon from "./_favicon/Favicon";
 import animatedfavicon from "./_favicon/animatedfavicon";
 
+
 function Navbar() {
   const [click, setClick] = useState(false); // declares a state variable click
   const handleClick = () => setClick(!click); // arrow function that reverses the state of click

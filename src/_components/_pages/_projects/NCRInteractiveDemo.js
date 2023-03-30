@@ -9,6 +9,7 @@ import ImgOneNCRInteractiveDemo from "../../../_images/HOSPDemoOne.png";
 import ImgTwoNCRInteractiveDemo from "../../../_images/HOSPDemoTwo.png";
 import ImgThreeNCRInteractiveDemo from "../../../_images/HOSPDemoThree.png";
 import ImgNCRFrontpage from "../../../_images/NCRHOSP-Background.jpg";
+import ImgNCRFrontpageAnim from "../../../_images/NCRHOSP-AnimBackground.gif";
 import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import ProjectBanner from "./ProjectBanner";
@@ -107,6 +108,7 @@ export default function NCRInteractiveDemo() {
       <ProjectBanner
         hide={banner}
         image={ImgNCRFrontpage}
+        hoverImage={ImgNCRFrontpageAnim}
         title="ALOHA INTERACTIVE DEMO"
         background="#51b948"
         roles={[
