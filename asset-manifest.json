@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b5dbe4c.css",
-    "main.js": "/static/js/main.beb6530f.js",
+    "main.css": "/static/css/main.2e162ead.css",
+    "main.js": "/static/js/main.7a50e3b3.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
     "static/media/crown.png": "/static/media/crown.d36079741ef8a4cd89a4.png",
@@ -9,11 +9,13 @@
     "static/media/temple.png": "/static/media/temple.f90af19f2ebd08e49d52.png",
     "static/media/wall.png": "/static/media/wall.024d7d449cd107265ada.png",
     "static/media/ice.png": "/static/media/ice.bc9a956144974c16dd8a.png",
+    "static/media/RealityMedia-AnimBackground.gif": "/static/media/RealityMedia-AnimBackground.d59c73f3f29ac4212df6.gif",
     "static/media/pillar.png": "/static/media/pillar.0ba76f02dc0053db3284.png",
     "static/media/mononokeredesign.png": "/static/media/mononokeredesign.4ef120f0b46456a5df7c.png",
     "static/media/foundry.png": "/static/media/foundry.03b3d5779e0014d36628.png",
     "static/media/PostCard-Background.png": "/static/media/PostCard-Background.e4f6c047da963c1bb8de.png",
     "static/media/barter.png": "/static/media/barter.63486ee3de62b7f0603c.png",
+    "static/media/NCRHOSP-AnimBackground.gif": "/static/media/NCRHOSP-AnimBackground.80ed19396a4092636b6b.gif",
     "static/media/EmpathyBytesOne.jpg": "/static/media/EmpathyBytesOne.284925b2ff271aee3ee0.jpg",
     "static/media/CurrencyMockup.png": "/static/media/CurrencyMockup.e545722a4379c50a7c17.png",
     "static/media/EmpathyBytesTwo.jpg": "/static/media/EmpathyBytesTwo.e92450fe9d5f3a9161fa.jpg",
@@ -35,7 +37,6 @@
     "static/media/TheAscent-Background.png": "/static/media/TheAscent-Background.21413465e20510a0073b.png",
     "static/media/sorcerer.jpeg": "/static/media/sorcerer.534763bcb71904547e0d.jpeg",
     "static/media/Aframe.png": "/static/media/Aframe.015ba58790c5eea1e365.png",
-    "static/media/RealityMedia-Background.png": "/static/media/RealityMedia-Background.03ea86e4c3807a024fbb.png",
     "static/media/sit.jpeg": "/static/media/sit.7d6e3e9f6ca96e50b3b1.jpeg",
     "static/media/Aframe-Background.png": "/static/media/Aframe-Background.8e2bf4f4f3153378dd32.png",
     "static/media/RollerRush.png": "/static/media/RollerRush.99219456a3c0c9333df4.png",
@@ -87,11 +88,11 @@
     "static/media/bice.jpg": "/static/media/bice.9308f64cd6a7a208e55c.jpg",
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
-    "main.1b5dbe4c.css.map": "/static/css/main.1b5dbe4c.css.map",
-    "main.beb6530f.js.map": "/static/js/main.beb6530f.js.map"
+    "main.2e162ead.css.map": "/static/css/main.2e162ead.css.map",
+    "main.7a50e3b3.js.map": "/static/js/main.7a50e3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b5dbe4c.css",
-    "static/js/main.beb6530f.js"
+    "static/css/main.2e162ead.css",
+    "static/js/main.7a50e3b3.js"
   ]
 }
