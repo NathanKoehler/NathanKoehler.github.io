@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e162ead.css",
+    "main.css": "/static/css/main.595bc977.css",
     "main.js": "/static/js/main.7a50e3b3.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
@@ -88,11 +88,11 @@
     "static/media/bice.jpg": "/static/media/bice.9308f64cd6a7a208e55c.jpg",
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
-    "main.2e162ead.css.map": "/static/css/main.2e162ead.css.map",
+    "main.595bc977.css.map": "/static/css/main.595bc977.css.map",
     "main.7a50e3b3.js.map": "/static/js/main.7a50e3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e162ead.css",
+    "static/css/main.595bc977.css",
     "static/js/main.7a50e3b3.js"
   ]
 }
