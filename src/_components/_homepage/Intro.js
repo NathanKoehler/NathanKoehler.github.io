@@ -28,17 +28,17 @@ function Intro() {
             NATE IS A
             <div>
               <ul>
-                <li className="uiux-header">UI / UX DESIGNER</li>
+                <li className="fullstack-header">FULLSTACK ENGINEER</li>
                 <li className="software-header">SOFTWARE DEVELOPER</li>
-                <li className="frontend-header">FRONTEND DEVELOPER</li>
-                <li className="graphic-header">GRAPHIC DESIGNER</li>
+                <li className="frontend-header">FRONTEND EXPERT</li>
                 <li className="uiux-header">UI / UX DESIGNER</li>
+                <li className="fullstack-header">FULLSTACK ENGINEER</li>
               </ul>
             </div>
           </h1>
           <p>
-            Undergrad student at Georgia Tech studying Media and Interaction
-            Design looking for a 2023 internship / coop.
+            Undergrad Senior at Georgia Tech studying Media & Computer Science
+            looking for Summer 2024 Internships
           </p>
           <div className="intro-btns">
             <ScrollLink goTo="cards" vOffset={-250}>

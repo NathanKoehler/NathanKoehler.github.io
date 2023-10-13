@@ -73,7 +73,7 @@ function Profile() {
                 <mark className="red">曾雷生</mark> <span role="img" aria-label="smile">&#128516;</span>
               </h2>
               <p>
-                I'm currenty a undergrad studying Media and Design at&nbsp;
+                I'm currenty a undergrad studying Computer Science at&nbsp;
                 <mark className="small-red">Georgia Tech.</mark> <span></span>&#128029;&nbsp;
               </p>
               <p>

@@ -135,11 +135,11 @@ mark.dark-blue {
 
 .frontend-header {
   color: #74ebc9;
+  letter-spacing: 0.08em;
 }
 
-.graphic-header {
+.fullstack-header {
   color: #4ae4e4;
-  letter-spacing: 0.08em;
 }
 
 .intro-parallax > p {
