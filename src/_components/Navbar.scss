@@ -94,6 +94,7 @@
 .nav-item {
   height: 80px;
   margin-left: 10px;
+  overflow-y: hidden;
   &.switch {
     transition: transform 1s ease;
     transform: translateY(0);
