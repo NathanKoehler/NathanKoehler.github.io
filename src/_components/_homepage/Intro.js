@@ -37,7 +37,7 @@ function Intro() {
             </div>
           </h1>
           <p>
-            Undergrad Senior at Georgia Tech studying Media & Computer Science
+            Georgia Tech Undergrad interning at Tesla and studying CS
             looking for Summer 2024 Internships
           </p>
           <div className="intro-btns">

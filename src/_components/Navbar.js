@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { Nav, Name, NameMiddle, NameBackdrop } from "./NavbarElements";
-import ResumePDF from "../_resources/NathanKoehler_Resume.pdf";
+import ResumePDF from "../_resources/Nathaniel_Koehler_Resume_2024.pdf";
 import { useLocation } from 'react-router-dom';
 import { AppBar, Toolbar } from "@mui/material";
 import Favicon from "./_favicon/Favicon";
