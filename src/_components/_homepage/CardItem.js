@@ -1,9 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./Cards.css";
+import "./Cards.scss";
 import { Card } from "./StyledCard";
+import { COLOR_PURPLE } from "../../constants";
 
-function CardItem(props) {
+const CardItem = ({ 
+  aPath, 
+  handleCardDrawer, 
+  cardDrawerContents, 
+  path, 
+  label, 
+  src, 
+  srcAlt, 
+  text, 
+  badge, 
+  badgeColor = COLOR_PURPLE
+}) => {
   const elementRef = useRef(null);
   const [elemWidth, setWidth] = useState(0);
 
@@ -54,12 +66,12 @@ function CardItem(props) {
           onMouseLeave={() => setVisible(false)}
           onClick={() => {
             // for rare cards that take you to a new page entirely
-            // props.handleCardDrawer(true, props.cardDrawerContents);
-            if (props.aPath != null) {
-              window.open(props.aPath, "_blank");
+            // handleCardDrawer(true, cardDrawerContents);
+            if (aPath != null) {
+              window.open(aPath, "_blank");
             }
           }}
-          to={props.path}
+          to={path}
         >
           <div
             ref={elementRef}
@@ -67,21 +79,22 @@ function CardItem(props) {
           >
             <figure
               className="cards__item__pic-wrap" /* the image wrapper */
-              data-category={props.label}
+              style={{ "--badge-color": badgeColor }}
+              data-category={label}
             >
               <img
-                src={props.src}
+                src={src}
                 alt="Work"
                 className="cards__item__img"
                 style={{
                   cursor:
-                    props.path !== "/" || props.aPath != null
+                    path !== "/" || aPath != null
                       ? "pointer"
                       : "default",
                 }}
               />
               <img
-                src={props.srcAlt}
+                src={srcAlt}
                 alt="Work"
                 className="cards__item__img__background"
               />
@@ -92,12 +105,12 @@ function CardItem(props) {
                   style={{ fontSize: elemWidth / 22 }}
                   className="cards__item__text"
                 >
-                  {props.text}
-                  {props.redText && (
+                  {text}
+                  {badge && (
                     <>
                       <br />
                       <br />
-                      <span style={{ color: "#87f3ff" }}>{props.redText}</span>
+                      <span style={{ color: badgeColor }}>{badge}</span>
                     </>
                   )}
                 </h5>

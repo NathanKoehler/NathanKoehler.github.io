@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Cards.css";
+import "./Cards.scss";
 import CardItem from "./CardItem";
 import RollerRushImg from "../../_images/RollerRush.png";
 import RollerRushBackgroundImg from "../../_images/RollerRush-Background.png";
@@ -37,6 +37,7 @@ import CIVICDXImg from "../../_images/CIVICDX.png";
 import CIVICDXBackgroundImg from "../../_images/CIVICDX-Background.jpg";
 
 import CardDialog from "../_dialogs/CardDialog";
+import { COLOR_BLUE, COLOR_MAGENTA, COLOR_ORANGE, COLOR_ORANGERED, COLOR_PINK, COLOR_RED, COLOR_TURQUISE } from "../../constants";
 
 function Cards() {
   const [cardDrawerOpen, setCardDrawerOpen] = useState(false);
@@ -55,6 +56,7 @@ function Cards() {
       label="React.js & Django + PostgreSQL"
       path="/"
       handleCardDrawer={handleCardDrawer}
+      badgeColor={COLOR_TURQUISE}
     />
   );
 
@@ -63,9 +65,10 @@ function Cards() {
       src={ComcastImg}
       srcAlt={ComcastBackgroundImg}
       text="Comcast Fullstack Software Engineering Internship from May to August 2023 in Atlanta, GA. Worked in Application Development & Automation."
-      label="Angular & C# .NET + Azure SQL Databases"
+      label="Angular & C# .NET + Azure SQL"
       path="/"
       handleCardDrawer={handleCardDrawer}
+      badgeColor={COLOR_BLUE}
     />
   );
 
@@ -74,7 +77,8 @@ function Cards() {
       src={NCRRetailImg}
       srcAlt={NCRHOSPBackgroundImg}
       text="Software Engineering Internship for NCR from May to August 2022. Built & Deployed the Aloha Cloud POS Software Demo"
-      redText="Case Study"
+      badge="Case Study"
+      badgeColor={COLOR_RED}
       label="React.js & Node.js"
       path="/ncr-interactive-demo"
       handleCardDrawer={handleCardDrawer}
@@ -86,7 +90,8 @@ function Cards() {
       src={CIVICDXImg}
       srcAlt={CIVICDXBackgroundImg}
       text="Software Engineering Fellowship in Atlanta, GA for Civic Digital Experience January to May 2022."
-      redText="Click To Visit Civic DX:"
+      badge="Click To Visit Civic DX:"
+      badgeColor={COLOR_MAGENTA}
       label="React.js & C# .NET"
       path="/"
       handleCardDrawer={handleCardDrawer}
@@ -99,7 +104,7 @@ function Cards() {
       src={RealityMediaImg}
       srcAlt={RealityMediaBackgroundImg}
       text="User Experience Design and Vue.js programming to create virtual reality museum spaces for the GT Augmented Environments Lab."
-      redText="Click to learn more:"
+      badge="Click to learn more:"
       label="User Experience"
       path="/"
       aPath={new URL("https://realitymedia.digital/notLoggedIn/")} // takes to another site
@@ -111,7 +116,8 @@ function Cards() {
       src={EmpathyBytesImg}
       srcAlt={EmpathyBytesBackgroundImg}
       text="Web Development Work for Empathy Bytes from August 2021 to January 2022."
-      redText="Case Study"
+      badge="Case Study"
+      badgeColor={COLOR_ORANGE}
       label="Web UI / UX"
       path="/empathy-bytes"
     />
@@ -122,7 +128,7 @@ function Cards() {
       src={FingersCrossedImg}
       srcAlt={FingersCrossedBackgroundImg}
       text="Student-led game startup from Fall 2021 to Spring 2022."
-      redText="Case Study"
+      badge="Case Study"
       label="UI / UX + 3D Illustration"
       path="/fingers-crossed"
       handleCardDrawer={handleCardDrawer}
@@ -156,7 +162,7 @@ function Cards() {
       src={RollerRushImg}
       srcAlt={RollerRushBackgroundImg}
       text="Created a multiplayer web game using Three.js and Cannon.js in tandem with vanilla CSS and HTML within GT's Computational Media design program."
-      redText="Click to try it out:"
+      badge="Click to try it out:"
       label="JavaScript"
       path="/"
       handleCardDrawer={handleCardDrawer}
@@ -169,7 +175,7 @@ function Cards() {
       src={TodoImg}
       srcAlt={TodoBackgroundImg}
       text="Web design work for a Todo application built in React.js and TypeScript. Designed a modular Todo web app with streamlined sorting and editing."
-      redText="Click to try it out:"
+      badge="Click to try it out:"
       label="Web Dev"
       path="/"
       handleCardDrawer={handleCardDrawer}
@@ -182,7 +188,7 @@ function Cards() {
       src={AframeImg}
       srcAlt={AframeBackgroundImg}
       text="Created a virtual VR environment utilizing Aframe, Autodesk Maya Arnold procedural generation and Blender UV wrapping for class demonstration."
-      redText="Click to try it out:"
+      badge="Click to try it out:"
       label="AR / VR"
       path="/"
       aPath="/Aframe-3D-Replica/"
@@ -239,7 +245,7 @@ function Cards() {
       src={SliderImg}
       srcAlt={SliderBackgroundImg}
       text="2D Illustration and game programming within the C# and Unity indie title Slider, available as a demo on Steam. Currently an Indepedent Games Festival 2023 finalist."
-      redText="Click visit the Steam Store page:"
+      badge="Click visit the Steam Store page:"
       label="Game Development"
       path="/"
       handleCardDrawer={handleCardDrawer}

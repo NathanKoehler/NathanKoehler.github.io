@@ -1,63 +1,48 @@
 import React, { useEffect, useState } from "react";
 import "../../App.css";
-import "./Intro.css";
+import "./Intro.scss";
 import Piano from "./Piano";
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from "react-scroll-parallax";
 import { ScrollButton, ScrollLink } from "../Scroll";
 import { Link } from "react-router-dom";
-
-
-
+import { ScrollParallax } from "react-just-parallax";
 
 function Intro() {
-  const [isToCardsVisible, setIsToCardsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsToCardsVisible(true);
-  }, [])
-
   return (
     <div className="intro-invisible-width">
       <div id="top" className="intro-container">
         <Piano className="piano" />
-        <Parallax
-          translateY={5} /* determines the speed of the parallax */ 
-          className="intro-parallax"
-        >
-          <h1 className="intro-text">
-            NATE IS A
-            <div>
-              <ul>
-                <li className="fullstack-header">FULLSTACK ENGINEER</li>
-                <li className="software-header">SOFTWARE DEVELOPER</li>
-                <li className="frontend-header">FRONTEND EXPERT</li>
-                <li className="uiux-header">UI / UX DESIGNER</li>
-                <li className="fullstack-header">FULLSTACK ENGINEER</li>
-              </ul>
+        <ScrollParallax isAbsolutelyPositioned strength={0.69} lerpEase={0.1}>
+          <div className="intro-parallax">
+            <h1 className="intro-text">
+              NATE IS A
+              <div>
+                <ul>
+                  <li className="fullstack-header">FULLSTACK ENGINEER</li>
+                  <li className="software-header">SOFTWARE DEVELOPER</li>
+                  <li className="frontend-header">FRONTEND EXPERT</li>
+                  <li className="uiux-header">UI / UX DESIGNER</li>
+                  <li className="fullstack-header">FULLSTACK ENGINEER</li>
+                </ul>
+              </div>
+            </h1>
+            <p>
+              Georgia Tech Undergrad interning at Tesla and studying CS looking
+              for Summer 2024 Internships
+            </p>
+            <div className="intro-btns">
+              <ScrollLink goTo="cards" vOffset={-250}>
+                PROJECTS
+              </ScrollLink>
+              <Link to="/artwork">GALLERY</Link>
+              <ScrollLink goTo="skills" vOffset={-250}>
+                SKILLS
+              </ScrollLink>
+              <ScrollLink goTo="footer" vOffset={-250}>
+                CONTACT
+              </ScrollLink>
             </div>
-          </h1>
-          <p>
-            Georgia Tech Undergrad interning at Tesla and studying CS
-            looking for Summer 2024 Internships
-          </p>
-          <div className="intro-btns">
-            <ScrollLink goTo="cards" vOffset={-250}>
-              PROJECTS
-            </ScrollLink>
-            <Link to="/artwork" >
-              GALLERY
-            </Link>
-            <ScrollLink goTo="skills" vOffset={-250}>
-              SKILLS
-            </ScrollLink>
-            <ScrollLink goTo="footer" vOffset={-250}>
-              CONTACT
-            </ScrollLink>
-          </div>
-            <div
-              className="to-cards-button"
-              style={isToCardsVisible ? { opacity: 1 } : { opacity: 0 }}
-            >
+            <div className="to-cards-button">
               <ScrollButton
                 goTo="cards"
                 vDuration={800}
@@ -66,15 +51,13 @@ function Intro() {
                 buttonStyle="btn--invisible"
                 buttonSize="btn--large--invisible"
               >
-                <div
-                  className="to-cards-arrow"
-                  aria-label="Scroll To Cards"
-                >
+                <div className="to-cards-arrow" aria-label="Scroll To Cards">
                   <i className="fas fa-chevron-down"></i>
                 </div>
               </ScrollButton>
             </div>
-        </Parallax>
+          </div>
+        </ScrollParallax>
         <div className="bottom-made-in-react">
           <p>Made in React JS</p>
           <span className="react-logo">
