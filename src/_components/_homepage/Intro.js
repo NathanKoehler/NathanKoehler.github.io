@@ -12,7 +12,7 @@ function Intro() {
     <div className="intro-invisible-width">
       <div id="top" className="intro-container">
         <Piano className="piano" />
-        <ScrollParallax isAbsolutelyPositioned strength={0.69} lerpEase={0.1}>
+        <ScrollParallax isAbsolutelyPositioned enableOnTouchDevice={false} strength={0.69} lerpEase={0.1}>
           <div className="intro-parallax">
             <h1 className="intro-text">
               NATE IS A
