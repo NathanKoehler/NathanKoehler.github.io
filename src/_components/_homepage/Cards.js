@@ -37,7 +37,7 @@ import CIVICDXImg from "../../_images/CIVICDX.png";
 import CIVICDXBackgroundImg from "../../_images/CIVICDX-Background.jpg";
 
 import CardDialog from "../_dialogs/CardDialog";
-import { COLOR_BLUE, COLOR_MAGENTA, COLOR_ORANGE, COLOR_ORANGERED, COLOR_PINK, COLOR_RED, COLOR_TURQUISE } from "../../constants";
+import { COLOR_BLUE, COLOR_MAGENTA, COLOR_ORANGE, COLOR_RED, COLOR_TURQUISE } from "../../constants";
 
 function Cards() {
   const [cardDrawerOpen, setCardDrawerOpen] = useState(false);

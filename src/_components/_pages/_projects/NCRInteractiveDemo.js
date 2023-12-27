@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import "../../../App.css";
 import "./_projects.scss";
 import Footer from "../../Footer";
@@ -13,7 +13,6 @@ import ImgNCRFrontpageAnim from "../../../_images/NCRHOSP-AnimBackground.gif";
 import { Divider, Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import ProjectBanner from "./ProjectBanner";
-import { FocusImage } from "../../FocusImage";
 import ProjectImageList from "./ProjectImageList";
 import ProjectTimeline from "./ProjectTimeline";
 

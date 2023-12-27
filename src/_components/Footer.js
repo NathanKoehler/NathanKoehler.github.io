@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
 import { Instagram, InstagramBackground } from "./FooterElements";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { ScrollButton } from "./Scroll";

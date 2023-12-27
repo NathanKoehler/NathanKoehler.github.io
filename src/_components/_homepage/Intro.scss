@@ -46,6 +46,10 @@ mark.dark-blue {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   z-index: 0;
   pointer-events: none;
+
+  > span > span {
+    pointer-events: none !important;
+  }
 }
 
 .intro-parallax {
