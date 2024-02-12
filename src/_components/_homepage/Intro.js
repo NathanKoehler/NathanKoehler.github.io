@@ -24,14 +24,14 @@ function Intro() {
                   <ul>
                     <li className="fullstack-header">FULLSTACK ENGINEER</li>
                     <li className="software-header">SOFTWARE DEVELOPER</li>
-                    <li className="frontend-header">FRONTEND EXPERT</li>
+                    <li className="frontend-header">REACT JS EXPERT</li>
                     <li className="uiux-header">UI / UX DESIGNER</li>
                     <li className="fullstack-header">FULLSTACK ENGINEER</li>
                   </ul>
                 </div>
               </h1>
               <p>
-                Georgia Tech Undergrad interning at Tesla and studying CS
+                Georgia Tech Undergrad studying Tooling & Application Development
                 looking for Summer 2024 Internships
               </p>
               <div className="intro-btns">

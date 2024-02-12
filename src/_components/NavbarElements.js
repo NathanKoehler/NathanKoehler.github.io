@@ -46,5 +46,5 @@ export const NameBackdrop = styled.h4`
 
   z-index: 0;
 
-  transition: 1100ms all ease-in;
+  transition: 1100ms transform ease-in;
 `;
