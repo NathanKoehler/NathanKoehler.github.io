@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.28105634.css",
-    "main.js": "/static/js/main.236142c2.js",
+    "main.js": "/static/js/main.ff32e728.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
     "static/media/crown.png": "/static/media/crown.d36079741ef8a4cd89a4.png",
@@ -70,6 +70,7 @@
     "static/media/bsorcerer.jpg": "/static/media/bsorcerer.e0d89021bcb151ecac4e.jpg",
     "static/media/HOSPDemoTwo.png": "/static/media/HOSPDemoTwo.d89b078f96c2e05ceb9b.png",
     "static/media/bfish.jpg": "/static/media/bfish.1a8b483efc50368e536d.jpg",
+    "static/media/Machine_Learning_Proposal.pdf": "/static/media/Machine_Learning_Proposal.bb0fda6a6af5b0455142.pdf",
     "static/media/Comcast-Background.jpg": "/static/media/Comcast-Background.67829dc33e0da58bdb48.jpg",
     "static/media/NCRRETAIL.jpg": "/static/media/NCRRETAIL.61a1948dd2087b5a5c64.jpg",
     "static/media/bwater.jpg": "/static/media/bwater.6a79274a63a295026644.jpg",
@@ -95,10 +96,10 @@
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
     "main.28105634.css.map": "/static/css/main.28105634.css.map",
-    "main.236142c2.js.map": "/static/js/main.236142c2.js.map"
+    "main.ff32e728.js.map": "/static/js/main.ff32e728.js.map"
   },
   "entrypoints": [
     "static/css/main.28105634.css",
-    "static/js/main.236142c2.js"
+    "static/js/main.ff32e728.js"
   ]
 }
