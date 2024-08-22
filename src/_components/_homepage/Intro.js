@@ -23,7 +23,9 @@ function Intro() {
                 <div>
                   <ul>
                     <li className="fullstack-header">FULLSTACK ENGINEER</li>
+                    <li className="software-header">FORMER FAANG INTERN</li>
                     <li className="software-header">SOFTWARE DEVELOPER</li>
+                    <li className="software-header">FORMER TESLA INTERN</li>
                     <li className="frontend-header">REACT JS EXPERT</li>
                     <li className="uiux-header">UI / UX DESIGNER</li>
                     <li className="fullstack-header">FULLSTACK ENGINEER</li>
@@ -31,8 +33,7 @@ function Intro() {
                 </div>
               </h1>
               <p>
-                Georgia Tech Undergrad studying Tooling & Application Development
-                looking for Summer 2024 Internships
+                Georgia Tech Undergrad looking for 2025 New Grad Opportunities
               </p>
               <div className="intro-btns">
                 <ScrollLink goTo="cards" vOffset={-250}>

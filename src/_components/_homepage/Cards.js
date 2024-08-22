@@ -3,7 +3,6 @@ import "./Cards.scss";
 import CardItem from "./CardItem";
 import RollerRushImg from "../../_images/RollerRush.png";
 import RollerRushBackgroundImg from "../../_images/RollerRush-Background.png";
-import NCRHOSPImg from "../../_images/NCRHOSP.jpg";
 import NCRHOSPBackgroundImg from "../../_images/NCRHOSP-AnimBackground.gif";
 import PostCardImg from "../../_images/PostCard.png";
 import PostCardBackgroundImg from "../../_images/PostCard-Background.png";
@@ -22,7 +21,6 @@ import TheAscentBackgroundImg from "../../_images/TheAscent-Background.png";
 import UGAHacksImg from "../../_images/UGAHacks6.png";
 import UGAHacksBackgroundImg from "../../_images/UGAHacks6-Background.png";
 import NCRRetailImg from "../../_images/NCRRETAIL.jpg";
-import NCRRetailBackgroundImg from "../../_images/NCRRETAIL-Background.png";
 import SliderImg from "../../_images/Slider.jpg";
 import SliderBackgroundImg from "../../_images/Slider-Background.gif";
 import RealityMediaImg from "../../_images/RealityMedia.png";
@@ -35,9 +33,17 @@ import ComcastImg from "../../_images/Comcast.jpg";
 import ComcastBackgroundImg from "../../_images/Comcast-Background.jpg";
 import CIVICDXImg from "../../_images/CIVICDX.png";
 import CIVICDXBackgroundImg from "../../_images/CIVICDX-Background.jpg";
+import METAImg from "../../_images/META.png";
+import METABackgroundImg from "../../_images/META-Background.jpg";
 
 import CardDialog from "../_dialogs/CardDialog";
-import { COLOR_BLUE, COLOR_MAGENTA, COLOR_ORANGE, COLOR_RED, COLOR_TURQUISE } from "../../constants";
+import {
+  COLOR_BLUE,
+  COLOR_MAGENTA,
+  COLOR_ORANGE,
+  COLOR_RED,
+  COLOR_TURQUISE,
+} from "../../constants";
 
 function Cards() {
   const [cardDrawerOpen, setCardDrawerOpen] = useState(false);
@@ -53,7 +59,7 @@ function Cards() {
       src={TeslaImg}
       srcAlt={TeslaBackgroundImg}
       text="Tesla Fullstack Software Engineering Internship from August 2023 to Today in Bay Area, CA. Building Tools & Applications for Engineers."
-      label="React.js & Django + PostgreSQL"
+      label="React.js & Django & PostgreSQL"
       path="/"
       handleCardDrawer={handleCardDrawer}
       badgeColor={COLOR_TURQUISE}
@@ -65,7 +71,7 @@ function Cards() {
       src={ComcastImg}
       srcAlt={ComcastBackgroundImg}
       text="Comcast Fullstack Software Engineering Internship from May to August 2023 in Atlanta, GA. Worked in Application Development & Automation."
-      label="Angular & C# .NET + Azure SQL"
+      label="Angular & C# .NET & Azure SQL"
       path="/"
       handleCardDrawer={handleCardDrawer}
       badgeColor={COLOR_BLUE}
@@ -120,6 +126,18 @@ function Cards() {
       badgeColor={COLOR_ORANGE}
       label="Web UI / UX"
       path="/empathy-bytes"
+    />
+  );
+
+  const MetaCard = (
+    <CardItem
+      src={METAImg}
+      srcAlt={METABackgroundImg}
+      text="Fullstack application for tracking product privacy compliance for Meta. Expediated queries by over 70%, highest productivity in org (80+ FTEs)."
+      badge="Click to learn more:"
+      label="GraphQL & PHP & React.JS"
+      path="/"
+      handleCardDrawer={handleCardDrawer}
     />
   );
 
@@ -229,17 +247,6 @@ function Cards() {
     />
   );
 
-  const NCRRETAILCard = (
-    <CardItem
-      src={NCRHOSPImg}
-      srcAlt={NCRRetailBackgroundImg}
-      text="React.js and Material UI programming and Figma UI design for the Retail Catalog UI within my summer 2022 SWE role within NCR Corporation. Also conducted API testing with Postman."
-      label="UI / UX + React.js"
-      path="/"
-      handleCardDrawer={handleCardDrawer}
-    />
-  );
-
   const SliderCard = (
     <CardItem
       src={SliderImg}
@@ -265,32 +272,26 @@ function Cards() {
         <div className="cards__container">
           <div className="cards__wrapper">
             <ul id="cards" className="cards__items">
+              {MetaCard}
               {TeslaCard}
-              {ComcastCard}
             </ul>
             <ul id="cards" className="cards__items">
+              {ComcastCard}
               {CIVICDXCard}
               {NCRHOSPCard}
-              {EmpathyBytes}
             </ul>
             <h1 className="card__title">Projects</h1>
-            <ul
-              className="cards__items" /* makes the 3 item row in the second column */
-            >
+            <ul id="cards" className="cards__items">
               {SliderCard}
               {FingersCrossedCard}
               {RollerCard}
             </ul>
-            <ul
-              className="cards__items" /* makes the 2 item container in the 3rd row */
-            >
-              {NCRRETAILCard}
+            <ul id="cards" className="cards__items">
+              {EmpathyBytes}
               {RealityMedia}
               {AframeCard}
             </ul>
-            <ul
-              className="cards__items" /* makes the 2 item container in the 4th row */
-            >
+            <ul id="cards" className="cards__items">
               {PostCardCard}
               {TodoCard}
               {CurrencyCard}
