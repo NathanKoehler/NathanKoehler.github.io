@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.28105634.css",
-    "main.js": "/static/js/main.6a50ea43.js",
+    "main.js": "/static/js/main.24676ae2.js",
     "static/media/fish.png": "/static/media/fish.e37a3881a22f35600188.png",
     "static/media/water.png": "/static/media/water.2cfd9a97467d6f783c1e.png",
     "static/media/crown.png": "/static/media/crown.d36079741ef8a4cd89a4.png",
@@ -57,26 +57,24 @@
     "static/media/AHS-Robotics.png": "/static/media/AHS-Robotics.2b1ecb9a1972219f58f8.png",
     "static/media/Todo-Background.png": "/static/media/Todo-Background.c1af97a7a94fbbfa9221.png",
     "static/media/Todo.png": "/static/media/Todo.198be26ac5338703cc6b.png",
-    "static/media/Nathaniel_Koehler_Resume_2024.pdf": "/static/media/Nathaniel_Koehler_Resume_2024.8c42be28af72711a75f2.pdf",
+    "static/media/Nathaniel_Koehler_Resume_2024.pdf": "/static/media/Nathaniel_Koehler_Resume_2024.879d28ce9fb0e8d1a085.pdf",
     "static/media/NCRHOSP-Background.jpg": "/static/media/NCRHOSP-Background.14e4c99f39f7344362a9.jpg",
     "static/media/CIVICDX-Background.jpg": "/static/media/CIVICDX-Background.3504562300df38cd2f6c.jpg",
     "static/media/EmpathyBytes-Background.jpg": "/static/media/EmpathyBytes-Background.98ce2ddb5aba34081f53.jpg",
     "static/media/btree.jpg": "/static/media/btree.a48e8b9e959dfb2afbe6.jpg",
     "static/media/UGAHacks6.png": "/static/media/UGAHacks6.ca679fe91faa21f50567.png",
-    "static/media/NCRRETAIL-Background.png": "/static/media/NCRRETAIL-Background.b3d1eccabd4c76b1d7f3.png",
     "static/media/bnewrohcaw.jpg": "/static/media/bnewrohcaw.24d2f8c5356203f58f7d.jpg",
+    "static/media/META-Background.jpg": "/static/media/META-Background.942ce234a0faedd92f42.jpg",
     "static/media/FingersCrossedFour.png": "/static/media/FingersCrossedFour.b49e1cf9c3a437687c0b.png",
     "static/media/bnewrohcawback.jpg": "/static/media/bnewrohcawback.4b210d9bfe0a883bf731.jpg",
     "static/media/bsorcerer.jpg": "/static/media/bsorcerer.e0d89021bcb151ecac4e.jpg",
     "static/media/HOSPDemoTwo.png": "/static/media/HOSPDemoTwo.d89b078f96c2e05ceb9b.png",
     "static/media/bfish.jpg": "/static/media/bfish.1a8b483efc50368e536d.jpg",
-    "static/media/Machine_Learning_Proposal.pdf": "/static/media/Machine_Learning_Proposal.bb0fda6a6af5b0455142.pdf",
     "static/media/Comcast-Background.jpg": "/static/media/Comcast-Background.67829dc33e0da58bdb48.jpg",
     "static/media/NCRRETAIL.jpg": "/static/media/NCRRETAIL.61a1948dd2087b5a5c64.jpg",
     "static/media/bwater.jpg": "/static/media/bwater.6a79274a63a295026644.jpg",
     "static/media/HOSPDemoOne.png": "/static/media/HOSPDemoOne.03611e16edebc4eee302.png",
     "static/media/bwall.jpg": "/static/media/bwall.95edae5a05373d71109c.jpg",
-    "static/media/NCRHOSP.jpg": "/static/media/NCRHOSP.b28d1eaf9536ed38d28f.jpg",
     "static/media/EmpathyBytes.jpg": "/static/media/EmpathyBytes.a7e59c760e7e89528f3e.jpg",
     "static/media/bpillar.jpg": "/static/media/bpillar.e551b6827e40c694c42b.jpg",
     "static/media/bfire.jpg": "/static/media/bfire.930e6dfa3741291755cf.jpg",
@@ -89,6 +87,7 @@
     "static/media/bmononokeredesign.jpg": "/static/media/bmononokeredesign.77fbfb0842bf7d471cc0.jpg",
     "static/media/bwinter.jpg": "/static/media/bwinter.ff5e5b0612e3376038df.jpg",
     "static/media/bsit.jpg": "/static/media/bsit.0d61d3fc242f460eed26.jpg",
+    "static/media/META.png": "/static/media/META.4fbb749ac5e175149ad3.png",
     "static/media/btemple.jpg": "/static/media/btemple.089dd238bd06dff64f66.jpg",
     "static/media/bcrown.jpg": "/static/media/bcrown.364b4b6710eef6a32d14.jpg",
     "static/media/Tesla.png": "/static/media/Tesla.2938d896a496b3e9789d.png",
@@ -96,10 +95,10 @@
     "static/media/bmountain.jpg": "/static/media/bmountain.75e576c6cf6e3d55b531.jpg",
     "index.html": "/index.html",
     "main.28105634.css.map": "/static/css/main.28105634.css.map",
-    "main.6a50ea43.js.map": "/static/js/main.6a50ea43.js.map"
+    "main.24676ae2.js.map": "/static/js/main.24676ae2.js.map"
   },
   "entrypoints": [
     "static/css/main.28105634.css",
-    "static/js/main.6a50ea43.js"
+    "static/js/main.24676ae2.js"
   ]
 }
